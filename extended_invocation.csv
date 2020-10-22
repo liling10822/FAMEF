@@ -1,0 +1,1552 @@
+,URL,contributor,excerpt
+0,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Usage
+1,https://github.com/JimmySuen/integral-human-pose,Allen Mao,"We have placed some example config files in experiments folder, and you can use them straight forward. Don't modify them unless you know exactly what it means."
+2,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Train
+3,https://github.com/JimmySuen/integral-human-pose,Allen Mao,"For Integral Human Pose Regression, cd to pytorch_projects/integral_human_pose"
+4,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Integral Regression
+5,https://github.com/JimmySuen/integral-human-pose,Allen Mao,python train.py --cfg=experiments/hm36/resnet50v1_ft/d-mh_ps-256_deconv256x3_min-int-l1_adam_bs32-4gpus_x300-270-290/lr1e-3.yaml --dataroot=../../data/
+6,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Direct Joint Regression
+7,https://github.com/JimmySuen/integral-human-pose,Allen Mao,python train.py --cfg=experiments/hm36/resnet50v1_ft/d-mh_ps-256_dj_l1_adam_bs32-4gpus_x140-90-120/lr1e-3.yaml --dataroot=../../data/
+8,https://github.com/JimmySuen/integral-human-pose,Allen Mao,"For 3D pose estimation system of ECCV18 Challenge, cd to pytorch_projects/hm36_challenge"
+9,https://github.com/JimmySuen/integral-human-pose,Allen Mao,python train.py --cfg=experiments/hm36/resnet152v1_ft/d-mh_ps-256_deconv256x3_min-int-l1_adam_bs24-4gpus_x300-270-290/lr1e-3.yaml --dataroot=../../data/
+10,https://github.com/JimmySuen/integral-human-pose,Allen Mao,"By default, logging and model will be saved to log and output folder respectively."
+11,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Test
+12,https://github.com/JimmySuen/integral-human-pose,Allen Mao,To run evaluation on CHALL_H80K Val dataset
+13,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Download model
+14,https://github.com/JimmySuen/integral-human-pose,Allen Mao,Place it under $project_root/model/hm36_challenge
+15,https://github.com/JimmySuen/integral-human-pose,Allen Mao,cd to $project_root/pytorch_projects/hm36_challenge
+16,https://github.com/JimmySuen/integral-human-pose,Allen Mao,execute command below
+17,https://github.com/JimmySuen/integral-human-pose,Allen Mao,python test.py --cfg experiments/hm36/resnet152v1_ft/d-mch_384x288_deconv256x3_min-int-l1_adam_bs12-4gpus/lr1e-4_x300-27
+18,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"p1 = readgeom(""POLYGON((0 0,1 0,1 1,0 0))"")"
+19,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"p2 = readgeom(""POLYGON((0 0,1 0,1 1,0 1,0 0))"")"
+20,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"p3 = readgeom(""POLYGON((2 0,3 0,3 1,2 1,2 0))"")"
+21,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"g1 = buffer(p1, 0.5)"
+22,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"g2 = buffer(p2, 0.5)"
+23,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"g3 = buffer(p3, 0.5)"
+24,https://github.com/JuliaGeo/LibGEOS.jl,Allen Mao,"polygon = LibGEOS.union(g1, g3)"
+25,https://github.com/LMescheder/GAN_stability,Allen Mao,First download your data and put it into the ./data folder.
+26,https://github.com/LMescheder/GAN_stability,Allen Mao,"To train a new model, first create a config script similar to the ones provided in the ./configs folder. You can then train you model using"
+27,https://github.com/LMescheder/GAN_stability,Allen Mao,python train.py PATH_TO_CONFIG
+28,https://github.com/LMescheder/GAN_stability,Allen Mao,"To compute the inception score for your model and generate samples, use"
+29,https://github.com/LMescheder/GAN_stability,Allen Mao,python test.py PATH_TO_CONIFG
+30,https://github.com/LMescheder/GAN_stability,Allen Mao,"Finally, you can create nice latent space interpolations using"
+31,https://github.com/LMescheder/GAN_stability,Allen Mao,python interpolate.py PATH_TO_CONFIG
+32,https://github.com/LMescheder/GAN_stability,Allen Mao,or
+33,https://github.com/LMescheder/GAN_stability,Allen Mao,python interpolate_class.py PATH_TO_CONFIG
+34,https://github.com/NSGeophysics/GPRPy,Allen Mao,Running the software
+35,https://github.com/NSGeophysics/GPRPy,Allen Mao,"After installation, you can run the script from the Anaconda Prompt (or your Python-enabled prompt) by running either"
+36,https://github.com/NSGeophysics/GPRPy,Allen Mao,gprpy
+37,https://github.com/NSGeophysics/GPRPy,Allen Mao,python -m gprpy
+38,https://github.com/NSGeophysics/GPRPy,Allen Mao,The first time you run GPRPy it could take a while to initialize. GPRPy will ask you if you want to run the profile [p] or WARR / CMP [c] user interface. Type
+39,https://github.com/NSGeophysics/GPRPy,Allen Mao,p
+40,https://github.com/NSGeophysics/GPRPy,Allen Mao,"and then enter for profile, or"
+41,https://github.com/NSGeophysics/GPRPy,Allen Mao,c
+42,https://github.com/NSGeophysics/GPRPy,Allen Mao,and then enter for CMP / WARR.
+43,https://github.com/NSGeophysics/GPRPy,Allen Mao,You can also directly select one by running either
+44,https://github.com/NSGeophysics/GPRPy,Allen Mao,gprpy p
+45,https://github.com/NSGeophysics/GPRPy,Allen Mao,gprpy c
+46,https://github.com/NSGeophysics/GPRPy,Allen Mao,python -m gprpy p
+47,https://github.com/NSGeophysics/GPRPy,Allen Mao,python -m gprpy c
+48,https://github.com/OpenGeoVis/PVGeo,Allen Mao,Now PVGeo is ready for use in your standard Python environment (2.7 or >=3.6) with all dependencies installed! Go ahead and test your install:
+49,https://github.com/OpenGeoVis/PVGeo,Allen Mao,"python -c ""import PVGeo; print(PVGeo.__version__)"""
+50,https://github.com/OpenGeoVis/omfvista,Allen Mao,Example Use
+51,https://github.com/OpenGeoVis/omfvista,Allen Mao,Be sure to check out the Example Notebook that demos omfvista or our Example Gallery in the documentation! Here's an example using the sample data hosted in the OMF repository.
+52,https://github.com/OpenGeoVis/omfvista,Allen Mao,import pyvista as pv
+53,https://github.com/OpenGeoVis/omfvista,Allen Mao,import omfvista
+54,https://github.com/OpenGeoVis/omfvista,Allen Mao,project = omfvista.load_project('test_file.omf')
+55,https://github.com/OpenGeoVis/omfvista,Allen Mao,project
+56,https://github.com/OpenGeoVis/omfvista,Allen Mao,"Once the data is loaded as a pyvista.MultiBlock dataset from omfvista, then that object can be directly used for interactive 3D visualization from PyVista:"
+57,https://github.com/OpenGeoVis/omfvista,Allen Mao,project.plot(notebook=False)
+58,https://github.com/OpenGeoVis/omfvista,Allen Mao,"Or an interactive scene can be created and manipulated to create a compelling figure directly in a Jupyter notebook. First, grab the elements from the project:"
+59,https://github.com/OpenGeoVis/omfvista,Allen Mao,# Grab a few elements of interest and plot em up!
+60,https://github.com/OpenGeoVis/omfvista,Allen Mao,vol = project['Block Model']
+61,https://github.com/OpenGeoVis/omfvista,Allen Mao,assay = project['wolfpass_WP_assay']
+62,https://github.com/OpenGeoVis/omfvista,Allen Mao,topo = project['Topography']
+63,https://github.com/OpenGeoVis/omfvista,Allen Mao,dacite = project['Dacite']
+64,https://github.com/OpenGeoVis/omfvista,Allen Mao,Then apply a filtering tool from PyVista to the volumetric data:
+65,https://github.com/OpenGeoVis/omfvista,Allen Mao,thresher = pv.Threshold(vol)
+66,https://github.com/OpenGeoVis/omfvista,Allen Mao,Then you can put it all in one environment!
+67,https://github.com/OpenGeoVis/omfvista,Allen Mao,# Grab the active plotting window
+68,https://github.com/OpenGeoVis/omfvista,Allen Mao,#  from the thresher tool
+69,https://github.com/OpenGeoVis/omfvista,Allen Mao,p = thresher.plotter
+70,https://github.com/OpenGeoVis/omfvista,Allen Mao,# Add our datasets
+71,https://github.com/OpenGeoVis/omfvista,Allen Mao,"p.add_mesh(topo, cmap='gist_earth', opacity=0.5)"
+72,https://github.com/OpenGeoVis/omfvista,Allen Mao,"p.add_mesh(assay, color='blue', line_width=3)"
+73,https://github.com/OpenGeoVis/omfvista,Allen Mao,"p.add_mesh(dacite, color='yellow', opacity=0.6)"
+74,https://github.com/OpenGeoVis/omfvista,Allen Mao,# Add the bounds axis
+75,https://github.com/OpenGeoVis/omfvista,Allen Mao,p.show_bounds()
+76,https://github.com/OpenGeoVis/omfvista,Allen Mao,"And once you like what the render view displays, you can save a screenshot:"
+77,https://github.com/OpenGeoVis/omfvista,Allen Mao,p.screenshot('wolfpass.png')
+78,https://github.com/OpenGeoscience/geonotebook/,Allen Mao,Run the notebook:
+79,https://github.com/OpenGeoscience/geonotebook/,Allen Mao,cd notebooks/
+80,https://github.com/OpenGeoscience/geonotebook/,Allen Mao,jupyter notebook
+81,https://github.com/Toblerity/Fiona/,Allen Mao,Collections
+82,https://github.com/Toblerity/Fiona/,Allen Mao,"Records are read from and written to file-like Collection objects returned from the fiona.open() function. Records are mappings modeled on the GeoJSON format. They don't have any spatial methods of their own, so if you want to do anything fancy with them you will probably need Shapely or something like it. Here is an example of using Fiona to read some records from one data file, change their geometry attributes, and write them to a new data file."
+83,https://github.com/Toblerity/Fiona/,Allen Mao,import fiona
+84,https://github.com/Toblerity/Fiona/,Allen Mao,"# Open a file for reading. We'll call this the ""source."""
+85,https://github.com/Toblerity/Fiona/,Allen Mao,with fiona.open('tests/data/coutwildrnp.shp') as src:
+86,https://github.com/Toblerity/Fiona/,Allen Mao,"# The file we'll write to, the ""destination"", must be initialized"
+87,https://github.com/Toblerity/Fiona/,Allen Mao,"# with a coordinate system, a format driver name, and"
+88,https://github.com/Toblerity/Fiona/,Allen Mao,# a record schema.  We can get initial values from the open
+89,https://github.com/Toblerity/Fiona/,Allen Mao,# collection's ``meta`` property and then modify them as
+90,https://github.com/Toblerity/Fiona/,Allen Mao,# desired.
+91,https://github.com/Toblerity/Fiona/,Allen Mao,meta = src.meta
+92,https://github.com/Toblerity/Fiona/,Allen Mao,meta['schema']['geometry'] = 'Point'
+93,https://github.com/Toblerity/Fiona/,Allen Mao,"# Open an output file, using the same format driver and"
+94,https://github.com/Toblerity/Fiona/,Allen Mao,# coordinate reference system as the source. The ``meta``
+95,https://github.com/Toblerity/Fiona/,Allen Mao,# mapping fills in the keyword parameters of fiona.open().
+96,https://github.com/Toblerity/Fiona/,Allen Mao,"with fiona.open('test_write.shp', 'w', **meta) as dst:"
+97,https://github.com/Toblerity/Fiona/,Allen Mao,# Process only the records intersecting a box.
+98,https://github.com/Toblerity/Fiona/,Allen Mao,"for f in src.filter(bbox=(-107.0, 37.0, -105.0, 39.0)):"
+99,https://github.com/Toblerity/Fiona/,Allen Mao,# Get a point on the boundary of the record's
+100,https://github.com/Toblerity/Fiona/,Allen Mao,# geometry.
+101,https://github.com/Toblerity/Fiona/,Allen Mao,f['geometry'] = {
+102,https://github.com/Toblerity/Fiona/,Allen Mao,"'type': 'Point',"
+103,https://github.com/Toblerity/Fiona/,Allen Mao,'coordinates': f['geometry']['coordinates'][0][0]}
+104,https://github.com/Toblerity/Fiona/,Allen Mao,# Write the record out.
+105,https://github.com/Toblerity/Fiona/,Allen Mao,dst.write(f)
+106,https://github.com/Toblerity/Fiona/,Allen Mao,# The destination's contents are flushed to disk and the file is
+107,https://github.com/Toblerity/Fiona/,Allen Mao,# closed when its ``with`` block ends. This effectively
+108,https://github.com/Toblerity/Fiona/,Allen Mao,# executes ``dst.flush(); dst.close()``.
+109,https://github.com/Toblerity/Fiona/,Allen Mao,Reading Multilayer data
+110,https://github.com/Toblerity/Fiona/,Allen Mao,Collections can also be made from single layers within multilayer files or directories of data. The target layer is specified by name or by its integer index within the file or directory. The fiona.listlayers() function provides an index ordered list of layer names.
+111,https://github.com/Toblerity/Fiona/,Allen Mao,for layername in fiona.listlayers('tests/data'):
+112,https://github.com/Toblerity/Fiona/,Allen Mao,"with fiona.open('tests/data', layer=layername) as src:"
+113,https://github.com/Toblerity/Fiona/,Allen Mao,"print(layername, len(src))"
+114,https://github.com/Toblerity/Fiona/,Allen Mao,# Output:
+115,https://github.com/Toblerity/Fiona/,Allen Mao,"# (u'coutwildrnp', 67)"
+116,https://github.com/Toblerity/Fiona/,Allen Mao,"Layer can also be specified by index. In this case, layer=0 and layer='test_uk' specify the same layer in the data file or directory."
+117,https://github.com/Toblerity/Fiona/,Allen Mao,"for i, layername in enumerate(fiona.listlayers('tests/data')):"
+118,https://github.com/Toblerity/Fiona/,Allen Mao,"with fiona.open('tests/data', layer=i) as src:"
+119,https://github.com/Toblerity/Fiona/,Allen Mao,"print(i, layername, len(src))"
+120,https://github.com/Toblerity/Fiona/,Allen Mao,"# (0, u'coutwildrnp', 67)"
+121,https://github.com/Toblerity/Fiona/,Allen Mao,Writing Multilayer data
+122,https://github.com/Toblerity/Fiona/,Allen Mao,Multilayer data can be written as well. Layers must be specified by name when writing.
+123,https://github.com/Toblerity/Fiona/,Allen Mao,with open('tests/data/cowildrnp.shp') as src:
+124,https://github.com/Toblerity/Fiona/,Allen Mao,f = next(src)
+125,https://github.com/Toblerity/Fiona/,Allen Mao,"with fiona.open('/tmp/foo', 'w', layer='bar', **meta) as dst:"
+126,https://github.com/Toblerity/Fiona/,Allen Mao,print(fiona.listlayers('/tmp/foo'))
+127,https://github.com/Toblerity/Fiona/,Allen Mao,"with fiona.open('/tmp/foo', layer='bar') as src:"
+128,https://github.com/Toblerity/Fiona/,Allen Mao,print(len(src))
+129,https://github.com/Toblerity/Fiona/,Allen Mao,print(f['geometry']['type'])
+130,https://github.com/Toblerity/Fiona/,Allen Mao,print(f['properties'])
+131,https://github.com/Toblerity/Fiona/,Allen Mao,# [u'bar']
+132,https://github.com/Toblerity/Fiona/,Allen Mao,# 1
+133,https://github.com/Toblerity/Fiona/,Allen Mao,# Polygon
+134,https://github.com/Toblerity/Fiona/,Allen Mao,"# OrderedDict([(u'PERIMETER', 1.22107), (u'FEATURE2', None), (u'NAME', u'Mount Naomi Wilderness'), (u'FEATURE1', u'Wilderness'), (u'URL', u'http://www.wilderness.net/index.cfm?fuse=NWPS&sec=wildView&wname=Mount%20Naomi'), (u'AGBUR', u'FS'), (u'AREA', 0.0179264), (u'STATE_FIPS', u'49'), (u'WILDRNP020', 332), (u'STATE', u'UT')])"
+135,https://github.com/Toblerity/Fiona/,Allen Mao,A view of the /tmp/foo directory will confirm the creation of the new files.
+136,https://github.com/Toblerity/Fiona/,Allen Mao,$ ls /tmp/foo
+137,https://github.com/Toblerity/Fiona/,Allen Mao,bar.cpg bar.dbf bar.prj bar.shp bar.shx
+138,https://github.com/Toblerity/Fiona/,Allen Mao,Collections from archives and virtual file systems
+139,https://github.com/Toblerity/Fiona/,Allen Mao,"Zip and Tar archives can be treated as virtual filesystems and Collections can be made from paths and layers within them. In other words, Fiona lets you read and write zipped Shapefiles."
+140,https://github.com/Toblerity/Fiona/,Allen Mao,"for i, layername in enumerate("
+141,https://github.com/Toblerity/Fiona/,Allen Mao,fiona.listlayers('zip://tests/data/coutwildrnp.zip'):
+142,https://github.com/Toblerity/Fiona/,Allen Mao,"with fiona.open('zip://tests/data/coutwildrnp.zip', layer=i) as src:"
+143,https://github.com/Toblerity/Fiona/,Allen Mao,"Fiona can also read from more exotic file systems. For instance, a zipped shape file in S3 can be accessed like so:"
+144,https://github.com/Toblerity/Fiona/,Allen Mao,with fiona.open('zip+s3://mapbox/rasterio/coutwildrnp.zip') as src:
+145,https://github.com/Toblerity/Fiona/,Allen Mao,# 67
+146,https://github.com/Toblerity/Fiona/,Allen Mao,Fiona CLI
+147,https://github.com/Toblerity/Fiona/,Allen Mao,"Fiona's command line interface, named ""fio"", is documented at docs/cli.rst. Its fio info pretty prints information about a data file."
+148,https://github.com/Toblerity/Fiona/,Allen Mao,$ fio info --indent 2 tests/data/coutwildrnp.shp
+149,https://github.com/Toblerity/Fiona/,Allen Mao,"{count"": 67,
+  ""crs"": ""EPSG:4326"",
+  ""driver"": ""ESRI Shapefile"",
+  ""bounds"": [
+    -113.56424713134766,
+    37.0689811706543,
+    -104.97087097167969,
+    41.99627685546875
+  ],
+  ""schema"": {
+    ""geometry"": ""Polygon"",
+    ""properties"": {
+      ""PERIMETER"": ""float:24.15"",
+      ""FEATURE2"": ""str:80"",
+      ""NAME"": ""str:80"",
+      ""FEATURE1"": ""str:80"",
+      ""URL"": ""str:101"",
+      ""AGBUR"": ""str:80"",
+      ""AREA"": ""float:24.15"",
+      ""STATE_FIPS"": ""str:80"",
+      ""WILDRNP020"": ""int:10"",
+      ""STATE"": ""str:80}}}"
+150,https://github.com/Toblerity/Shapely,Allen Mao,Here is the canonical example of building an approximately circular patch by buffering a point.
+151,https://github.com/Toblerity/Shapely,Allen Mao,>>> from shapely.geometry import Point
+152,https://github.com/Toblerity/Shapely,Allen Mao,">>> patch = Point(0.0, 0.0).buffer(10.0)"
+153,https://github.com/Toblerity/Shapely,Allen Mao,>>> patch
+154,https://github.com/Toblerity/Shapely,Allen Mao,<shapely.geometry.polygon.Polygon object at 0x...>
+155,https://github.com/Toblerity/Shapely,Allen Mao,>>> patch.area
+156,https://github.com/Toblerity/Shapely,Allen Mao,See the manual for comprehensive usage snippets and the dissolve.py and intersect.py examples.
+157,https://github.com/Toblerity/Shapely,Allen Mao,Integration
+158,https://github.com/Toblerity/Shapely,Allen Mao,"Shapely does not read or write data files, but it can serialize and deserialize using several well known formats and protocols. The shapely.wkb and shapely.wkt modules provide dumpers and loaders inspired by Python's pickle module."
+159,https://github.com/Toblerity/Shapely,Allen Mao,">>> from shapely.wkt import dumps, loads"
+160,https://github.com/Toblerity/Shapely,Allen Mao,>>> dumps(loads('POINT (0 0)'))
+161,https://github.com/Toblerity/Shapely,Allen Mao,'POINT (0.0000000000000000 0.0000000000000000)'
+162,https://github.com/Toblerity/Shapely,Allen Mao,Shapely can also integrate with other Python GIS packages using GeoJSON-like dicts.
+163,https://github.com/Toblerity/Shapely,Allen Mao,>>> import json
+164,https://github.com/Toblerity/Shapely,Allen Mao,">>> from shapely.geometry import mapping, shape"
+165,https://github.com/Toblerity/Shapely,Allen Mao,">>> s = shape(json.loads('{""type"": ""Point"", ""coordinates"": [0.0, 0.0]}'))"
+166,https://github.com/Toblerity/Shapely,Allen Mao,>>> s
+167,https://github.com/Toblerity/Shapely,Allen Mao,<shapely.geometry.point.Point object at 0x...>
+168,https://github.com/Toblerity/Shapely,Allen Mao,>>> print(json.dumps(mapping(s)))
+169,https://github.com/Toblerity/Shapely,Allen Mao,"{""type"": ""Point"", ""coordinates"": [0.0, 0.0]}"
+170,https://github.com/XiaLiPKU/RESCAN,Allen Mao,"Train, Test and Show"
+171,https://github.com/XiaLiPKU/RESCAN,Allen Mao,python train.py
+172,https://github.com/XiaLiPKU/RESCAN,Allen Mao,python eval.py
+173,https://github.com/XiaLiPKU/RESCAN,Allen Mao,python show.py
+174,https://github.com/ZhouYanzhao/PRM,Allen Mao,Run demo
+175,https://github.com/ZhouYanzhao/PRM,Allen Mao,Install Nest's build-in Pytorch modules:
+176,https://github.com/ZhouYanzhao/PRM,Allen Mao,"To increase reusability, I abstracted some features from the original code, such as network trainer, to build Nest's built-in pytorch module set."
+177,https://github.com/ZhouYanzhao/PRM,Allen Mao,$ nest module install github@ZhouYanzhao/Nest:pytorch pytorch
+178,https://github.com/ZhouYanzhao/PRM,Allen Mao,Download the PASCAL-VOC2012 dataset:
+179,https://github.com/ZhouYanzhao/PRM,Allen Mao,mkdir ./PRM/demo/datasets
+180,https://github.com/ZhouYanzhao/PRM,Allen Mao,cd ./PRM/demo/datasets
+181,https://github.com/ZhouYanzhao/PRM,Allen Mao,# download and extract data
+182,https://github.com/ZhouYanzhao/PRM,Allen Mao,wget http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+183,https://github.com/ZhouYanzhao/PRM,Allen Mao,tar xvf VOCtrainval_11-May-2012.tar
+184,https://github.com/ZhouYanzhao/PRM,Allen Mao,Run the demo experiment via demo/main.ipynb
+185,https://github.com/agile-geoscience/striplog/,Allen Mao,Development: setting up for testing
+186,https://github.com/agile-geoscience/striplog/,Allen Mao,"There are other requirements for testing, as listed in setup.py. They should install with:"
+187,https://github.com/agile-geoscience/striplog/,Allen Mao,python setup.py test
+188,https://github.com/agile-geoscience/striplog/,Allen Mao,But I had better luck doing conda install pytest first.
+189,https://github.com/agile-geoscience/striplog/,Allen Mao,The tests can be run with:
+190,https://github.com/agile-geoscience/striplog/,Allen Mao,python run_tests.py
+191,https://github.com/akaszynski/pyansys,Allen Mao,Quick Examples
+192,https://github.com/akaszynski/pyansys,Allen Mao,"Many of the following examples are built in and can be run from the build-in examples module. For a quick demo, run:"
+193,https://github.com/akaszynski/pyansys,Allen Mao,from pyansys import examples
+194,https://github.com/akaszynski/pyansys,Allen Mao,examples.run_all()
+195,https://github.com/akaszynski/pyansys,Allen Mao,Controlling ANSYS
+196,https://github.com/akaszynski/pyansys,Allen Mao,Create an instance of ANSYS and interactively send commands to it. This is a direct interface and does not rely on writing a temporary script file. You can also generate plots using matplotlib.
+197,https://github.com/akaszynski/pyansys,Allen Mao,import os
+198,https://github.com/akaszynski/pyansys,Allen Mao,import pyansys
+199,https://github.com/akaszynski/pyansys,Allen Mao,path = os.getcwd()
+200,https://github.com/akaszynski/pyansys,Allen Mao,"ansys = pyansys.ANSYS(run_location=path, interactive_plotting=True)"
+201,https://github.com/akaszynski/pyansys,Allen Mao,# create a square area using keypoints
+202,https://github.com/akaszynski/pyansys,Allen Mao,ansys.Prep7()
+203,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.K(1, 0, 0, 0)"
+204,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.K(2, 1, 0, 0)"
+205,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.K(3, 1, 1, 0)"
+206,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.K(4, 0, 1, 0)"
+207,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.L(1, 2)"
+208,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.L(2, 3)"
+209,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.L(3, 4)"
+210,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.L(4, 1)"
+211,https://github.com/akaszynski/pyansys,Allen Mao,"ansys.Al(1, 2, 3, 4)"
+212,https://github.com/akaszynski/pyansys,Allen Mao,ansys.Aplot()
+213,https://github.com/akaszynski/pyansys,Allen Mao,ansys.Save()
+214,https://github.com/akaszynski/pyansys,Allen Mao,ansys.Exit()
+215,https://github.com/akaszynski/pyansys,Allen Mao,Loading and Plotting an ANSYS Archive File
+216,https://github.com/akaszynski/pyansys,Allen Mao,"ANSYS archive files containing solid elements (both legacy and current), can be loaded using Archive and then converted to a vtk object."
+217,https://github.com/akaszynski/pyansys,Allen Mao,# Sample *.cdb
+218,https://github.com/akaszynski/pyansys,Allen Mao,filename = examples.hexarchivefile
+219,https://github.com/akaszynski/pyansys,Allen Mao,# Read ansys archive file
+220,https://github.com/akaszynski/pyansys,Allen Mao,archive = pyansys.Archive(filename)
+221,https://github.com/akaszynski/pyansys,Allen Mao,# Print raw data from cdb
+222,https://github.com/akaszynski/pyansys,Allen Mao,for key in archive.raw:
+223,https://github.com/akaszynski/pyansys,Allen Mao,"print(""%s : %s"" % (key, archive.raw[key]))"
+224,https://github.com/akaszynski/pyansys,Allen Mao,# Create a vtk unstructured grid from the raw data and plot it
+225,https://github.com/akaszynski/pyansys,Allen Mao,grid = archive.parse_vtk()
+226,https://github.com/akaszynski/pyansys,Allen Mao,grid.plot()
+227,https://github.com/akaszynski/pyansys,Allen Mao,# write this as a vtk xml file
+228,https://github.com/akaszynski/pyansys,Allen Mao,grid.Write('hex.vtu')
+229,https://github.com/akaszynski/pyansys,Allen Mao,grid = pv.UnstructuredGrid('hex.vtu')
+230,https://github.com/akaszynski/pyansys,Allen Mao,Loading the Result File
+231,https://github.com/akaszynski/pyansys,Allen Mao,This example reads in binary results from a modal analysis of a beam from ANSYS.
+232,https://github.com/akaszynski/pyansys,Allen Mao,# Load the reader from pyansys
+233,https://github.com/akaszynski/pyansys,Allen Mao,# Sample result file
+234,https://github.com/akaszynski/pyansys,Allen Mao,rstfile = examples.rstfile
+235,https://github.com/akaszynski/pyansys,Allen Mao,# Create result object by loading the result file
+236,https://github.com/akaszynski/pyansys,Allen Mao,result = pyansys.read_binary(rstfile)
+237,https://github.com/akaszynski/pyansys,Allen Mao,# Beam natural frequencies
+238,https://github.com/akaszynski/pyansys,Allen Mao,freqs = result.time_values
+239,https://github.com/akaszynski/pyansys,Allen Mao,>>> print(freq)
+240,https://github.com/akaszynski/pyansys,Allen Mao,[ 7366.49503969  7366.49503969 11504.89523664 17285.70459456
+241,https://github.com/akaszynski/pyansys,Allen Mao,17285.70459457 20137.19299035]
+242,https://github.com/akaszynski/pyansys,Allen Mao,# Get the 1st bending mode shape.  Results are ordered based on the sorted
+243,https://github.com/akaszynski/pyansys,Allen Mao,# node numbering.  Note that results are zero indexed
+244,https://github.com/akaszynski/pyansys,Allen Mao,"nnum, disp = result.nodal_solution(0)"
+245,https://github.com/akaszynski/pyansys,Allen Mao,>>> print(disp)
+246,https://github.com/akaszynski/pyansys,Allen Mao,[[ 2.89623914e+01 -2.82480489e+01 -3.09226692e-01]
+247,https://github.com/akaszynski/pyansys,Allen Mao,[ 2.89489249e+01 -2.82342416e+01  2.47536161e+01]
+248,https://github.com/akaszynski/pyansys,Allen Mao,[ 2.89177130e+01 -2.82745126e+01  6.05151053e+00]
+249,https://github.com/akaszynski/pyansys,Allen Mao,[ 2.88715048e+01 -2.82764960e+01  1.22913304e+01]
+250,https://github.com/akaszynski/pyansys,Allen Mao,[ 2.89221536e+01 -2.82479511e+01  1.84965333e+01]
+251,https://github.com/akaszynski/pyansys,Allen Mao,[ 2.89623914e+01 -2.82480489e+01  3.09226692e-01]
+252,https://github.com/akaszynski/pyansys,Allen Mao,"result.plot_nodal_solution(0, 'x', label='Displacement')"
+253,https://github.com/akaszynski/pyansys,Allen Mao,Reading a Full File
+254,https://github.com/akaszynski/pyansys,Allen Mao,This example reads in the mass and stiffness matrices associated with the above example.
+255,https://github.com/akaszynski/pyansys,Allen Mao,from scipy import sparse
+256,https://github.com/akaszynski/pyansys,Allen Mao,# load the full file
+257,https://github.com/akaszynski/pyansys,Allen Mao,fobj = pyansys.FullReader('file.full')
+258,https://github.com/akaszynski/pyansys,Allen Mao,"dofref, k, m = fobj.load_km()  # returns upper triangle only"
+259,https://github.com/akaszynski/pyansys,Allen Mao,"# make k, m full, symmetric matricies"
+260,https://github.com/akaszynski/pyansys,Allen Mao,"k += sparse.triu(k, 1).T"
+261,https://github.com/akaszynski/pyansys,Allen Mao,"m += sparse.triu(m, 1).T"
+262,https://github.com/akaszynski/pyansys,Allen Mao,"If you have scipy installed, you can solve the eigensystem for its natural frequencies and mode shapes."
+263,https://github.com/akaszynski/pyansys,Allen Mao,from scipy.sparse import linalg
+264,https://github.com/akaszynski/pyansys,Allen Mao,# condition the k matrix
+265,https://github.com/akaszynski/pyansys,Allen Mao,"# to avoid getting the ""Factor is exactly singular"" error"
+266,https://github.com/akaszynski/pyansys,Allen Mao,"k += sparse.diags(np.random.random(k.shape[0])/1E20, shape=k.shape)"
+267,https://github.com/akaszynski/pyansys,Allen Mao,# Solve
+268,https://github.com/akaszynski/pyansys,Allen Mao,"w, v = linalg.eigsh(k, k=20, M=m, sigma=10000)"
+269,https://github.com/akaszynski/pyansys,Allen Mao,# System natural frequencies
+270,https://github.com/akaszynski/pyansys,Allen Mao,f = (np.real(w))**0.5/(2*np.pi)
+271,https://github.com/akaszynski/pyansys,Allen Mao,print('First four natural frequencies')
+272,https://github.com/akaszynski/pyansys,Allen Mao,for i in range(4):
+273,https://github.com/akaszynski/pyansys,Allen Mao,print '{:.3f} Hz'.format(f[i])
+274,https://github.com/albertpumarola/GANimation,Allen Mao,Data Preparation
+275,https://github.com/albertpumarola/GANimation,Allen Mao,The code requires a directory containing the following files:
+276,https://github.com/albertpumarola/GANimation,Allen Mao,imgs/: folder with all image
+277,https://github.com/albertpumarola/GANimation,Allen Mao,aus_openface.pkl: dictionary containing the images action units.
+278,https://github.com/albertpumarola/GANimation,Allen Mao,train_ids.csv: file containing the images names to be used to train.
+279,https://github.com/albertpumarola/GANimation,Allen Mao,test_ids.csv: file containing the images names to be used to test.
+280,https://github.com/albertpumarola/GANimation,Allen Mao,An example of this directory is shown in sample_dataset/.
+281,https://github.com/albertpumarola/GANimation,Allen Mao,To generate the aus_openface.pkl extract each image Action Units with OpenFace and store each output in a csv file the same name as the image. Then run:
+282,https://github.com/albertpumarola/GANimation,Allen Mao,python data/prepare_au_annotations.py
+283,https://github.com/albertpumarola/GANimation,Allen Mao,Run
+284,https://github.com/albertpumarola/GANimation,Allen Mao,To train:
+285,https://github.com/albertpumarola/GANimation,Allen Mao,bash launch/run_train.sh
+286,https://github.com/albertpumarola/GANimation,Allen Mao,To test:
+287,https://github.com/albertpumarola/GANimation,Allen Mao,python test --input_path path/to/img
+288,https://github.com/cgre-aachen/gempy,Allen Mao,Pull Docker image from DockerHub
+289,https://github.com/cgre-aachen/gempy,Allen Mao,The easiest way to get remote-geomod running is by running the pre-compiled Docker image (containing everything you need) directly from the cloud service Docker Hub to get a locally running Docker container. Make sure to set your Docker daemon to Linux containers in Docker's context menu.
+290,https://github.com/cgre-aachen/gempy,Allen Mao,$ docker run -it -p 8899:8899 leguark/gempy
+291,https://github.com/cgre-aachen/gempy,Allen Mao,"This will automatically pull the Docker image from Docker Hub and run it, opening a command line shell inside of the running Docker container. There you have access to the file system inside of the container. Note that this pre-compiled Docker image already contains the GemPy repository."
+292,https://github.com/cgre-aachen/gempy,Allen Mao,Once you are in the docker console if you want to open the tutorials you will need to run:
+293,https://github.com/cgre-aachen/gempy,Allen Mao,$ jupyter notebook --ip 0.0.0.0 --port 8899 --no-browser --allow-root
+294,https://github.com/cgre-aachen/gempy,Allen Mao,"Notice that we are running the notebook on the port 8899 to try to avoid conflicts with jupyter servers running in your system. If everything worked fine, the address to the jupyter notebook will be display on the console. It has to look something like this (Just be aware of the brackets):"
+295,https://github.com/cgre-aachen/gempy,Allen Mao,"To access the notebook, open this file in a browser:"
+296,https://github.com/cgre-aachen/gempy,Allen Mao,file:///root/.local/share/jupyter/runtime/nbserver-286-open.html
+297,https://github.com/cgre-aachen/gempy,Allen Mao,Or copy and paste one of these URLs:
+298,https://github.com/cgre-aachen/gempy,Allen Mao,http://(ce2cdcc55bb0 or 127.0.0.1):8899/?token=97d52c1dc321c42083d8c1b4d
+299,https://github.com/d3/d3,Allen Mao,"To import D3 into an ES2015 application, either import specific symbols from specific D3 modules:"
+300,https://github.com/d3/d3,Allen Mao,"import {scaleLinear} from ""d3-scale"";"
+301,https://github.com/d3/d3,Allen Mao,"Or import everything into a namespace (here, d3):"
+302,https://github.com/d3/d3,Allen Mao,"import * as d3 from ""d3"";"
+303,https://github.com/d3/d3,Allen Mao,In Node:
+304,https://github.com/d3/d3,Allen Mao,"var d3 = require(""d3"");"
+305,https://github.com/d3/d3,Allen Mao,You can also require individual modules and combine them into a d3 object using Object.assign:
+306,https://github.com/d3/d3,Allen Mao,"var d3 = Object.assign({}, require(""d3-format""), require(""d3-geo""), require(""d3-geo-projection""));"
+307,https://github.com/driftingtides/hyvr,Allen Mao,To use HyVR you have to create a configuration file with your settings. You can then run HyVR the following way:
+308,https://github.com/driftingtides/hyvr,Allen Mao,(hyvr_env) $ python -m hyvr my_configfile.ini
+309,https://github.com/driftingtides/hyvr,Allen Mao,"HyVR will then run and store all results in a subdirectory. If no configfile is given, it will run a test case instead:"
+310,https://github.com/driftingtides/hyvr,Allen Mao,(hyvr_env) $ python -m hyvr
+311,https://github.com/driftingtides/hyvr,Allen Mao,"If you want to use HyVR in a script, you can import it and use the run function:"
+312,https://github.com/driftingtides/hyvr,Allen Mao,import hyvr
+313,https://github.com/driftingtides/hyvr,Allen Mao,hyvr.run('my_configfile.ini')
+314,https://github.com/driftingtides/hyvr,Allen Mao,"Examples can be found in the testcases directory of the github repository, the general setup and possible options of the config-file are described in the documentation. Currently only made.ini is ported to version 1.0.0."
+315,https://github.com/driving-behavior/DBNet,Allen Mao,Quick Start
+316,https://github.com/driving-behavior/DBNet,Allen Mao,Training
+317,https://github.com/driving-behavior/DBNet,Allen Mao,To train a model to predict vehicle speeds and steering angles:
+318,https://github.com/driving-behavior/DBNet,Allen Mao,python train.py --model nvidia_pn --batch_size 16 --max_epoch 125 --gpu 0
+319,https://github.com/driving-behavior/DBNet,Allen Mao,The names of the models are consistent with our paper. Log files and network parameters will be saved to logs folder in default.
+320,https://github.com/driving-behavior/DBNet,Allen Mao,To see HELP for the training script:
+321,https://github.com/driving-behavior/DBNet,Allen Mao,python train.py -h
+322,https://github.com/driving-behavior/DBNet,Allen Mao,We can use TensorBoard to view the network architecture and monitor the training progress.
+323,https://github.com/driving-behavior/DBNet,Allen Mao,tensorboard --logdir logs
+324,https://github.com/driving-behavior/DBNet,Allen Mao,Evaluation
+325,https://github.com/driving-behavior/DBNet,Allen Mao,"After training, you could evaluate the performance of models using evaluate.py. To plot the figures or calculate AUC, you may need to have matplotlib library installed."
+326,https://github.com/driving-behavior/DBNet,Allen Mao,python evaluate.py --model_path logs/nvidia_pn/model.ckpt
+327,https://github.com/driving-behavior/DBNet,Allen Mao,Prediction
+328,https://github.com/driving-behavior/DBNet,Allen Mao,To get the predictions of test data:
+329,https://github.com/driving-behavior/DBNet,Allen Mao,python predict.py
+330,https://github.com/driving-behavior/DBNet,Allen Mao,The results are saved in results/results (every segment) and results/behavior_pred.txt (merged) by default. To change the storation location:
+331,https://github.com/driving-behavior/DBNet,Allen Mao,python predict.py --result_dir specified_dir
+332,https://github.com/driving-behavior/DBNet,Allen Mao,The result directory will be created automatically if it doesn't exist.
+333,https://github.com/equinor/pylops,Allen Mao,from pylops import FirstDerivative
+334,https://github.com/equinor/pylops,Allen Mao,"Dlop = FirstDerivative(nx, dtype='float64')"
+335,https://github.com/equinor/pylops,Allen Mao,# y = Dx
+336,https://github.com/equinor/pylops,Allen Mao,y = Dlop*x
+337,https://github.com/equinor/pylops,Allen Mao,# x = D'y
+338,https://github.com/equinor/pylops,Allen Mao,xadj = Dlop.H*y
+339,https://github.com/equinor/pylops,Allen Mao,# xinv = D^-1 y
+340,https://github.com/equinor/pylops,Allen Mao,xinv = Dlop / y
+341,https://github.com/equinor/segyio,Allen Mao,import segyio
+342,https://github.com/equinor/segyio,Allen Mao,import numpy as np
+343,https://github.com/equinor/segyio,Allen Mao,with segyio.open('file.sgy') as f:
+344,https://github.com/equinor/segyio,Allen Mao,for trace in f.trace:
+345,https://github.com/equinor/segyio,Allen Mao,filtered = trace[np.where(trace < 1e-2)]
+346,https://github.com/equinor/segyio,Allen Mao,"All code in this tutorial assumes segyio is imported, and that numpy is available as np."
+347,https://github.com/equinor/segyio,Allen Mao,"This tutorial assumes you're familiar with Python and numpy. For a refresh, check out the python tutorial and numpy quickstart"
+348,https://github.com/equinor/segyio,Allen Mao,Basics
+349,https://github.com/equinor/segyio,Allen Mao,"Opening a file for reading is done with the segyio.open function, and idiomatically used with context managers. Using the with statement, files are properly closed even in the case of exceptions. By default, files are opened read-only."
+350,https://github.com/equinor/segyio,Allen Mao,with segyio.open(filename) as f:
+351,https://github.com/equinor/segyio,Allen Mao,...
+352,https://github.com/equinor/segyio,Allen Mao,"Open accepts several options (for more a more comprehensive reference, check the open function's docstring with help(segyio.open). The most important option is the second (optional) positional argument. To open a file for writing, do segyio.open(filename, 'r+'), from the C fopen function."
+353,https://github.com/equinor/segyio,Allen Mao,"Files can be opened in unstructured mode, either by passing segyio.open the optional arguments strict=False, in which case not establishing structure (inline numbers, crossline numbers etc.) is not an error, and ignore_geometry=True, in which case segyio won't even try to set these internal attributes."
+354,https://github.com/equinor/segyio,Allen Mao,The segy file object has several public attributes describing this structure:
+355,https://github.com/equinor/segyio,Allen Mao,f.ilines Inferred inline numbers
+356,https://github.com/equinor/segyio,Allen Mao,f.xlines Inferred crossline numbers
+357,https://github.com/equinor/segyio,Allen Mao,f.offsets Inferred offsets numbers
+358,https://github.com/equinor/segyio,Allen Mao,f.samples Inferred sample offsets (frequency and recording time delay)
+359,https://github.com/equinor/segyio,Allen Mao,"f.unstructured True if unstructured, False if structured"
+360,https://github.com/equinor/segyio,Allen Mao,f.ext_headers The number of extended textual headers
+361,https://github.com/equinor/segyio,Allen Mao,"If the file is opened unstructured, all the line properties will will be None."
+362,https://github.com/equinor/segyio,Allen Mao,Modes
+363,https://github.com/equinor/segyio,Allen Mao,"In segyio, data is retrieved and written through so-called modes. Modes are abstract arrays, or addressing schemes, and change what names and indices mean. All modes are properties on the file handle object, support the len function, and reads and writes are done through f.mode[]. Writes are done with assignment. Modes support array slicing inspired by numpy. The following modes are available:"
+364,https://github.com/equinor/segyio,Allen Mao,trace
+365,https://github.com/equinor/segyio,Allen Mao,"The trace mode offers raw addressing of traces as they are laid out in the file. This, along with header, is the only mode available for unstructured files. Traces are enumerated 0..len(f.trace)."
+366,https://github.com/equinor/segyio,Allen Mao,"Reading a trace yields a numpy ndarray, and reading multiple traces yields a generator of ndarrays. Generator semantics are used and the same object is reused, so if you want to cache or address trace data later, you must explicitly copy."
+367,https://github.com/equinor/segyio,Allen Mao,>>> f.trace[10]
+368,https://github.com/equinor/segyio,Allen Mao,>>> f.trace[-2]
+369,https://github.com/equinor/segyio,Allen Mao,>>> f.trace[15:45]
+370,https://github.com/equinor/segyio,Allen Mao,>>> f.trace[:45:3]
+371,https://github.com/equinor/segyio,Allen Mao,header
+372,https://github.com/equinor/segyio,Allen Mao,"With addressing behaviour similar to trace, accessing items yield header objects instead of numpy ndarrays. Headers are dict-like objects, where keys are integers, seismic unix-style keys (in segyio.su module) and segyio enums (segyio.TraceField)."
+373,https://github.com/equinor/segyio,Allen Mao,"Header values can be updated by assigning a dict-like to it, and keys not present on the right-hand-side of the assignment are unmodified."
+374,https://github.com/equinor/segyio,Allen Mao,>>> f.header[5] = { segyio.su.tracl: 10 }
+375,https://github.com/equinor/segyio,Allen Mao,>>> f.header[5].items()
+376,https://github.com/equinor/segyio,Allen Mao,">>> f.header[5][25, 37] # read multiple values at once"
+377,https://github.com/equinor/segyio,Allen Mao,"iline, xline"
+378,https://github.com/equinor/segyio,Allen Mao,"These modes will raise an error if the file is unstructured. They consider arguments to [] as the keys of the respective lines. Line numbers are always increasing, but can have arbitrary, uneven spacing. The valid names can be found in the ilines and xlines properties."
+379,https://github.com/equinor/segyio,Allen Mao,"As with traces, getting one line yields an ndarray, and a slice of lines yields a generator of ndarrays. When using slices with a step, some intermediate items might be skipped if it is not matched by the step, i.e. doing f.line[1:10:3] on a file with lines [1,2,3,4,5] is equivalent of looking up 1, 4, 7, and finding [1,4]."
+380,https://github.com/equinor/segyio,Allen Mao,"When working with a 4D pre-stack file, the first offset is implicitly read. To access a different or a range of offsets, use comma separated indices or ranges, as such: f.iline[120, 4]."
+381,https://github.com/equinor/segyio,Allen Mao,"fast, slow"
+382,https://github.com/equinor/segyio,Allen Mao,"These are aliases for iline and xline, determined by how the traces are laid out. For inline sorted files, fast would yield iline."
+383,https://github.com/equinor/segyio,Allen Mao,depth_slice
+384,https://github.com/equinor/segyio,Allen Mao,"The depth slice is a horizontal, file-wide cut at a depth. The yielded values are ndarrays and generators-of-arrays."
+385,https://github.com/equinor/segyio,Allen Mao,gather
+386,https://github.com/equinor/segyio,Allen Mao,"The gather is the intersection of an inline and crossline, a vertical column of the survey, and unless a single offset is specified returns an offset x samples ndarray. In the presence of ranges, it returns a generator of such ndarrays."
+387,https://github.com/equinor/segyio,Allen Mao,text
+388,https://github.com/equinor/segyio,Allen Mao,"The text mode is an array of the textual headers, where text[0] is the standard-mandated textual header, and 1..n are the optional extended headers."
+389,https://github.com/equinor/segyio,Allen Mao,"The text headers are returned as 3200-byte string-like blobs (bytes in Python 3, str in Python 2), as it is in the file. The segyio.tools.wrap function can create a line-oriented version of this string."
+390,https://github.com/equinor/segyio,Allen Mao,bin
+391,https://github.com/equinor/segyio,Allen Mao,"The values of the file-wide binary header with a dict-like interface. Behaves like the header mode, but without the indexing."
+392,https://github.com/equinor/segyio,Allen Mao,Mode examples
+393,https://github.com/equinor/segyio,Allen Mao,>>> for line in f.iline[:2430]:
+394,https://github.com/equinor/segyio,Allen Mao,...     print(np.average(line))
+395,https://github.com/equinor/segyio,Allen Mao,>>> for line in f.xline[2:10]:
+396,https://github.com/equinor/segyio,Allen Mao,...     print(line)
+397,https://github.com/equinor/segyio,Allen Mao,>>> for line in f.fast[::2]:
+398,https://github.com/equinor/segyio,Allen Mao,...     print(np.min(line))
+399,https://github.com/equinor/segyio,Allen Mao,">>> for factor, offset in enumerate(f.iline[10, :]):"
+400,https://github.com/equinor/segyio,Allen Mao,...     offset *= factor
+401,https://github.com/equinor/segyio,Allen Mao,print(offset)
+402,https://github.com/equinor/segyio,Allen Mao,">>> f.gather[200, 241, :].shape"
+403,https://github.com/equinor/segyio,Allen Mao,>>> text = f.text[0]
+404,https://github.com/equinor/segyio,Allen Mao,>>> type(text)
+405,https://github.com/equinor/segyio,Allen Mao,<type 'bytes'> # 'str' in Python 2
+406,https://github.com/equinor/segyio,Allen Mao,>>> f.trace[10] = np.zeros(len(f.samples))
+407,https://github.com/equinor/segyio,Allen Mao,More examples and recipes can be found in the docstrings help(segyio) and the examples section.
+408,https://github.com/equinor/segyio,Allen Mao,Examples
+409,https://github.com/equinor/segyio,Allen Mao,Python
+410,https://github.com/equinor/segyio,Allen Mao,Import useful libraries:
+411,https://github.com/equinor/segyio,Allen Mao,from shutil import copyfile
+412,https://github.com/equinor/segyio,Allen Mao,Open segy file and inspect it:
+413,https://github.com/equinor/segyio,Allen Mao,filename = 'name_of_your_file.sgy'
+414,https://github.com/equinor/segyio,Allen Mao,with segyio.open(filename) as segyfile:
+415,https://github.com/equinor/segyio,Allen Mao,# Memory map file for faster reading (especially if file is big...)
+416,https://github.com/equinor/segyio,Allen Mao,segyfile.mmap()
+417,https://github.com/equinor/segyio,Allen Mao,# Print binary header info
+418,https://github.com/equinor/segyio,Allen Mao,print(segyfile.bin)
+419,https://github.com/equinor/segyio,Allen Mao,print(segyfile.bin[segyio.BinField.Traces])
+420,https://github.com/equinor/segyio,Allen Mao,# Read headerword inline for trace 10
+421,https://github.com/equinor/segyio,Allen Mao,print(segyfile.header[10][segyio.TraceField.INLINE_3D])
+422,https://github.com/equinor/segyio,Allen Mao,# Print inline and crossline axis
+423,https://github.com/equinor/segyio,Allen Mao,print(segyfile.xlines)
+424,https://github.com/equinor/segyio,Allen Mao,print(segyfile.ilines)
+425,https://github.com/equinor/segyio,Allen Mao,Read post-stack data cube contained in segy file:
+426,https://github.com/equinor/segyio,Allen Mao,# Read data along first xline
+427,https://github.com/equinor/segyio,Allen Mao,data = segyfile.xline[segyfile.xlines[1]]
+428,https://github.com/equinor/segyio,Allen Mao,# Read data along last iline
+429,https://github.com/equinor/segyio,Allen Mao,data = segyfile.iline[segyfile.ilines[-1]]
+430,https://github.com/equinor/segyio,Allen Mao,# Read data along 100th time slice
+431,https://github.com/equinor/segyio,Allen Mao,data = segyfile.depth_slice[100]
+432,https://github.com/equinor/segyio,Allen Mao,# Read data cube
+433,https://github.com/equinor/segyio,Allen Mao,data = segyio.tools.cube(filename)
+434,https://github.com/equinor/segyio,Allen Mao,Read pre-stack data cube contained in segy file:
+435,https://github.com/equinor/segyio,Allen Mao,filename = 'name_of_your_prestack_file.sgy'
+436,https://github.com/equinor/segyio,Allen Mao,# Print offsets
+437,https://github.com/equinor/segyio,Allen Mao,print(segyfile.offset)
+438,https://github.com/equinor/segyio,Allen Mao,# Read data along first iline and offset 100:  data [nxl x nt]
+439,https://github.com/equinor/segyio,Allen Mao,"data = segyfile.iline[0, 100]"
+440,https://github.com/equinor/segyio,Allen Mao,# Read data along first iline and all offsets gath:  data [noff x nxl x nt]
+441,https://github.com/equinor/segyio,Allen Mao,"data = np.asarray([np.copy(x) for x in segyfile.iline[0:1, :]])"
+442,https://github.com/equinor/segyio,Allen Mao,# Read data along first 5 ilines and all offsets gath:  data [noff nil x nxl x nt]
+443,https://github.com/equinor/segyio,Allen Mao,"data = np.asarray([np.copy(x) for x in segyfile.iline[0:5, :]])"
+444,https://github.com/equinor/segyio,Allen Mao,# Read data along first xline and all offsets gath:  data [noff x nil x nt]
+445,https://github.com/equinor/segyio,Allen Mao,"data = np.asarray([np.copy(x) for x in segyfile.xline[0:1, :]])"
+446,https://github.com/equinor/segyio,Allen Mao,"Read and understand fairly 'unstructured' data (e.g., data sorted in common shot gathers):"
+447,https://github.com/equinor/segyio,Allen Mao,"with segyio.open(filename, ignore_geometry=True) as segyfile:"
+448,https://github.com/equinor/segyio,Allen Mao,# Extract header word for all traces
+449,https://github.com/equinor/segyio,Allen Mao,sourceX = segyfile.attributes(segyio.TraceField.SourceX)[:]
+450,https://github.com/equinor/segyio,Allen Mao,# Scatter plot sources and receivers color-coded on their number
+451,https://github.com/equinor/segyio,Allen Mao,plt.figure()
+452,https://github.com/equinor/segyio,Allen Mao,sourceY = segyfile.attributes(segyio.TraceField.SourceY)[:]
+453,https://github.com/equinor/segyio,Allen Mao,nsum = segyfile.attributes(segyio.TraceField.NSummedTraces)[:]
+454,https://github.com/equinor/segyio,Allen Mao,"plt.scatter(sourceX, sourceY, c=nsum, edgecolor='none')"
+455,https://github.com/equinor/segyio,Allen Mao,groupX = segyfile.attributes(segyio.TraceField.GroupX)[:]
+456,https://github.com/equinor/segyio,Allen Mao,groupY = segyfile.attributes(segyio.TraceField.GroupY)[:]
+457,https://github.com/equinor/segyio,Allen Mao,nstack = segyfile.attributes(segyio.TraceField.NStackedTraces)[:]
+458,https://github.com/equinor/segyio,Allen Mao,"plt.scatter(groupX, groupY, c=nstack, edgecolor='none')"
+459,https://github.com/equinor/segyio,Allen Mao,Write segy file using same header of another file but multiply data by *2
+460,https://github.com/equinor/segyio,Allen Mao,input_file = 'name_of_your_input_file.sgy'
+461,https://github.com/equinor/segyio,Allen Mao,output_file = 'name_of_your_output_file.sgy'
+462,https://github.com/equinor/segyio,Allen Mao,"copyfile(input_file, output_file)"
+463,https://github.com/equinor/segyio,Allen Mao,"with segyio.open(output_file, ""r+"") as src:"
+464,https://github.com/equinor/segyio,Allen Mao,# multiply data by 2
+465,https://github.com/equinor/segyio,Allen Mao,for i in src.ilines:
+466,https://github.com/equinor/segyio,Allen Mao,src.iline[i] = 2 * src.iline[i]
+467,https://github.com/equinor/segyio,Allen Mao,Make segy file from sctrach
+468,https://github.com/equinor/segyio,Allen Mao,MATLAB
+469,https://github.com/equinor/segyio,Allen Mao,filename='name_of_your_file.sgy'
+470,https://github.com/equinor/segyio,Allen Mao,% Inspect segy
+471,https://github.com/equinor/segyio,Allen Mao,"Segy_struct=SegySpec(filename,189,193,1);"
+472,https://github.com/equinor/segyio,Allen Mao,% Read headerword inline for each trace
+473,https://github.com/equinor/segyio,Allen Mao,"Segy.get_header(filename,'Inline3D')"
+474,https://github.com/equinor/segyio,Allen Mao,%Read data along first xline
+475,https://github.com/equinor/segyio,Allen Mao,"data= Segy.readCrossLine(Segy_struct,Segy_struct.crossline_indexes(1));"
+476,https://github.com/equinor/segyio,Allen Mao,%Read cube
+477,https://github.com/equinor/segyio,Allen Mao,data=Segy.get_cube(Segy_struct);
+478,https://github.com/equinor/segyio,Allen Mao,"%Write segy, use same header but multiply data by *2"
+479,https://github.com/equinor/segyio,Allen Mao,input_file='input_file.sgy';
+480,https://github.com/equinor/segyio,Allen Mao,output_file='output_file.sgy';
+481,https://github.com/equinor/segyio,Allen Mao,"copyfile(input_file,output_file)"
+482,https://github.com/equinor/segyio,Allen Mao,data = Segy.get_traces(input_file);
+483,https://github.com/equinor/segyio,Allen Mao,data1 = 2*data;
+484,https://github.com/equinor/segyio,Allen Mao,"Segy.put_traces(output_file, data1);"
+485,https://github.com/facebook/react,Allen Mao,We have several examples on the website. Here is the first one to get you started:
+486,https://github.com/facebook/react,Allen Mao,function HelloMessage({ name }) {
+487,https://github.com/facebook/react,Allen Mao,return <div>Hello {name}</div>;
+488,https://github.com/facebook/react,Allen Mao,}
+489,https://github.com/facebook/react,Allen Mao,ReactDOM.render(
+490,https://github.com/facebook/react,Allen Mao,"<HelloMessage name=""Taylor"" />,"
+491,https://github.com/facebook/react,Allen Mao,document.getElementById('container')
+492,https://github.com/facebook/react,Allen Mao,);
+493,https://github.com/facebook/react,Allen Mao,"This example will render ""Hello Taylor"" into a container on the page."
+494,https://github.com/geo-data/gdal-docker,Allen Mao,Running the container without any arguments will by default output the GDAL version string as well as the supported raster and vector formats:
+495,https://github.com/geo-data/gdal-docker,Allen Mao,docker run geodata/gdal
+496,https://github.com/geo-data/gdal-docker,Allen Mao,The following command will open a bash shell in an Ubuntu based environment with GDAL available:
+497,https://github.com/geo-data/gdal-docker,Allen Mao,docker run -t -i geodata/gdal /bin/bash
+498,https://github.com/geo-data/gdal-docker,Allen Mao,"You will most likely want to work with data on the host system from within the docker container, in which case run the container with the -v option. Assuming you have a raster called test.tif in your current working directory on your host system, running the following command should invoke gdalinfo on test.tif:"
+499,https://github.com/geo-data/gdal-docker,Allen Mao,docker run -v $(pwd):/data geodata/gdal gdalinfo test.tif
+500,https://github.com/geo-data/gdal-docker,Allen Mao,"This works because the current working directory is set to /data in the container, and you have mapped the current working directory on your host to /data."
+501,https://github.com/geo-data/gdal-docker,Allen Mao,"Note that the image tagged latest, GDAL represents the latest code at the time the image was built. If you want to include the most up-to-date commits then you need to build the docker image yourself locally along these lines:"
+502,https://github.com/geo-data/gdal-docker,Allen Mao,docker build -t geodata/gdal:local git://github.com/geo-data/gdal-docker/
+503,https://github.com/gprMax/gprMax,Allen Mao,Running gprMax
+504,https://github.com/gprMax/gprMax,Allen Mao,"gprMax is designed as a Python package, i.e. a namespace which can contain multiple packages and modules, much like a directory."
+505,https://github.com/gprMax/gprMax,Allen Mao,"Open a Terminal (Linux/macOS) or Command Prompt (Windows), navigate into the top-level gprMax directory, and if it is not already active, activate the gprMax conda environment conda activate gprMax."
+506,https://github.com/gprMax/gprMax,Allen Mao,Basic usage of gprMax is:
+507,https://github.com/gprMax/gprMax,Allen Mao,(gprMax)$ python -m gprMax path_to/name_of_input_file
+508,https://github.com/gprMax/gprMax,Allen Mao,For example to run one of the test models:
+509,https://github.com/gprMax/gprMax,Allen Mao,(gprMax)$ python -m gprMax user_models/cylinder_Ascan_2D.in
+510,https://github.com/gprMax/gprMax,Allen Mao,When the simulation is complete you can plot the A-scan using:
+511,https://github.com/gprMax/gprMax,Allen Mao,(gprMax)$ python -m tools.plot_Ascan user_models/cylinder_Ascan_2D.out
+512,https://github.com/gprMax/gprMax,Allen Mao,Your results should like those from the A-scan from the metal cylinder example in introductory/basic 2D models section
+513,https://github.com/gprMax/gprMax,Allen Mao,"When you are finished using gprMax, the conda environment can be deactivated using conda deactivate."
+514,https://github.com/haoliangyu/node-qa-masker,Allen Mao,var qm = require('qa-masker');
+515,https://github.com/haoliangyu/node-qa-masker,Allen Mao,var Masker = qm.LandsatMasker;
+516,https://github.com/haoliangyu/node-qa-masker,Allen Mao,var Confidence = qm.LandsatConfidence;
+517,https://github.com/haoliangyu/node-qa-masker,Allen Mao,// read the band file to initialize
+518,https://github.com/haoliangyu/node-qa-masker,Allen Mao,var masker = new Masker('LC80170302016198LGN00_BQA.TIF');
+519,https://github.com/haoliangyu/node-qa-masker,Allen Mao,// generate mask in ndarray format
+520,https://github.com/haoliangyu/node-qa-masker,Allen Mao,var mask = masker.getWaterMask(Confidence.high);
+521,https://github.com/haoliangyu/node-qa-masker,Allen Mao,// save the mask as GeoTIFF
+522,https://github.com/haoliangyu/node-qa-masker,Allen Mao,"masker.saveAsTif(mask, 'test.tif');"
+523,https://github.com/haoliangyu/node-qa-masker,Allen Mao,var masker = new Masker('modis_qa_band.tif');
+524,https://github.com/haoliangyu/node-qa-masker,Allen Mao,"var mask = masker.getMask(0, 2, 2);"
+525,https://github.com/hezhangsprinter/DCPDN,Allen Mao,python demo.py --dataroot ./facades/nat_new4 --valDataroot ./facades/nat_new4 --netG ./demo_model/netG_epoch_8.pth
+526,https://github.com/hezhangsprinter/DCPDN,Allen Mao,python train.py --dataroot ./facades/train512 --valDataroot ./facades/test512 --exp ./checkpoints_new --netG ./demo_model/netG_epoch_8.pth
+527,https://github.com/hezhangsprinter/DCPDN,Allen Mao,python demo.py --dataroot ./your_dataroot --valDataroot ./your_dataroot --netG ./pre_trained/netG_epoch_9.pth
+528,https://github.com/hezhangsprinter/DID-MDN,Allen Mao,python test.py --dataroot ./facades/github --valDataroot ./facades/github --netG ./pre_trained/netG_epoch_9.pth
+529,https://github.com/hezhangsprinter/DID-MDN,Allen Mao,python derain_train_2018.py  --dataroot ./facades/DID-MDN-training/Rain_Medium/train2018new  --valDataroot ./facades/github --exp ./check --netG ./pre_trained/netG_epoch_9.pth.
+530,https://github.com/hezhangsprinter/DID-MDN,Allen Mao,Make sure you download the training sample and put in the right folder
+531,https://github.com/hezhangsprinter/DID-MDN,Allen Mao,python train_rain_class.py  --dataroot ./facades/DID-MDN-training/Rain_Medium/train2018new  --exp ./check_class
+532,https://github.com/hiroharu-kato/neural_renderer,Allen Mao,Running examples
+533,https://github.com/hiroharu-kato/neural_renderer,Allen Mao,python ./examples/example1.py
+534,https://github.com/hiroharu-kato/neural_renderer,Allen Mao,python ./examples/example2.py
+535,https://github.com/hiroharu-kato/neural_renderer,Allen Mao,python ./examples/example3.py
+536,https://github.com/hiroharu-kato/neural_renderer,Allen Mao,python ./examples/example4.py
+537,https://github.com/iannesbitt/readgssi,Allen Mao,usage
+538,https://github.com/iannesbitt/readgssi,Allen Mao,To display the help text:
+539,https://github.com/iannesbitt/readgssi,Allen Mao,$ readgssi -h
+540,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__001.DZT
+541,https://github.com/iannesbitt/readgssi,Allen Mao,Simply specifying an input DZT file like in the above command (-i file) will display a host of data about the file including:
+542,https://github.com/iannesbitt/readgssi,Allen Mao,name of GSSI control unit
+543,https://github.com/iannesbitt/readgssi,Allen Mao,antenna model
+544,https://github.com/iannesbitt/readgssi,Allen Mao,antenna frequency
+545,https://github.com/iannesbitt/readgssi,Allen Mao,samples per trace
+546,https://github.com/iannesbitt/readgssi,Allen Mao,bits per sample
+547,https://github.com/iannesbitt/readgssi,Allen Mao,traces per second
+548,https://github.com/iannesbitt/readgssi,Allen Mao,L1 dielectric as entered during survey
+549,https://github.com/iannesbitt/readgssi,Allen Mao,sampling depth
+550,https://github.com/iannesbitt/readgssi,Allen Mao,speed of light at given dielectric
+551,https://github.com/iannesbitt/readgssi,Allen Mao,number of traces
+552,https://github.com/iannesbitt/readgssi,Allen Mao,number of seconds
+553,https://github.com/iannesbitt/readgssi,Allen Mao,basic functionality
+554,https://github.com/iannesbitt/readgssi,Allen Mao,CSV output
+555,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__001.DZT -o test.csv -f CSV
+556,https://github.com/iannesbitt/readgssi,Allen Mao,"Translates radar data array to CSV format, if that's your cup of tea. One might use this to export to Matlab. One CSV will be written per channel. The script will rename the output to 'test_100MHz.csv' automatically. No header information is included in the CSV."
+557,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__001.DZT -s 8 -w -r -o test.csv -f CSV
+558,https://github.com/iannesbitt/readgssi,Allen Mao,"Applies 8x stacking, dewow, and background removal filters before exporting to CSV."
+559,https://github.com/iannesbitt/readgssi,Allen Mao,plotting
+560,https://github.com/iannesbitt/readgssi,Allen Mao,example 1A
+561,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__001.DZT -p 5 -s auto -c viridis -m
+562,https://github.com/iannesbitt/readgssi,Allen Mao,"The above command will cause readgssi to save and show a plot named ""DZT__001_100MHz.png"" with a y-size of 6 inches at 150 dpi (-p 6) and the autostacking algorithm will stack the x-axis to some multiple of times shorter than the original data array for optimal viewing on a monitor, approximately 2.5*y (-s auto). The plot will be rendered in the viridis color scheme, which is the default for matplotlib. The -m flag will draw a histogram for each data channel. Example 1a Example 1a histogram"
+563,https://github.com/iannesbitt/readgssi,Allen Mao,example 1B
+564,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__001.DZT -o 1b.png -p 5 -s auto -c viridis -g 50 -m -r -w
+565,https://github.com/iannesbitt/readgssi,Allen Mao,"This will cause readgssi to create a plot from the same file, but matplotlib will save the plot as ""1b.png"" (-o 1b.png). The script will plot the y-axis size (-p 5) and automatically stack the x-axis to (-s auto). The script will plot the data with a gain value of 50 (-g 50), which will increase the plot contrast by a factor of 50. Next readgssi will run the background removal (-r) and dewow (-w) filters. Finally, the -m flag will draw a histogram for each data channel. Note how the histogram changes when filters are applied. Example 1b Example 1b histogram"
+566,https://github.com/iannesbitt/readgssi,Allen Mao,example 1C: gain can be tricky depending on your colormap
+567,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__001.DZT -o 1c.png -p 5 -s auto -r -w -c seismic
+568,https://github.com/iannesbitt/readgssi,Allen Mao,"Here, background removal and dewow filters are applied, but no gain adjustments are made (equivalent to -g 1). The script uses matplotlib's ""seismic"" colormap (-c seismic) which is specifically designed for this type of waterfall array plotting. Even without gain, you will often be able to easily see very slight signal perturbations. It is not colorblind-friendly for either of the two most common types of human colorblindness, however, which is why it is not the default colormap. Example 1c"
+569,https://github.com/iannesbitt/readgssi,Allen Mao,example 2A: no background removal
+570,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__002.DZT -o 2a.png -p 10 -s 3 -n
+571,https://github.com/iannesbitt/readgssi,Allen Mao,"Here readgssi will create a plot of size 10 and stack 3x (-p 10 -s 3). Matplotlib will use the default ""Greys"" colormap and save a PNG of the figure, but the script will suppress the matplotlib window (-n, useful for processing an entire directory full of DZTs at once). Example 2a"
+572,https://github.com/iannesbitt/readgssi,Allen Mao,example 2B: horizontal mean BGR algorithm applied
+573,https://github.com/iannesbitt/readgssi,Allen Mao,readgssi -i DZT__002.DZT -o 2b.png -p 10 -s 3 -n -r
+574,https://github.com/iannesbitt/readgssi,Allen Mao,"The script does the same thing, except it applies horizontal mean background removal -r. Note the difference in ringing artifacts between examples 2a and 2b."
+575,https://github.com/imfunniee/gitfolio,Allen Mao,Forks
+576,https://github.com/imfunniee/gitfolio,Allen Mao,To include forks on your personal website just provide -f or --fork argument while building
+577,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio build <username> -f
+578,https://github.com/imfunniee/gitfolio,Allen Mao,Sorting Repos
+579,https://github.com/imfunniee/gitfolio,Allen Mao,"To sort repos provide --sort [sortBy] argument while building. Where [sortBy] can be star, created, updated, pushed,full_name. Default: created"
+580,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio build <username> --sort star
+581,https://github.com/imfunniee/gitfolio,Allen Mao,Ordering Repos
+582,https://github.com/imfunniee/gitfolio,Allen Mao,To order the sorted repos provide --order [orderBy] argument while building. Where [orderBy] can be asc or desc. Default: asc
+583,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio build <username> --sort star --order desc
+584,https://github.com/imfunniee/gitfolio,Allen Mao,Customize Themes
+585,https://github.com/imfunniee/gitfolio,Allen Mao,Themes are specified using the --theme [theme-name] flag when running the build command. The available themes are
+586,https://github.com/imfunniee/gitfolio,Allen Mao,light
+587,https://github.com/imfunniee/gitfolio,Allen Mao,dark
+588,https://github.com/imfunniee/gitfolio,Allen Mao,"For example, the following command will build the website with the dark theme"
+589,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio build <username> --theme dark
+590,https://github.com/imfunniee/gitfolio,Allen Mao,Customize background image
+591,https://github.com/imfunniee/gitfolio,Allen Mao,To customize the background image just provide --background [url] argument while building
+592,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio build <username> --background https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634
+593,https://github.com/imfunniee/gitfolio,Allen Mao,You could also add in your custom CSS inside index.css to give it a more personal feel.
+594,https://github.com/imfunniee/gitfolio,Allen Mao,Let's Publish
+595,https://github.com/imfunniee/gitfolio,Allen Mao,"Head over to GitHub and create a new repository named username.github.io, where username is your username. Push the files inside/dist folder to repo you just created."
+596,https://github.com/imfunniee/gitfolio,Allen Mao,Go To username.github.io your site should be up!!
+597,https://github.com/imfunniee/gitfolio,Allen Mao,Updating
+598,https://github.com/imfunniee/gitfolio,Allen Mao,"To update your info, simply run"
+599,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio update
+600,https://github.com/imfunniee/gitfolio,Allen Mao,This will update your info and your repository info.
+601,https://github.com/imfunniee/gitfolio,Allen Mao,To Update background or theme you need to run build command again.
+602,https://github.com/imfunniee/gitfolio,Allen Mao,Add a Blog
+603,https://github.com/imfunniee/gitfolio,Allen Mao,To add your first blog run this command.
+604,https://github.com/imfunniee/gitfolio,Allen Mao,$ gitfolio blog my-first-blog
+605,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,Testing
+606,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,Download pretrained models through: download_model.sh inside checkpoints/.
+607,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"To test blur images in a folder, just use arguments --input_path=<TEST_FOLDER> and save the outputs to --output_path=<OUTPUT_FOLDER>. For example:"
+608,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,python run_model.py --input_path=./testing_set --output_path=./testing_res
+609,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"If you have a GPU, please include --gpu argument, and add your gpu id to your command. Otherwise, use --gpu=-1 for CPU."
+610,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,python run_model.py --gpu=0
+611,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"To test the model, pre-defined height and width of tensorflow placeholder should be assigned. Our network requires the height and width be multiples of 16. When the gpu memory is enough, the height and width could be assigned to the maximum to accommodate all the images."
+612,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"Otherwise, the images will be downsampled by the largest scale factor to be fed into the placeholder. And results will be upsampled to the original size."
+613,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"According to our experience, --height=720 and --width=1280 work well on a Gefore GTX 1050 TI with 4GB memory. For example,"
+614,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,python run_model.py --height=720 --width=1280
+615,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,The quantitative results of PSNR and SSIM in the paper is calculated using MATLAB built-in function psnr() and ssim() based on the generated color results.
+616,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,We trained our model using the dataset from DeepDeblur_release. Please put the dataset into training_set/. And the provided datalist_gopro.txt can be used to train the model.
+617,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"Hyper parameters such as batch size, learning rate, epoch number can be tuned through command line:"
+618,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,python run_model.py --phase=train --batch=16 --lr=1e-4 --epoch=4000
+619,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,Models
+620,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,We provided 3 models (training settings) for testing:
+621,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,"--model=lstm: This model implements exactly the same structure in our paper. Current released model weights should produce PSNR=30.19, SSIM=0.9334 on GOPRO testing dataset."
+622,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,#NAME?
+623,https://github.com/jiangsutx/SRN-Deblur,Allen Mao,#NAME?
+624,https://github.com/joferkington/mplstereonet,Allen Mao,Basic Usage
+625,https://github.com/joferkington/mplstereonet,Allen Mao,"In most cases, you'll want to import mplstereonet and then make an axes with projection=""stereonet"" (By default, this is an equal-area stereonet). Alternately, you can use mplstereonet.subplots, which functions identically to matplotlib.pyplot.subplots, but creates stereonet axes."
+626,https://github.com/joferkington/mplstereonet,Allen Mao,As an example:
+627,https://github.com/joferkington/mplstereonet,Allen Mao,import matplotlib.pyplot as plt
+628,https://github.com/joferkington/mplstereonet,Allen Mao,import mplstereonet
+629,https://github.com/joferkington/mplstereonet,Allen Mao,fig = plt.figure()
+630,https://github.com/joferkington/mplstereonet,Allen Mao,"ax = fig.add_subplot(111, projection='stereonet')"
+631,https://github.com/joferkington/mplstereonet,Allen Mao,"strike, dip = 315, 30"
+632,https://github.com/joferkington/mplstereonet,Allen Mao,"ax.plane(strike, dip, 'g-', linewidth=2)"
+633,https://github.com/joferkington/mplstereonet,Allen Mao,"ax.pole(strike, dip, 'g^', markersize=18)"
+634,https://github.com/joferkington/mplstereonet,Allen Mao,"ax.rake(strike, dip, -25)"
+635,https://github.com/joferkington/mplstereonet,Allen Mao,ax.grid()
+636,https://github.com/joferkington/mplstereonet,Allen Mao,plt.show()
+637,https://github.com/joferkington/mplstereonet,Allen Mao,"fig, ax = mplstereonet.subplots()"
+638,https://github.com/joferkington/mplstereonet,Allen Mao,"strike, dip = 90, 80"
+639,https://github.com/joferkington/mplstereonet,Allen Mao,num = 10
+640,https://github.com/joferkington/mplstereonet,Allen Mao,strikes = strike + 10 * np.random.randn(num)
+641,https://github.com/joferkington/mplstereonet,Allen Mao,dips = dip + 10 * np.random.randn(num)
+642,https://github.com/joferkington/mplstereonet,Allen Mao,"cax = ax.density_contourf(strikes, dips, measurement='poles')"
+643,https://github.com/joferkington/mplstereonet,Allen Mao,"ax.pole(strikes, dips)"
+644,https://github.com/joferkington/mplstereonet,Allen Mao,ax.grid(True)
+645,https://github.com/joferkington/mplstereonet,Allen Mao,fig.colorbar(cax)
+646,https://github.com/jwass/mplleaflet,Allen Mao,The simplest use is to just create your plot using matplotlib commands and call mplleaflet.show().
+647,https://github.com/jwass/mplleaflet,Allen Mao,>>> import matplotlib.pyplot as plt
+648,https://github.com/jwass/mplleaflet,Allen Mao,"... # Load longitude, latitude data"
+649,https://github.com/jwass/mplleaflet,Allen Mao,>>> plt.hold(True)
+650,https://github.com/jwass/mplleaflet,Allen Mao,# Plot the data as a blue line with red squares on top
+651,https://github.com/jwass/mplleaflet,Allen Mao,# Just plot longitude vs. latitude
+652,https://github.com/jwass/mplleaflet,Allen Mao,">>> plt.plot(longitude, latitude, 'b') # Draw blue line"
+653,https://github.com/jwass/mplleaflet,Allen Mao,">>> plt.plot(longitude, latitude, 'rs') # Draw red squares"
+654,https://github.com/jwass/mplleaflet,Allen Mao,# Convert to interactive Leaflet map
+655,https://github.com/jwass/mplleaflet,Allen Mao,>>> import mplleaflet
+656,https://github.com/jwass/mplleaflet,Allen Mao,>>> mplleaflet.show()
+657,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,ActivityNet
+658,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Download videos using the official crawler.
+659,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Convert from avi to jpg files using utils/video_jpg.py
+660,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/video_jpg.py avi_video_directory jpg_video_directory
+661,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Generate fps files using utils/fps.py
+662,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/fps.py avi_video_directory jpg_video_directory
+663,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Kinetics
+664,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Locate test set in video_directory/test.
+665,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Convert from avi to jpg files using utils/video_jpg_kinetics.py
+666,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/video_jpg_kinetics.py avi_video_directory jpg_video_directory
+667,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Generate n_frames files using utils/n_frames_kinetics.py
+668,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/n_frames_kinetics.py jpg_video_directory
+669,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Generate annotation file in json format similar to ActivityNet using utils/kinetics_json.py
+670,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,"The CSV files (kinetics_{train, val, test}.csv) are included in the crawler."
+671,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/kinetics_json.py train_csv_path val_csv_path test_csv_path dst_json_path
+672,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,UCF-101
+673,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Download videos and train/test splits here.
+674,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Convert from avi to jpg files using utils/video_jpg_ucf101_hmdb51.py
+675,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/video_jpg_ucf101_hmdb51.py avi_video_directory jpg_video_directory
+676,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Generate n_frames files using utils/n_frames_ucf101_hmdb51.py
+677,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/n_frames_ucf101_hmdb51.py jpg_video_directory
+678,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Generate annotation file in json format similar to ActivityNet using utils/ucf101_json.py
+679,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,"annotation_dir_path includes classInd.txt, trainlist0{1, 2, 3}.txt, testlist0{1, 2, 3}.txt"
+680,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/ucf101_json.py annotation_dir_path
+681,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,HMDB-51
+682,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Generate annotation file in json format similar to ActivityNet using utils/hmdb51_json.py
+683,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,"annotation_dir_path includes brush_hair_test_split1.txt, ..."
+684,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python utils/hmdb51_json.py annotation_dir_path
+685,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Running the code
+686,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Assume the structure of data directories is the following:
+687,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,~/
+688,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,data/
+689,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,kinetics_videos/
+690,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,jpg/
+691,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,.../ (directories of class names)
+692,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,.../ (directories of video names)
+693,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,... (jpg files)
+694,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,results/
+695,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,save_100.pth
+696,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,kinetics.json
+697,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Confirm all options.
+698,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python main.lua -h
+699,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Train ResNets-34 on the Kinetics dataset (400 classes) with 4 CPU threads (for data loading).
+700,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Batch size is 128.
+701,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,"Save models at every 5 epochs. All GPUs is used for the training. If you want a part of GPUs, use CUDA_VISIBLE_DEVICES=...."
+702,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python main.py --root_path ~/data --video_path kinetics_videos/jpg --annotation_path kinetics.json \
+703,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,#NAME?
+704,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,--model_depth 34 --n_classes 400 --batch_size 128 --n_threads 4 --checkpoint 5
+705,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Continue Training from epoch 101. (~/data/results/save_100.pth is loaded.)
+706,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,#NAME?
+707,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,Fine-tuning conv5_x and fc layers of a pretrained model (~/data/models/resnet-34-kinetics.pth) on UCF-101.
+708,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,python main.py --root_path ~/data --video_path ucf101_videos/jpg --annotation_path ucf101_01.json \
+709,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,--result_path results --dataset ucf101 --n_classes 400 --n_finetune_classes 101 \
+710,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,--pretrain_path models/resnet-34-kinetics.pth --ft_begin_index 4 \
+711,https://github.com/kenshohara/3D-ResNets-PyTorch,Allen Mao,--model resnet --model_depth 34 --resnet_shortcut A --batch_size 128 --n_threads 4 --checkpoint 5
+712,https://github.com/kinverarity1/lasio/,Allen Mao,Very quick example session:
+713,https://github.com/kinverarity1/lasio/,Allen Mao,>>> import lasio
+714,https://github.com/kinverarity1/lasio/,Allen Mao,">>> las = lasio.read(""sample_big.las"")"
+715,https://github.com/kinverarity1/lasio/,Allen Mao,Data is accessible both directly as numpy arrays
+716,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las.keys()
+717,https://github.com/kinverarity1/lasio/,Allen Mao,"['DEPT', 'DT', 'RHOB', 'NPHI', 'SFLU', 'SFLA', 'ILM', 'ILD']"
+718,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las['SFLU']
+719,https://github.com/kinverarity1/lasio/,Allen Mao,"array([ 123.45,  123.45,  123.45, ...,  123.45,  123.45,  123.45])"
+720,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las['DEPT']
+721,https://github.com/kinverarity1/lasio/,Allen Mao,"array([ 1670.   ,  1669.875,  1669.75 , ...,  1669.75 ,  1670.   ,"
+722,https://github.com/kinverarity1/lasio/,Allen Mao,1669.875])
+723,https://github.com/kinverarity1/lasio/,Allen Mao,and as CurveItem objects with associated metadata:
+724,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las.curves
+725,https://github.com/kinverarity1/lasio/,Allen Mao,"[CurveItem(mnemonic=DEPT, unit=M, value=, descr=1  DEPTH, original_mnemonic=DEPT, data.shape=(29897,)),"
+726,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=DT, unit=US/M, value=, descr=2  SONIC TRANSIT TIME, original_mnemonic=DT, data.shape=(29897,)),"
+727,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=RHOB, unit=K/M3, value=, descr=3  BULK DENSITY, original_mnemonic=RHOB, data.shape=(29897,)),"
+728,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=NPHI, unit=V/V, value=, descr=4   NEUTRON POROSITY, original_mnemonic=NPHI, data.shape=(29897,)),"
+729,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=SFLU, unit=OHMM, value=, descr=5  RXO RESISTIVITY, original_mnemonic=SFLU, data.shape=(29897,)),"
+730,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=SFLA, unit=OHMM, value=, descr=6  SHALLOW RESISTIVITY, original_mnemonic=SFLA, data.shape=(29897,)),"
+731,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=ILM, unit=OHMM, value=, descr=7  MEDIUM RESISTIVITY, original_mnemonic=ILM, data.shape=(29897,)),"
+732,https://github.com/kinverarity1/lasio/,Allen Mao,"CurveItem(mnemonic=ILD, unit=OHMM, value=, descr=8  DEEP RESISTIVITY, original_mnemonic=ILD, data.shape=(29897,))]"
+733,https://github.com/kinverarity1/lasio/,Allen Mao,"Header information is parsed into simple HeaderItem objects, and stored in a dictionary for each section of the header:"
+734,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las.version
+735,https://github.com/kinverarity1/lasio/,Allen Mao,"[HeaderItem(mnemonic=VERS, unit=, value=1.2, descr=CWLS LOG ASCII STANDARD -VERSION 1.2, original_mnemonic=VERS),"
+736,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=WRAP, unit=, value=NO, descr=ONE LINE PER DEPTH STEP, original_mnemonic=WRAP)]"
+737,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las.well
+738,https://github.com/kinverarity1/lasio/,Allen Mao,"[HeaderItem(mnemonic=STRT, unit=M, value=1670.0, descr=, original_mnemonic=STRT),"
+739,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=STOP, unit=M, value=1660.0, descr=, original_mnemonic=STOP),"
+740,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=STEP, unit=M, value=-0.125, descr=, original_mnemonic=STEP),"
+741,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=NULL, unit=, value=-999.25, descr=, original_mnemonic=NULL),"
+742,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=COMP, unit=, value=ANY OIL COMPANY LTD., descr=COMPANY, original_mnemonic=COMP),"
+743,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=WELL, unit=, value=ANY ET AL OIL WELL #12, descr=WELL, original_mnemonic=WELL),"
+744,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=FLD, unit=, value=EDAM, descr=FIELD, original_mnemonic=FLD),"
+745,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=LOC, unit=, value=A9-16-49, descr=LOCATION, original_mnemonic=LOC),"
+746,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=PROV, unit=, value=SASKATCHEWAN, descr=PROVINCE, original_mnemonic=PROV),"
+747,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=SRVC, unit=, value=ANY LOGGING COMPANY LTD., descr=SERVICE COMPANY, original_mnemonic=SRVC),"
+748,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=DATE, unit=, value=25-DEC-1988, descr=LOG DATE, original_mnemonic=DATE),"
+749,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=UWI, unit=, value=100091604920, descr=UNIQUE WELL ID, original_mnemonic=UWI)]"
+750,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las.params
+751,https://github.com/kinverarity1/lasio/,Allen Mao,"[HeaderItem(mnemonic=BHT, unit=DEGC, value=35.5, descr=BOTTOM HOLE TEMPERATURE, original_mnemonic=BHT),"
+752,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=BS, unit=MM, value=200.0, descr=BIT SIZE, original_mnemonic=BS),"
+753,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=FD, unit=K/M3, value=1000.0, descr=FLUID DENSITY, original_mnemonic=FD),"
+754,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=MATR, unit=, value=0.0, descr=NEUTRON MATRIX(0=LIME,1=SAND,2=DOLO), original_mnemonic=MATR),"
+755,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=MDEN, unit=, value=2710.0, descr=LOGGING MATRIX DENSITY, original_mnemonic=MDEN),"
+756,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=RMF, unit=OHMM, value=0.216, descr=MUD FILTRATE RESISTIVITY, original_mnemonic=RMF),"
+757,https://github.com/kinverarity1/lasio/,Allen Mao,"HeaderItem(mnemonic=DFD, unit=K/M3, value=1525.0, descr=DRILL FLUID DENSITY, original_mnemonic=DFD)]"
+758,https://github.com/kinverarity1/lasio/,Allen Mao,The data is stored as a 2D numpy array:
+759,https://github.com/kinverarity1/lasio/,Allen Mao,>>> las.data
+760,https://github.com/kinverarity1/lasio/,Allen Mao,"array([[ 1670.   ,   123.45 ,  2550.   , ...,   123.45 ,   110.2  ,   105.6  ],"
+761,https://github.com/kinverarity1/lasio/,Allen Mao,"[ 1669.875,   123.45 ,  2550.   , ...,   123.45 ,   110.2  ,   105.6  ],"
+762,https://github.com/kinverarity1/lasio/,Allen Mao,"[ 1669.75 ,   123.45 ,  2550.   , ...,   123.45 ,   110.2  ,   105.6  ],"
+763,https://github.com/kinverarity1/lasio/,Allen Mao,"...,"
+764,https://github.com/kinverarity1/lasio/,Allen Mao,"[ 1670.   ,   123.45 ,  2550.   , ...,   123.45 ,   110.2  ,   105.6  ],"
+765,https://github.com/kinverarity1/lasio/,Allen Mao,"[ 1669.875,   123.45 ,  2550.   , ...,   123.45 ,   110.2  ,   105.6  ]])"
+766,https://github.com/kinverarity1/lasio/,Allen Mao,"You can also retrieve and load data as a pandas DataFrame, build LAS files from scratch, write them back to disc, and export to Excel, amongst other things."
+767,https://github.com/kosmtik/kosmtik,Allen Mao,"To get command line help, run:"
+768,https://github.com/kosmtik/kosmtik,Allen Mao,kosmtik -h
+769,https://github.com/kosmtik/kosmtik,Allen Mao,"To run a Carto project (or .yml, .yaml):"
+770,https://github.com/kosmtik/kosmtik,Allen Mao,kosmtik serve <path/to/your/project.mml>
+771,https://github.com/kosmtik/kosmtik,Allen Mao,Then open your browser at http://127.0.0.1:6789/.
+772,https://github.com/kosmtik/kosmtik,Allen Mao,"You may also want to install plugins. To see the list of available ones, type:"
+773,https://github.com/kosmtik/kosmtik,Allen Mao,kosmtik plugins --available
+774,https://github.com/kosmtik/kosmtik,Allen Mao,And then pick one and install it like this:
+775,https://github.com/kosmtik/kosmtik,Allen Mao,kosmtik plugins --install pluginname
+776,https://github.com/kosmtik/kosmtik,Allen Mao,For example:
+777,https://github.com/kosmtik/kosmtik,Allen Mao,kosmtik plugins --install kosmtik-map-compare [--install kosmtik-overlay…]
+778,https://github.com/mapbox/geojson-vt,Allen Mao,// build an initial index of tiles
+779,https://github.com/mapbox/geojson-vt,Allen Mao,var tileIndex = geojsonvt(geoJSON);
+780,https://github.com/mapbox/geojson-vt,Allen Mao,// request a particular tile
+781,https://github.com/mapbox/geojson-vt,Allen Mao,"var features = tileIndex.getTile(z, x, y).features;"
+782,https://github.com/mapbox/geojson-vt,Allen Mao,// show an array of tile coordinates created so far
+783,https://github.com/mapbox/geojson-vt,Allen Mao,"console.log(tileIndex.tileCoords); // [{z: 0, x: 0, y: 0}, ...]"
+784,https://github.com/mapbox/rasterio,Allen Mao,import rasterio
+785,https://github.com/mapbox/rasterio,Allen Mao,# Read raster bands directly to Numpy arrays.
+786,https://github.com/mapbox/rasterio,Allen Mao,#
+787,https://github.com/mapbox/rasterio,Allen Mao,with rasterio.open('tests/data/RGB.byte.tif') as src:
+788,https://github.com/mapbox/rasterio,Allen Mao,"r, g, b = src.read()"
+789,https://github.com/mapbox/rasterio,Allen Mao,# Combine arrays in place. Expecting that the sum will
+790,https://github.com/mapbox/rasterio,Allen Mao,"# temporarily exceed the 8-bit integer range, initialize it as"
+791,https://github.com/mapbox/rasterio,Allen Mao,# a 64-bit float (the numpy default) array. Adding other
+792,https://github.com/mapbox/rasterio,Allen Mao,"# arrays to it in-place converts those arrays ""up"" and"
+793,https://github.com/mapbox/rasterio,Allen Mao,# preserves the type of the total array.
+794,https://github.com/mapbox/rasterio,Allen Mao,total = np.zeros(r.shape)
+795,https://github.com/mapbox/rasterio,Allen Mao,"for band in r, g, b:"
+796,https://github.com/mapbox/rasterio,Allen Mao,total += band
+797,https://github.com/mapbox/rasterio,Allen Mao,total /= 3
+798,https://github.com/mapbox/rasterio,Allen Mao,# Write the product as a raster band to a new 8-bit file. For
+799,https://github.com/mapbox/rasterio,Allen Mao,"# the new file's profile, we start with the meta attributes of"
+800,https://github.com/mapbox/rasterio,Allen Mao,"# the source file, but then change the band count to 1, set the"
+801,https://github.com/mapbox/rasterio,Allen Mao,"# dtype to uint8, and specify LZW compression."
+802,https://github.com/mapbox/rasterio,Allen Mao,profile = src.profile
+803,https://github.com/mapbox/rasterio,Allen Mao,"profile.update(dtype=rasterio.uint8, count=1, compress='lzw')"
+804,https://github.com/mapbox/rasterio,Allen Mao,"with rasterio.open('example-total.tif', 'w', **profile) as dst:"
+805,https://github.com/mapbox/rasterio,Allen Mao,"dst.write(total.astype(rasterio.uint8), 1)"
+806,https://github.com/mapbox/tilelive-mapnik,Allen Mao,var tilelive = require('tilelive');
+807,https://github.com/mapbox/tilelive-mapnik,Allen Mao,require('tilelive-mapnik').registerProtocols(tilelive);
+808,https://github.com/mapbox/tilelive-mapnik,Allen Mao,"tilelive.load('mapnik:///path/to/file.xml', function(err, source) {"
+809,https://github.com/mapbox/tilelive-mapnik,Allen Mao,if (err) throw err;
+810,https://github.com/mapbox/tilelive-mapnik,Allen Mao,// Interface is in XYZ/Google coordinates.
+811,https://github.com/mapbox/tilelive-mapnik,Allen Mao,// Use `y = (1 << z) - 1 - y` to flip TMS coordinates.
+812,https://github.com/mapbox/tilelive-mapnik,Allen Mao,"source.getTile(0, 0, 0, function(err, tile, headers) {"
+813,https://github.com/mapbox/tilelive-mapnik,Allen Mao,"// `err` is an error object when generation failed, otherwise null."
+814,https://github.com/mapbox/tilelive-mapnik,Allen Mao,// `tile` contains the compressed image file as a Buffer
+815,https://github.com/mapbox/tilelive-mapnik,Allen Mao,// `headers` is a hash with HTTP headers for the image.
+816,https://github.com/mapbox/tilelive-mapnik,Allen Mao,});
+817,https://github.com/mapbox/tilelive-mapnik,Allen Mao,// The `.getGrid` is implemented accordingly.
+818,https://github.com/mapbox/tippecanoe,Allen Mao,$ tippecanoe -o file.mbtiles [options] [file.json file.json.gz file.geobuf ...]
+819,https://github.com/mapbox/tippecanoe,Allen Mao,$ tippecanoe -o out.mbtiles -zg --drop-densest-as-needed in.geojson
+820,https://github.com/mapbox/tippecanoe,Allen Mao,"The -zg option will make Tippecanoe choose a maximum zoom level that should be high enough to reflect the precision of the original data. (If it turns out still not to be as detailed as you want, use -z manually with a higher number.)"
+821,https://github.com/mapbox/tippecanoe,Allen Mao,"If the tiles come out too big, the --drop-densest-as-needed option will make Tippecanoe try dropping what should be the least visible features at each zoom level. (If it drops too many features, use -x to leave out some feature attributes that you didn't really need.)"
+822,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,Demo
+823,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,"To run the demo with our trained model (on ImageNet DET + VID train), please download the model manually from OneDrive, and put it under folder model/."
+824,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,Make sure it looks like this:
+825,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./model/rfcn_fgfa_flownet_vid-0000.params
+826,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,python ./fgfa_rfcn/demo.py
+827,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,Preparation for Training & Testing
+828,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,"Please download ILSVRC2015 DET and ILSVRC2015 VID dataset, and make sure it looks like this:"
+829,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./data/ILSVRC2015/
+830,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./data/ILSVRC2015/Annotations/DET
+831,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./data/ILSVRC2015/Annotations/VID
+832,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./data/ILSVRC2015/Data/DET
+833,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./data/ILSVRC2015/Data/VID
+834,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./data/ILSVRC2015/ImageSets
+835,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,"Please download ImageNet pre-trained ResNet-v1-101 model and Flying-Chairs pre-trained FlowNet model manually from OneDrive, and put it under folder ./model. Make sure it looks like this:"
+836,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./model/pretrained_model/resnet_v1_101-0000.params
+837,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,./model/pretrained_model/flownet-0000.params
+838,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,"All of our experiment settings (GPU #, dataset, etc.) are kept in yaml config files at folder ./experiments/fgfa_rfcn/cfgs."
+839,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,"Two config files have been provided so far, namely, frame baseline (R-FCN) and the proposed FGFA for ImageNet VID. We use 4 GPUs to train models on ImageNet VID."
+840,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,"To perform experiments, run the python script with the corresponding config file as input. For example, to train and test FGFA with R-FCN, use the following command"
+841,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,python experiments/fgfa_rfcn/fgfa_rfcn_end2end_train_test.py --cfg experiments/fgfa_rfcn/cfgs/resnet_v1_101_flownet_imagenet_vid_rfcn_end2end_ohem.yaml
+842,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,A cache folder would be created automatically to save the model and the log under output/fgfa_rfcn/imagenet_vid/.
+843,https://github.com/msracver/Flow-Guided-Feature-Aggregation,Allen Mao,Please find more details in config files and in our code.
+844,https://github.com/nypl-spacetime/map-vectorizer,Allen Mao,Run the script on the provided test GeoTIFF: python vectorize_map.py test.tif
+845,https://github.com/nypl-spacetime/map-vectorizer,Allen Mao,usage: vectorize_map.py [-h] --gimp-path GIMP_PATH [--chunksize CHUNKSIZE]
+846,https://github.com/nypl-spacetime/map-vectorizer,Allen Mao,[--image-processing-configuration-file VECTORIZE_CONFIG]
+847,https://github.com/nypl-spacetime/map-vectorizer,Allen Mao,<input file or dir>
+848,https://github.com/odoe/generator-arcgis-js-app,Allen Mao,"grunt - default task, will output code to a dist folder with sourcemaps."
+849,https://github.com/odoe/generator-arcgis-js-app,Allen Mao,grunt dev - will start a local server on at http://localhost:8282/ and watch for changes. Uses livereload to refresh browser with each update.
+850,https://github.com/odoe/generator-arcgis-js-app,Allen Mao,http://localhost:8282/dist/ - application
+851,https://github.com/odoe/generator-arcgis-js-app,Allen Mao,http://localhost:8282/node_modules/intern/client.html?config=tests/intern - test suites
+852,https://github.com/odoe/generator-arcgis-js-app,Allen Mao,grunt build - build the application and output to a release folder.
+853,https://github.com/odoe/generator-arcgis-js-app,Allen Mao,grunt e2e - runs all tests using local chromedriver.
+854,https://github.com/phoenix104104/LapSRN,Allen Mao,Test Pre-trained Models
+855,https://github.com/phoenix104104/LapSRN,Allen Mao,To test LapSRN / MS-LapSRN on a single-image:
+856,https://github.com/phoenix104104/LapSRN,Allen Mao,>> demo_LapSRN
+857,https://github.com/phoenix104104/LapSRN,Allen Mao,>> demo_MSLapSRN
+858,https://github.com/phoenix104104/LapSRN,Allen Mao,This script will load the pretrained LapSRN / MS-LapSRN model and apply SR on emma.jpg.
+859,https://github.com/phoenix104104/LapSRN,Allen Mao,"To test LapSRN / MS-LapSRN on benchmark datasets, first download the testing datasets:"
+860,https://github.com/phoenix104104/LapSRN,Allen Mao,$ cd datasets
+861,https://github.com/phoenix104104/LapSRN,Allen Mao,$ wget http://vllab1.ucmerced.edu/~wlai24/LapSRN/results/SR_testing_datasets.zip
+862,https://github.com/phoenix104104/LapSRN,Allen Mao,$ unzip SR_testing_datasets.zip
+863,https://github.com/phoenix104104/LapSRN,Allen Mao,$ cd ..
+864,https://github.com/phoenix104104/LapSRN,Allen Mao,"Then choose the evaluated dataset and upsampling scale in evaluate_LapSRN_dataset.m and evaluate_MSLapSRN_dataset.m, and run:"
+865,https://github.com/phoenix104104/LapSRN,Allen Mao,>> evaluate_LapSRN_dataset
+866,https://github.com/phoenix104104/LapSRN,Allen Mao,>> evaluate_MSLapSRN_dataset
+867,https://github.com/phoenix104104/LapSRN,Allen Mao,which can reproduce the results in our paper.
+868,https://github.com/phoenix104104/LapSRN,Allen Mao,Training LapSRN
+869,https://github.com/phoenix104104/LapSRN,Allen Mao,"To train LapSRN from scratch, first download the training datasets:"
+870,https://github.com/phoenix104104/LapSRN,Allen Mao,$ wget http://vllab1.ucmerced.edu/~wlai24/LapSRN/results/SR_training_datasets.zip
+871,https://github.com/phoenix104104/LapSRN,Allen Mao,$ unzip SR_train_datasets.zip
+872,https://github.com/phoenix104104/LapSRN,Allen Mao,or use the provided bash script to download all datasets and unzip at once:
+873,https://github.com/phoenix104104/LapSRN,Allen Mao,$ ./download_SR_datasets.sh
+874,https://github.com/phoenix104104/LapSRN,Allen Mao,"Then, setup training options in init_LapSRN_opts.m, and run train_LapSRN(scale, depth, gpuID). For example, to train LapSRN with depth = 10 for 4x SR using GPU ID = 1:"
+875,https://github.com/phoenix104104/LapSRN,Allen Mao,">> train_LapSRN(4, 10, 1)"
+876,https://github.com/phoenix104104/LapSRN,Allen Mao,"Note that we only test our code on single-GPU mode. MatConvNet supports training with multiple GPUs but you may need to modify our script and options (e.g., opts.gpu)."
+877,https://github.com/phoenix104104/LapSRN,Allen Mao,"To test your trained LapSRN model, use test_LapSRN(model_name, epoch, dataset, test_scale, gpu). For example, test LapSRN with depth = 10, scale = 4, epoch = 10 on Set5:"
+878,https://github.com/phoenix104104/LapSRN,Allen Mao,">> test_LapSRN('LapSRN_x4_depth10_L1_train_T91_BSDS200_pw128_lr1e-05_step50_drop0.5_min1e-06_bs64', 10, 'Set5', 4, 1)"
+879,https://github.com/phoenix104104/LapSRN,Allen Mao,which will report the PSNR and SSIM.
+880,https://github.com/phoenix104104/LapSRN,Allen Mao,Training MS-LapSRN
+881,https://github.com/phoenix104104/LapSRN,Allen Mao,"Setup training options in init_MSLapSRN_opts.m, and run train_MSLapSRN(scales, depth, recursive, gpuID), where scales should be a vector, e.g., [2, 4, 8]. For example, to train MS-LapSRN with D = 5, R = 2 for 2x, 4x and 8x SR:"
+882,https://github.com/phoenix104104/LapSRN,Allen Mao,">> train_MSLapSRN([2, 4, 8], 5, 2, 1)"
+883,https://github.com/phoenix104104/LapSRN,Allen Mao,"To test your trained MS-LapSRN model, use test_MS-LapSRN(model_name, model_scale, epoch, dataset, test_scale, gpu), where model_scale is used to define the number of pyramid levels. test_scale could be different from model_scale. For example, test MS-LapSRN-D5R2 with two pyramid levels (model_scale = 4), epoch = 10, on Set5 for 3x SR:"
+884,https://github.com/phoenix104104/LapSRN,Allen Mao,">> test_MSLapSRN('MSLapSRN_x248_SS_D5_R2_fn64_L1_train_T91_BSDS200_pw128_lr5e-06_step100_drop0.5_min1e-06_bs64', 4, 10, 'Set5', 3, 1)"
+885,https://github.com/phuang17/DeepMVS,Allen Mao,Download the training datasets.
+886,https://github.com/phuang17/DeepMVS,Allen Mao,python python/download_training_datasets.py # This may take up to 1-2 days to complete.
+887,https://github.com/phuang17/DeepMVS,Allen Mao,Train the network.
+888,https://github.com/phuang17/DeepMVS,Allen Mao,Download the trained model.
+889,https://github.com/phuang17/DeepMVS,Allen Mao,python python/download_trained_model.py
+890,https://github.com/phuang17/DeepMVS,Allen Mao,Run the sparse reconstruction and the image_undistorter using COLMAP. The image_undistorter will generate a images folder which contains undistorted images and a sparse folder which contains three .bin files.
+891,https://github.com/phuang17/DeepMVS,Allen Mao,Run the testing script with the paths to the undistorted images and the sparse construction model.
+892,https://github.com/phuang17/DeepMVS,Allen Mao,python python/test.py --load_bin --image_path path/to/images --sparse_path path/to/sparse --output_path path/to/output/directory
+893,https://github.com/phuang17/DeepMVS,Allen Mao,"By default, the script resizes the images to be 540px in height to reduce the running time. If you would like to run the model with other resolutions, please pass the arguments --image_width XXX and --image_height XXX. If your COLMAP outputs .txt files instead of .bin files for the sparse reconstruction, simply remove the --load_bin flag."
+894,https://github.com/phuang17/DeepMVS,Allen Mao,"To evaluate the predicted results, run"
+895,https://github.com/phuang17/DeepMVS,Allen Mao,python python/eval.py --load_bin --image_path path/to/images --sparse_path path/to/sparse --output_path path/to/output/directory --gt_path path/to/gt/directory --image_width 810 --image_height 540 --size_mismatch crop_pad
+896,https://github.com/phuang17/DeepMVS,Allen Mao,"In gt_path, the ground truth disparity maps should be stored in npy format with filenames being <image_name>.depth.npy. If the ground truths are depth maps instead of disparity maps, please add --gt_type depth flag."
+897,https://github.com/pyvista/pymeshfix,Allen Mao,Test installation with the following from Python:
+898,https://github.com/pyvista/pymeshfix,Allen Mao,from pymeshfix import examples
+899,https://github.com/pyvista/pymeshfix,Allen Mao,# Test of pymeshfix without VTK module
+900,https://github.com/pyvista/pymeshfix,Allen Mao,examples.native()
+901,https://github.com/pyvista/pymeshfix,Allen Mao,# Performs same mesh repair while leveraging VTK's plotting/mesh loading
+902,https://github.com/pyvista/pymeshfix,Allen Mao,examples.with_vtk()
+903,https://github.com/pyvista/pymeshfix,Allen Mao,Easy Example
+904,https://github.com/pyvista/pymeshfix,Allen Mao,This example uses the Cython wrapper directly. No bells or whistles here:
+905,https://github.com/pyvista/pymeshfix,Allen Mao,from pymeshfix import _meshfix
+906,https://github.com/pyvista/pymeshfix,Allen Mao,# Read mesh from infile and output cleaned mesh to outfile
+907,https://github.com/pyvista/pymeshfix,Allen Mao,"_meshfix.clean_from_file(infile, outfile)"
+908,https://github.com/pyvista/pymeshfix,Allen Mao,This example assumes the user has vertex and faces arrays in Python.
+909,https://github.com/pyvista/pymeshfix,Allen Mao,# Generate vertex and face arrays of cleaned mesh
+910,https://github.com/pyvista/pymeshfix,Allen Mao,# where v and f are numpy arrays or python lists
+911,https://github.com/pyvista/pymeshfix,Allen Mao,"vclean, fclean = _meshfix.clean_from_arrays(v, f)"
+912,https://github.com/pyvista/pymeshfix,Allen Mao,import pymeshfix
+913,https://github.com/pyvista/pymeshfix,Allen Mao,# Create object from vertex and face arrays
+914,https://github.com/pyvista/pymeshfix,Allen Mao,"meshfix = pymeshfix.MeshFix(v, f)"
+915,https://github.com/pyvista/pymeshfix,Allen Mao,# Plot input
+916,https://github.com/pyvista/pymeshfix,Allen Mao,meshfix.plot()
+917,https://github.com/pyvista/pymeshfix,Allen Mao,# Repair input mesh
+918,https://github.com/pyvista/pymeshfix,Allen Mao,meshfix.repair()
+919,https://github.com/pyvista/pymeshfix,Allen Mao,# Access the repaired mesh with vtk
+920,https://github.com/pyvista/pymeshfix,Allen Mao,mesh = meshfix.mesh
+921,https://github.com/pyvista/pymeshfix,Allen Mao,"# Or, access the resulting arrays directly from the object"
+922,https://github.com/pyvista/pymeshfix,Allen Mao,meshfix.v # numpy np.float array
+923,https://github.com/pyvista/pymeshfix,Allen Mao,meshfix.f # numpy np.int32 array
+924,https://github.com/pyvista/pymeshfix,Allen Mao,# View the repaired mesh (requires vtkInterface)
+925,https://github.com/pyvista/pymeshfix,Allen Mao,# Save the mesh
+926,https://github.com/pyvista/pymeshfix,Allen Mao,meshfix.write('out.ply')
+927,https://github.com/pyvista/pymeshfix,Allen Mao,"Alternatively, the user could use the Cython wrapper of MeshFix directly if vtk is unavailable or they wish to have more control over the cleaning algorithm."
+928,https://github.com/pyvista/pymeshfix,Allen Mao,# Create TMesh object
+929,https://github.com/pyvista/pymeshfix,Allen Mao,tin = _meshfix.PyTMesh()
+930,https://github.com/pyvista/pymeshfix,Allen Mao,tin.LoadFile(infile)
+931,https://github.com/pyvista/pymeshfix,Allen Mao,"# tin.load_array(v, f) # or read arrays from memory"
+932,https://github.com/pyvista/pymeshfix,Allen Mao,# Attempt to join nearby components
+933,https://github.com/pyvista/pymeshfix,Allen Mao,# tin.join_closest_components()
+934,https://github.com/pyvista/pymeshfix,Allen Mao,# Fill holes
+935,https://github.com/pyvista/pymeshfix,Allen Mao,tin.fill_small_boundaries()
+936,https://github.com/pyvista/pymeshfix,Allen Mao,print('There are {:d} boundaries'.format(tin.boundaries())
+937,https://github.com/pyvista/pymeshfix,Allen Mao,# Clean (removes self intersections)
+938,https://github.com/pyvista/pymeshfix,Allen Mao,"tin.clean(max_iters=10, inner_loops=3)"
+939,https://github.com/pyvista/pymeshfix,Allen Mao,# Check mesh for holes again
+940,https://github.com/pyvista/pymeshfix,Allen Mao,# Clean again if necessary...
+941,https://github.com/pyvista/pymeshfix,Allen Mao,# Output mesh
+942,https://github.com/pyvista/pymeshfix,Allen Mao,tin.save_file(outfile)
+943,https://github.com/pyvista/pymeshfix,Allen Mao,# or return numpy arrays
+944,https://github.com/pyvista/pymeshfix,Allen Mao,"vclean, fclean = tin.return_arrays()"
+945,https://github.com/pyvista/tetgen,Allen Mao,import tetgen
+946,https://github.com/pyvista/tetgen,Allen Mao,sphere = pv.Sphere()
+947,https://github.com/pyvista/tetgen,Allen Mao,tet = tetgen.TetGen(sphere)
+948,https://github.com/pyvista/tetgen,Allen Mao,"tet.tetrahedralize(order=1, mindihedral=20, minratio=1.5)"
+949,https://github.com/pyvista/tetgen,Allen Mao,grid = tet.grid
+950,https://github.com/pyvista/tetgen,Allen Mao,# get cell centroids
+951,https://github.com/pyvista/tetgen,Allen Mao,"cells = grid.cells.reshape(-1, 5)[:, 1:]"
+952,https://github.com/pyvista/tetgen,Allen Mao,cell_center = grid.points[cells].mean(1)
+953,https://github.com/pyvista/tetgen,Allen Mao,# extract cells below the 0 xy plane
+954,https://github.com/pyvista/tetgen,Allen Mao,"mask = cell_center[:, 2] < 0"
+955,https://github.com/pyvista/tetgen,Allen Mao,cell_ind = mask.nonzero()[0]
+956,https://github.com/pyvista/tetgen,Allen Mao,subgrid = grid.extract_cells(cell_ind)
+957,https://github.com/pyvista/tetgen,Allen Mao,# advanced plotting
+958,https://github.com/pyvista/tetgen,Allen Mao,plotter = pv.Plotter()
+959,https://github.com/pyvista/tetgen,Allen Mao,plotter.set_background('w')
+960,https://github.com/pyvista/tetgen,Allen Mao,"plotter.add_mesh(subgrid, 'lightgrey', lighting=True)"
+961,https://github.com/pyvista/tetgen,Allen Mao,"plotter.add_mesh(sphere, 'r', 'wireframe')"
+962,https://github.com/pyvista/tetgen,Allen Mao,"plotter.add_legend([[' Input Mesh ', 'r'],"
+963,https://github.com/pyvista/tetgen,Allen Mao,"[' Tesselated Mesh ', 'black']])"
+964,https://github.com/pyvista/tetgen,Allen Mao,plotter.plot()
+965,https://github.com/pyvista/tetgen,Allen Mao,Cell quality scalars can be obtained and plotted with:
+966,https://github.com/pyvista/tetgen,Allen Mao,cell_qual = subgrid.quality
+967,https://github.com/pyvista/tetgen,Allen Mao,# plot quality
+968,https://github.com/pyvista/tetgen,Allen Mao,"subgrid.plot(scalars=cell_qual, stitle='quality', cmap='bwr', flip_scalars=True)"
+969,https://github.com/rowanz/neural-motifs,Allen Mao,"Pretrain VG detection. The old version involved pretraining COCO as well, but we got rid of that for simplicity. Run ./scripts/pretrain_detector.sh Note: You might have to modify the learning rate and batch size, particularly if you don't have 3 Titan X GPUs (which is what I used). You can also download the pretrained detector checkpoint here."
+970,https://github.com/rowanz/neural-motifs,Allen Mao,"Train VG scene graph classification: run ./scripts/train_models_sgcls.sh 2 (will run on GPU 2). OR, download the MotifNet-cls checkpoint here: Motifnet-SGCls/PredCls."
+971,https://github.com/rowanz/neural-motifs,Allen Mao,Refine for detection: run ./scripts/refine_for_detection.sh 2 or download the Motifnet-SGDet checkpoint.
+972,https://github.com/rowanz/neural-motifs,Allen Mao,Evaluate: Refer to the scripts ./scripts/eval_models_sg[cls/det].sh.
+973,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Dynamic texture synthesis
+974,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,python synthesize.py --type=dts --gpu=<NUMBER> --runid=<NAME> --dynamics_target=data/dynamic_textures/<FOLDER> --dynamics_model=models/<TFMODEL>
+975,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Store your chosen dynamic texture image sequence in a folder in /data/dynamic_textures. This folder is your --dynamics_target path.
+976,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Example usage
+977,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,"python synthesize.py --type=dts --gpu=0 --runid=""my_cool_fish"" --dynamics_target=data/dynamic_textures/fish --dynamics_model=models/MSOEnet_ucf101train01_6e-4_allaug_exceptscale_randorder.tfmodel"
+978,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Dynamics style transfer
+979,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,python synthesize.py --type=dst --gpu=<NUMBER> --runid=<NAME> --dynamics_target=data/dynamic_textures/<FOLDER> --dynamics_model=models/<TFMODEL> --appearance_target=data/textures/<IMAGE>
+980,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Store your chosen static texture in ./data/textures. The filepath to this texture is your --appearance_target path.
+981,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,"python synthesize.py --type=dst --gpu=0 --runid=""whoa_water!"" --dynamics_target=data/dynamic_textures/water_4 --appearance_target=data/textures/water_paint_cropped.jpeg --dynamics_model=models/MSOEnet_ucf101train01_6e-4_allaug_exceptscale_randorder.tfmodel"
+982,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Temporally-endless dynamic texture synthesis
+983,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,python synthesize.py --type=inf --gpu=<NUMBER> --runid=<NAME> --dynamics_target=data/dynamic_textures/<FOLDER> --dynamics_model=models/<TFMODEL>
+984,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Incremental dynamic texture synthesis
+985,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,python synthesize.py --type=inc --gpu=<NUMBER> --runid=<NAME> --dynamics_target=data/dynamic_textures/<FOLDER> --dynamics_model=models/<TFMODEL> --appearance_target=data/textures/<IMAGE>
+986,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Store your chosen static texture in /data/textures. The filepath to this texture is your --appearance_target path. This texture should be the last frame of a previously generated sequence.
+987,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,Static texture synthesis
+988,https://github.com/ryersonvisionlab/two-stream-dyntex-synth,Allen Mao,python synthesize.py --type=sta --gpu=<NUMBER> --runid=<NAME> --appearance_target=data/textures/<IMAGE>
+989,https://github.com/salihkaragoz/pose-residual-network-pytorch,Allen Mao,For more options look at opt.py
+990,https://github.com/salihkaragoz/pose-residual-network-pytorch,Allen Mao,Download pre-train model
+991,https://github.com/salihkaragoz/pose-residual-network-pytorch,Allen Mao,python test.py --test_cp=PathToPreTrainModel/PRN.pth.tar
+992,https://github.com/sentinelsat/sentinelsat,Allen Mao,sentinelsat -u <user> -p <password> -g <search_polygon.geojson> --sentinel 2 --cloud 30
+993,https://github.com/tensorflow/tensorflow,Allen Mao,Try your first TensorFlow program
+994,https://github.com/tensorflow/tensorflow,Allen Mao,$ python
+995,https://github.com/tensorflow/tensorflow,Allen Mao,>>> import tensorflow as tf
+996,https://github.com/tensorflow/tensorflow,Allen Mao,>>> tf.enable_eager_execution()
+997,https://github.com/tensorflow/tensorflow,Allen Mao,">>> tf.add(1, 2).numpy()"
+998,https://github.com/tensorflow/tensorflow,Allen Mao,3
+999,https://github.com/tensorflow/tensorflow,Allen Mao,">>> hello = tf.constant('Hello, TensorFlow!')"
+1000,https://github.com/tensorflow/tensorflow,Allen Mao,>>> hello.numpy()
+1001,https://github.com/tensorflow/tensorflow,Allen Mao,"'Hello, TensorFlow!'"
+1002,https://github.com/tensorflow/tensorflow,Allen Mao,Learn more examples about how to do specific tasks in TensorFlow at the tutorials page of tensorflow.org.
+1003,https://github.com/ungarj/tilematrix,Allen Mao,$ tmx -f GeoJSON tiles -- 1 -180 -90 180 90
+1004,https://github.com/ungarj/tilematrix,Allen Mao,Print WKT representation of tile 4 15 23:
+1005,https://github.com/ungarj/tilematrix,Allen Mao,$ tmx bbox 4 15 23
+1006,https://github.com/ungarj/tilematrix,Allen Mao,"Also, tiles can have buffers around called pixelbuffer:"
+1007,https://github.com/ungarj/tilematrix,Allen Mao,$ tmx --pixelbuffer 10 bbox 4 15 23
+1008,https://github.com/ungarj/tilematrix,Allen Mao,Print GeoJSON representation of tile 4 15 23 on a mercator tile pyramid:
+1009,https://github.com/ungarj/tilematrix,Allen Mao,$ tmx -output_format GeoJSON -grid mercator bbox 4 15 15
+1010,https://github.com/vuejs/vue-devtools/,Allen Mao,Quick Start in chrome
+1011,https://github.com/vuejs/vue-devtools/,Allen Mao,// Before you create app
+1012,https://github.com/vuejs/vue-devtools/,Allen Mao,Vue.config.devtools = process.env.NODE_ENV === 'development'
+1013,https://github.com/vuejs/vue-devtools/,Allen Mao,// After you create app
+1014,https://github.com/vuejs/vue-devtools/,Allen Mao,window.__VUE_DEVTOOLS_GLOBAL_HOOK__.Vue = app.constructor;
+1015,https://github.com/vuejs/vue-devtools/,Allen Mao,// then had to add in ./store.js as well.
+1016,https://github.com/whimian/pyGeoPressure,Allen Mao,Example
+1017,https://github.com/whimian/pyGeoPressure,Allen Mao,Pore Pressure Prediction using well log data
+1018,https://github.com/whimian/pyGeoPressure,Allen Mao,import pygeopressure as ppp
+1019,https://github.com/whimian/pyGeoPressure,Allen Mao,"survey = ppp.Survey(""CUG"")"
+1020,https://github.com/whimian/pyGeoPressure,Allen Mao,well = survey.wells['CUG1']
+1021,https://github.com/whimian/pyGeoPressure,Allen Mao,"a, b = ppp.optimize_nct(well.get_log(""Velocity""),"
+1022,https://github.com/whimian/pyGeoPressure,Allen Mao,"well.params['horizon'][""T16""],"
+1023,https://github.com/whimian/pyGeoPressure,Allen Mao,"well.params['horizon'][""T20""])"
+1024,https://github.com/whimian/pyGeoPressure,Allen Mao,"n = ppp.optimize_eaton(well, ""Velocity"", ""Overburden_Pressure"", a, b)"
+1025,https://github.com/whimian/pyGeoPressure,Allen Mao,"pres_eaton_log = well.eaton(np.array(well.get_log(""Velocity"").data), n)"
+1026,https://github.com/whimian/pyGeoPressure,Allen Mao,"fig, ax = plt.subplots()"
+1027,https://github.com/whimian/pyGeoPressure,Allen Mao,ax.invert_yaxis()
+1028,https://github.com/whimian/pyGeoPressure,Allen Mao,"pres_eaton_log.plot(ax, color='blue')"
+1029,https://github.com/whimian/pyGeoPressure,Allen Mao,"well.get_log(""Overburden_Pressure"").plot(ax, 'g')"
+1030,https://github.com/whimian/pyGeoPressure,Allen Mao,"ax.plot(well.hydrostatic, well.depth, 'g', linestyle='--')"
+1031,https://github.com/whimian/pyGeoPressure,Allen Mao,well.plot_horizons(ax)
+1032,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,cd ImageProcessing/DeepGuidedFilteringNetwork
+1033,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,python predict.py  --task auto_ps \
+1034,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,--img_path ../../images/auto_ps.jpg \
+1035,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,--save_folder . \
+1036,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,#NAME?
+1037,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,--low_size 64 \
+1038,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,--gpu 0
+1039,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,See Here or python predict.py -h for more details.
+1040,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Semantic Segmentation with Deeplab-Resnet
+1041,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Enter the directory.
+1042,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,cd ComputerVision/Deeplab-Resnet
+1043,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Download the pretrained model [Google Drive|BaiduYunPan].
+1044,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Run it now !
+1045,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,python predict_dgf.py --img_path ../../images/segmentation.jpg --snapshots [MODEL_PATH]
+1046,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Note:
+1047,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Result is in ../../images.
+1048,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Run python predict_dgf.py -h for more details.
+1049,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Saliency Detection with DSS
+1050,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,cd ComputerVision/Saliency_DSS
+1051,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Try it now !
+1052,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,python predict.py --im_path ../../images/saliency.jpg \
+1053,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,--netG [MODEL_PATH] \
+1054,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,--thres 161 \
+1055,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,#NAME?
+1056,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,#NAME?
+1057,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Monocular Depth Estimation (TensorFlow version)
+1058,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,cd ComputerVision/MonoDepth
+1059,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Download and Unzip Pretrained Model [Google Drive|BaiduYunPan]
+1060,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Run on an Image !
+1061,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,python monodepth_simple.py --image_path ../../images/depth.jpg --checkpoint_path [MODEL_PATH] --guided_filter
+1062,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,See Here or python monodepth_simple.py -h for more details.
+1063,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,PyTorch Version
+1064,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,from guided_filter_pytorch.guided_filter import FastGuidedFilter
+1065,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,"hr_y = FastGuidedFilter(r, eps)(lr_x, lr_y, hr_x)"
+1066,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,from guided_filter_pytorch.guided_filter import GuidedFilter
+1067,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,"hr_y = GuidedFilter(r, eps)(hr_x, init_hr_y)"
+1068,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,Tensorflow Version
+1069,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,from guided_filter_tf.guided_filter import fast_guided_filter
+1070,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,"hr_y = fast_guided_filter(lr_x, lr_y, hr_x, r, eps, nhwc)"
+1071,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,from guided_filter_tf.guided_filter import guided_filter
+1072,https://github.com/wuhuikai/DeepGuidedFilter,Allen Mao,"hr_y = guided_filter(hr_x, init_hr_y, r, eps, nhwc)"
+1073,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,Follow the instrutions of rbgirshick/py-faster-rcnn to download related data.
+1074,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,"Prepare the dataset, source domain data should start with the filename 'source_', and target domain data with 'target_'."
+1075,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,To train the Domain Adaptive Faster R-CNN:
+1076,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,cd $FRCN_ROOT
+1077,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,./tools/train_net.py --gpu {GPU_ID} --solver models/da_faster_rcnn/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb voc_2007_trainval --iters  {NUM_ITER}  --cfg  {CONFIGURATION_FILE}
+1078,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,An example of adapting from Cityscapes dataset to Foggy Cityscapes dataset is provided:
+1079,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,"Download the datasets from here. Specifically, we will use gtFine_trainvaltest.zip, leftImg8bit_trainvaltest.zip and leftImg8bit_trainvaltest_foggy.zip."
+1080,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,Prepare the data using the scripts in 'prepare_data/prepare_data.m'.
+1081,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,Train the Domain Adaptive Faster R-CNN:
+1082,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,./tools/train_net.py --gpu {GPU_ID} --solver models/da_faster_rcnn/solver.prototxt --weights data/imagenet_models/VGG16.v2.caffemodel --imdb voc_2007_trainval --iters  70000  --cfg  models/da_faster_rcnn/faster_rcnn_end2end.yml
+1083,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,Test the trained model:
+1084,https://github.com/yuhuayc/da-faster-rcnn,Allen Mao,./tools/test_net.py --gpu {GPU_ID} --def models/da_faster_rcnn/test.prototxt --net output/faster_rcnn_end2end/voc_2007_trainval/vgg16_da_faster_rcnn_iter_70000.caffemodel --imdb voc_2007_test --cfg models/da_faster_rcnn/faster_rcnn_end2end.yml
+1085,https://github.com/zhiqiangdon/CU-Net,Allen Mao,python cu-net.py --gpu_id 0 --exp_id cu-net-2 --layer_num 2 --order 1 --loss_num 2 --is_train true --bs 24
+1086,https://github.com/zhiqiangdon/CU-Net,Allen Mao,Validation
+1087,https://github.com/zhiqiangdon/CU-Net,Allen Mao,python cu-net.py --gpu_id 0 --exp_id cu-net-2 --layer_num 2 --order 1 --loss_num 2 --resume_prefix your_pretrained_model.pth.tar --is_train false --bs 24
+1088,https://github.com/zhiqiangdon/CU-Net,Allen Mao,Model Options
+1089,https://github.com/zhiqiangdon/CU-Net,Allen Mao,layer_num     # number of coupled U-Nets
+1090,https://github.com/zhiqiangdon/CU-Net,Allen Mao,order         # the order of coupling
+1091,https://github.com/zhiqiangdon/CU-Net,Allen Mao,loss_num      # number of losses. Losses are uniformly distributed along the CU-Net. Each U-Net at most has one loss. (loss_num <= layer_num)
+1092,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,"Please follow fb.resnet.torch for the general usage of the code, including how to use pretrained ResNeXt models for your own task."
+1093,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,There are two new hyperparameters need to be specified to determine the bottleneck template:
+1094,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,#NAME?
+1095,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,To train ResNeXt-50 (32x4d) on 8 GPUs for ImageNet:
+1096,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,bash
+1097,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,th main.lua -dataset imagenet -bottleneckType resnext_C -depth 50 -baseWidth 4 -cardinality 32 -batchSize 256 -nGPU 8 -nThreads 8 -shareGradInput true -data [imagenet-folder]
+1098,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,To reproduce CIFAR results (e.g. ResNeXt 16x64d for cifar10) on 8 GPUs:
+1099,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,th main.lua -dataset cifar10 -bottleneckType resnext_C -depth 29 -baseWidth 64 -cardinality 16 -weightDecay 5e-4 -batchSize 128 -nGPU 8 -nThreads 8 -shareGradInput true
+1100,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,"To get comparable results using 2/4 GPUs, you should change the batch size and the corresponding learning rate:"
+1101,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,th main.lua -dataset cifar10 -bottleneckType resnext_C -depth 29 -baseWidth 64 -cardinality 16 -weightDecay 5e-4 -batchSize 64 -nGPU 4 -LR 0.05 -nThreads 8 -shareGradInput true
+1102,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,th main.lua -dataset cifar10 -bottleneckType resnext_C -depth 29 -baseWidth 64 -cardinality 16 -weightDecay 5e-4 -batchSize 32 -nGPU 2 -LR 0.025 -nThreads 8 -shareGradInput true
+1103,https://github.com/facebookresearch/ResNeXt,Rosna Thomas,Note: CIFAR datasets will be automatically downloaded and processed for the first time. Note that in the arXiv paper CIFAR results are based on pre-activated bottleneck blocks and a batch size of 256. We found that better CIFAR test acurracy can be achieved using original bottleneck blocks and a batch size of 128.
+1104,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,How to Run
+1105,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,"There's a file named ""input.txt"". You can add as many profiles as you want in the following format with each link on a new line:"
+1106,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,https://www.facebook.com/andrew.ng.96
+1107,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,https://www.facebook.com/zuck
+1108,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,Make sure the link only contains the username or id number at the end and not any other stuff. Make sure its in the format mentioned above.
+1109,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,Note: There are two modes to download Friends Profile Pics and the user's Photos: Large Size and Small Size. You can change the following variables. By default they are set to Small Sized Pics because its really quick while Large Size Mode takes time depending on the number of pictures to download
+1110,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,whether to download the full image or its thumbnail (small size)
+1111,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,if small size is True then it will be very quick else if its False then it will open each photo to download it
+1112,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,and it will take much more time
+1113,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,friends_small_size = True
+1114,https://github.com/harismuneer/Ultimate-Facebook-Scraper,Rosna Thomas,photos_small_size = True
+1115,https://github.com/microsoft/malmo,Rosna Thomas,cd CSharp_Examples
+1116,https://github.com/microsoft/malmo,Rosna Thomas,CSharpExamples_RunMission.exe
+1117,https://github.com/microsoft/malmo,Rosna Thomas,"To build the sample yourself, open CSharp_Examples/RunMission.csproj in Visual Studio."
+1118,https://github.com/microsoft/malmo,Rosna Thomas,Or from the command-line:
+1119,https://github.com/microsoft/malmo,Rosna Thomas,"Then, on Windows:"
+1120,https://github.com/microsoft/malmo,Rosna Thomas,msbuild RunMission.csproj /p:Platform=x64
+1121,https://github.com/microsoft/malmo,Rosna Thomas,bin\x64\Debug\CSharpExamples_RunMission.exe
+1122,https://github.com/microsoft/malmo,Rosna Thomas,Running a Java agent:
+1123,https://github.com/microsoft/malmo,Rosna Thomas,cd Java_Examples
+1124,https://github.com/microsoft/malmo,Rosna Thomas,java -cp MalmoJavaJar.jar:JavaExamples_run_mission.jar -Djava.library.path=. JavaExamples_run_mission (on Linux or MacOSX)
+1125,https://github.com/microsoft/malmo,Rosna Thomas,java -cp MalmoJavaJar.jar;JavaExamples_run_mission.jar -Djava.library.path=. JavaExamples_run_mission (on Windows)
+1126,https://github.com/microsoft/malmo,Rosna Thomas,Running an Atari agent: (Linux only)
+1127,https://github.com/microsoft/malmo,Rosna Thomas,cd Python_Examples
+1128,https://github.com/microsoft/malmo,Rosna Thomas,python3 ALE_HAC.py
+1129,https://github.com/pyro-ppl/pyro,Rosna Thomas,Running Pyro from a Docker Container
+1130,https://github.com/pyro-ppl/pyro,Rosna Thomas,Refer to the instructions here.
+1131,https://github.com/scikit-learn/scikit-learn,Rosna Thomas,"After installation, you can launch the test suite from outside the"
+1132,https://github.com/scikit-learn/scikit-learn,Rosna Thomas,source directory (you will need to have pytest >= 3.3.0 installed)::
+1133,https://github.com/scikit-learn/scikit-learn,Rosna Thomas,pytest sklearn
+1134,https://github.com/unagiootoro/ruby-dnn,Sharad,MNIST MLP example
+1135,https://github.com/unagiootoro/ruby-dnn,Sharad,model = Sequential.new
+1136,https://github.com/unagiootoro/ruby-dnn,Sharad,model << InputLayer.new(784)
+1137,https://github.com/unagiootoro/ruby-dnn,Sharad,model << Dense.new(256)
+1138,https://github.com/unagiootoro/ruby-dnn,Sharad,model << ReLU.new
+1139,https://github.com/unagiootoro/ruby-dnn,Sharad,model << Dense.new(256)
+1140,https://github.com/unagiootoro/ruby-dnn,Sharad,model << ReLU.new
+1141,https://github.com/unagiootoro/ruby-dnn,Sharad,model << Dense.new(10)
+1142,https://github.com/unagiootoro/ruby-dnn,Sharad,"model.setup(Adam.new, SoftmaxCrossEntropy.new)"
+1143,https://github.com/unagiootoro/ruby-dnn,Sharad,"model.train(x_train, y_train, 10, batch_size: 128, test: [x_test, y_test])"
+1144,https://github.com/unagiootoro/ruby-dnn,Sharad,"accuracy, loss = model.evaluate(x_test, y_test)"
+1145,https://github.com/unagiootoro/ruby-dnn,Sharad,"puts ""accuracy: #{accuracy}"""
+1146,https://github.com/unagiootoro/ruby-dnn,Sharad,"puts ""loss: #{loss}"""
+1147,https://github.com/unagiootoro/ruby-dnn,Sharad,When create a model with 'define by run' style:
+1148,https://github.com/unagiootoro/ruby-dnn,Sharad,class MLP < Model
+1149,https://github.com/unagiootoro/ruby-dnn,Sharad,def initialize
+1150,https://github.com/unagiootoro/ruby-dnn,Sharad,super
+1151,https://github.com/unagiootoro/ruby-dnn,Sharad,@d1 = Dense.new(256)
+1152,https://github.com/unagiootoro/ruby-dnn,Sharad,@d2 = Dense.new(256)
+1153,https://github.com/unagiootoro/ruby-dnn,Sharad,@d3 = Dense.new(10)
+1154,https://github.com/unagiootoro/ruby-dnn,Sharad,end
+1155,https://github.com/unagiootoro/ruby-dnn,Sharad,def forward(x)
+1156,https://github.com/unagiootoro/ruby-dnn,Sharad,x = InputLayer.new(784).(x)
+1157,https://github.com/unagiootoro/ruby-dnn,Sharad,x = @d1.(x)
+1158,https://github.com/unagiootoro/ruby-dnn,Sharad,x = ReLU.(x)
+1159,https://github.com/unagiootoro/ruby-dnn,Sharad,x = @d2.(x)
+1160,https://github.com/unagiootoro/ruby-dnn,Sharad,x = ReLU.(x)
+1161,https://github.com/unagiootoro/ruby-dnn,Sharad,x = @d3.(x)
+1162,https://github.com/unagiootoro/ruby-dnn,Sharad,x
+1163,https://github.com/unagiootoro/ruby-dnn,Sharad,end
+1164,https://github.com/unagiootoro/ruby-dnn,Sharad,end
+1165,https://github.com/unagiootoro/ruby-dnn,Sharad,model = MLP.new
+1166,https://github.com/unagiootoro/ruby-dnn,Sharad,"model.train(x_train, y_train, 10, batch_size: 128, test: [x_test, y_test])"
+1167,https://github.com/unagiootoro/ruby-dnn,Sharad,"accuracy, loss = model.evaluate(x_test, y_test)"
+1168,https://github.com/unagiootoro/ruby-dnn,Sharad,"puts ""accuracy: #{accuracy}"""
+1169,https://github.com/unagiootoro/ruby-dnn,Sharad,"puts ""loss: #{loss}"""
+1170,https://github.com/unagiootoro/ruby-dnn,Sharad,Please refer to examples for basic usage.
+1171,https://github.com/unagiootoro/ruby-dnn,Sharad,"If you want to know more detailed information, please refer to the source code."
+1172,https://github.com/ankane/lightgbm,Sharad,Prep your data
+1173,https://github.com/ankane/lightgbm,Sharad,"x = [[1, 2], [3, 4], [5, 6], [7, 8]]"
+1174,https://github.com/ankane/lightgbm,Sharad,"y = [1, 2, 3, 4]"
+1175,https://github.com/ankane/lightgbm,Sharad,Train a model
+1176,https://github.com/ankane/lightgbm,Sharad,"params = {objective: ""regression""}"
+1177,https://github.com/ankane/lightgbm,Sharad,"train_set = LightGBM::Dataset.new(x, label: y)"
+1178,https://github.com/ankane/lightgbm,Sharad,"booster = LightGBM.train(params, train_set)"
+1179,https://github.com/ankane/lightgbm,Sharad,Predict
+1180,https://github.com/ankane/lightgbm,Sharad,booster.predict(x)
+1181,https://github.com/ankane/lightgbm,Sharad,Save the model to a file
+1182,https://github.com/ankane/lightgbm,Sharad,"booster.save_model(""model.txt"")"
+1183,https://github.com/ankane/lightgbm,Sharad,Load the model from a file
+1184,https://github.com/ankane/lightgbm,Sharad,"booster = LightGBM::Booster.new(model_file: ""model.txt"")"
+1185,https://github.com/ankane/lightgbm,Sharad,Get the importance of features
+1186,https://github.com/ankane/lightgbm,Sharad,booster.feature_importance
+1187,https://github.com/ankane/lightgbm,Sharad,Early stopping
+1188,https://github.com/ankane/lightgbm,Sharad,"LightGBM.train(params, train_set, valid_sets: [train_set, test_set], early_stopping_rounds: 5)"
+1189,https://github.com/ankane/lightgbm,Sharad,CV
+1190,https://github.com/ankane/lightgbm,Sharad,"LightGBM.cv(params, train_set, nfold: 5, verbose_eval: true)"
+1191,https://github.com/ankane/lightgbm,Sharad,Scikit-Learn API
+1192,https://github.com/ankane/lightgbm,Sharad,Prep your data
+1193,https://github.com/ankane/lightgbm,Sharad,"x = [[1, 2], [3, 4], [5, 6], [7, 8]]"
+1194,https://github.com/ankane/lightgbm,Sharad,"y = [1, 2, 3, 4]"
+1195,https://github.com/ankane/lightgbm,Sharad,Train a model
+1196,https://github.com/ankane/lightgbm,Sharad,model = LightGBM::Regressor.new
+1197,https://github.com/ankane/lightgbm,Sharad,"model.fit(x, y)"
+1198,https://github.com/ankane/lightgbm,Sharad,"For classification, use LightGBM::Classifier"
+1199,https://github.com/ankane/lightgbm,Sharad,Predict
+1200,https://github.com/ankane/lightgbm,Sharad,model.predict(x)
+1201,https://github.com/ankane/lightgbm,Sharad,"For classification, use predict_proba for probabilities"
+1202,https://github.com/ankane/lightgbm,Sharad,Save the model to a file
+1203,https://github.com/ankane/lightgbm,Sharad,"model.save_model(""model.txt"")"
+1204,https://github.com/ankane/lightgbm,Sharad,Load the model from a file
+1205,https://github.com/ankane/lightgbm,Sharad,"model.load_model(""model.txt"")"
+1206,https://github.com/ankane/lightgbm,Sharad,Get the importance of features
+1207,https://github.com/ankane/lightgbm,Sharad,model.feature_importances
+1208,https://github.com/ankane/lightgbm,Sharad,Early stopping
+1209,https://github.com/ankane/lightgbm,Sharad,"model.fit(x, y, eval_set: [[x_test, y_test]], early_stopping_rounds: 5)"
+1210,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,Add the Neo4j Apache Tinkerpop implementation to your project:
+1211,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,Maven
+1212,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,<dependency>
+1213,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,<groupId>com.steelbridgelabs.oss</groupId>
+1214,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,<artifactId>neo4j-gremlin-bolt</artifactId>
+1215,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,<version>{version}</version>
+1216,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,</dependency>
+1217,https://github.com/SteelBridgeLabs/neo4j-gremlin-bolt,Sharad,*Please check the Maven Central for the latest version available.
+1218,https://github.com/stanfordnlp/stanza,Pratheek,"To run your first Stanza pipeline, simply following these steps in your Python interactive interpreter:
+
+"
+1219,https://github.com/stanfordnlp/stanza,Pratheek,import stanza
+1220,https://github.com/stanfordnlp/stanza,Pratheek,stanza.download('en') 
+1221,https://github.com/stanfordnlp/stanza,Pratheek,nlp = stanza.Pipeline('en')
+1222,https://github.com/stanfordnlp/stanza,Pratheek,doc.sentences[0].print_dependencies()
+1223,https://github.com/facebookresearch/pytext,Pratheek,"For this first example, we'll train a CNN-based text-classifier that classifies text utterances, using the examples in tests/data/train_data_tiny.tsv."
+1224,https://github.com/facebookresearch/pytext,Pratheek,The data and configs files can be obtained either by cloning the repository or by downloading the files manually from GitHub.
+1225,https://github.com/facebookresearch/pytext,Pratheek, (pytext_venv) $ pytext train < demo/configs/docnn.json
+1226,https://github.com/facebookresearch/pytext,Pratheek,"By default, the model is created in /tmp/model.pt"
+1227,https://github.com/facebookresearch/pytext,Pratheek,Now you can export your model as a caffe2 net:
+1228,https://github.com/facebookresearch/pytext,Pratheek, (pytext_venv) $ pytext export < demo/configs/docnn.json
+1229,https://github.com/facebookresearch/pytext,Pratheek,You can use the exported caffe2 model to predict the class of raw utterances like this:
+1230,https://github.com/facebookresearch/pytext,Pratheek,"(pytext_venv) $ pytext --config-file demo/configs/docnn.json predict <<< '{""text"": ""create an alarm for 1:30 pm""}'"
+1231,https://github.com/NicolasHug/Surprise,Pratheek,"Here is a simple example showing how you can (down)load a dataset, split it for 5-fold cross-validation, and compute the MAE and RMSE of the SVD algorithm."
+1232,https://github.com/NicolasHug/Surprise,Pratheek,"from surprise import SVD
+"
+1233,https://github.com/NicolasHug/Surprise,Pratheek,from surprise import Dataset
+1234,https://github.com/NicolasHug/Surprise,Pratheek,from surprise.model_selection import cross_validate
+1235,https://github.com/NicolasHug/Surprise,Pratheek,# Load the movielens-100k dataset (download it if needed).
+1236,https://github.com/NicolasHug/Surprise,Pratheek,data = Dataset.load_builtin('ml-100k')
+1237,https://github.com/NicolasHug/Surprise,Pratheek,# Use the famous SVD algorithm.
+1238,https://github.com/NicolasHug/Surprise,Pratheek,algo = SVD()
+1239,https://github.com/NicolasHug/Surprise,Pratheek,# Run 5-fold cross-validation and print results.
+1240,https://github.com/NicolasHug/Surprise,Pratheek,"cross_validate(algo, data, measures=['RMSE', 'MAE'], cv=5, verbose=True)"
+1241,https://github.com/amitt001/delegator.py,Pratheek,Basic run functionality:
+1242,https://github.com/amitt001/delegator.py,Pratheek,c = delegator.run('ls')
+1243,https://github.com/amitt001/delegator.py,Pratheek,print c.out
+1244,https://github.com/amitt001/delegator.py,Pratheek,"c = delegator.run('long-running-process', block=False)"
+1245,https://github.com/amitt001/delegator.py,Pratheek,c.pid
+1246,https://github.com/amitt001/delegator.py,Pratheek,c.block()
+1247,https://github.com/amitt001/delegator.py,Pratheek,c.return_code
+1248,https://github.com/amitt001/delegator.py,Pratheek,"Commands can be passed in as lists as well (e.g. ['ls', '-lrt']), for parameterization."
+1249,https://github.com/amitt001/delegator.py,Pratheek,Basic chain functionality:
+1250,https://github.com/amitt001/delegator.py,Pratheek,c = delegator.chain('fortune | cowsay')
+1251,https://github.com/amitt001/delegator.py,Pratheek, print c.out
+1252,https://github.com/amitt001/delegator.py,Pratheek,"Expect functionality is built-in too, on non-blocking commands:"
+1253,https://github.com/amitt001/delegator.py,Pratheek,c.expect('Password:')
+1254,https://github.com/amitt001/delegator.py,Pratheek,c.send('PASSWORD')
+1255,https://github.com/amitt001/delegator.py,Pratheek,"c.block()
+"
+1256,https://github.com/amitt001/delegator.py,Pratheek,Other functions:
+1257,https://github.com/amitt001/delegator.py,Pratheek,"c.kill()
+"
+1258,https://github.com/amitt001/delegator.py,Pratheek,"c.send('SIGTERM', signal=True)"
+1259,https://github.com/amitt001/delegator.py,Pratheek,"# Only available when block=True, otherwise, use c.out."
+1260,https://github.com/amitt001/delegator.py,Pratheek,c.err
+1261,https://github.com/amitt001/delegator.py,Pratheek,# Direct access to pipes.
+1262,https://github.com/amitt001/delegator.py,Pratheek,"c.std_err
+"
+1263,https://github.com/amitt001/delegator.py,Pratheek,"# Adjust environment variables for the command (existing will be overwritten).
+"
+1264,https://github.com/amitt001/delegator.py,Pratheek,"c = delegator.chain('env | grep NEWENV', env={'NEWENV': 'FOO_BAR'})"
+1265,https://github.com/amitt001/delegator.py,Pratheek,c.out
+1267,https://github.com/simbody/simbody,Yidan Zhang,
+1268,https://github.com/cyverse/atmosphere,Yidan Zhang,There are several utility scripts in ./scripts. To run these:
+1269,https://github.com/cyverse/atmosphere,Yidan Zhang,cd <path to atmosphere>
+1270,https://github.com/cyverse/atmosphere,Yidan Zhang,export DJANGO_SETTINGS_MODULE='atmosphere.settings'
+1271,https://github.com/cyverse/atmosphere,Yidan Zhang,"export PYTHONPATH=""$PWD:$PYTHONPATH"""
+1272,https://github.com/cyverse/atmosphere,Yidan Zhang,python scripts/<name of script>
+1273,https://github.com/darwinlau/CASPR,Yidan Zhang,"To start using CASPR, please follow the steps below"
+1274,https://github.com/darwinlau/CASPR,Yidan Zhang,Navigate to the CASPR root directory folder.
+1275,https://github.com/darwinlau/CASPR,Yidan Zhang,Run the script initialise_CASPR.m. This will ensure that your path libraries have been set up and should be run everytime that you use CASPR.
+1276,https://github.com/darwinlau/CASPR,Yidan Zhang,Go into the script folders to look at examples or open up the CASPR GUI using the CASPR_GUI command.
+1277,https://github.com/microsoft/tensorwatch,Yidan Zhang,Here's simple code that logs an integer and its square as a tuple every second to TensorWatch:
+1278,https://github.com/microsoft/tensorwatch,Yidan Zhang,import tensorwatch as tw
+1279,https://github.com/microsoft/tensorwatch,Yidan Zhang,import time
+1280,https://github.com/microsoft/tensorwatch,Yidan Zhang,# streams will be stored in test.log file
+1281,https://github.com/microsoft/tensorwatch,Yidan Zhang,w = tw.Watcher(filename='test.log')
+1282,https://github.com/microsoft/tensorwatch,Yidan Zhang,# create a stream for logging
+1283,https://github.com/microsoft/tensorwatch,Yidan Zhang,s = w.create_stream(name='metric1')
+1284,https://github.com/microsoft/tensorwatch,Yidan Zhang,# generate Jupyter Notebook to view real-time streams
+1285,https://github.com/microsoft/tensorwatch,Yidan Zhang,w.make_notebook()
+1286,https://github.com/microsoft/tensorwatch,Yidan Zhang,for i in range(1000):
+1287,https://github.com/microsoft/tensorwatch,Yidan Zhang,"# write x,y pair we want to log"
+1288,https://github.com/microsoft/tensorwatch,Yidan Zhang,"s.write((i, i*i))"
+1289,https://github.com/microsoft/tensorwatch,Yidan Zhang,time.sleep(1)
+1290,https://github.com/google/TensorNetwork,Yidan Zhang,"Here, we build a simple 2 node contraction."
+1291,https://github.com/google/TensorNetwork,Yidan Zhang,import numpy as np
+1292,https://github.com/google/TensorNetwork,Yidan Zhang,import tensornetwork as tn
+1293,https://github.com/google/TensorNetwork,Yidan Zhang,# Create the nodes
+1294,https://github.com/google/TensorNetwork,Yidan Zhang,"a = tn.Node(np.ones((10,)))"
+1295,https://github.com/google/TensorNetwork,Yidan Zhang,"b = tn.Node(np.ones((10,)))"
+1296,https://github.com/google/TensorNetwork,Yidan Zhang,"edge = a[0] ^ b[0] # Equal to tn.connect(a[0], b[0])"
+1297,https://github.com/google/TensorNetwork,Yidan Zhang,final_node = tn.contract(edge)
+1298,https://github.com/google/TensorNetwork,Yidan Zhang,print(final_node.tensor) # Should print 10.0
+1299,https://github.com/fastai/fastai,Ling Li,"To run the tests in parallel, launch:"
+1300,https://github.com/fastai/fastai,Ling Li,nbdev_test_nbs or make test
+1301,https://github.com/fastai/fastai,Ling Li,"For all the tests to pass, you'll need to install the following optional dependencies:"
+1302,https://github.com/fastai/fastai,Ling Li,"pip install ""sentencepiece<0.1.90"" wandb tensorboard albumentations pydicom opencv-python scikit-image pyarrow kornia \"
+1303,https://github.com/fastai/fastai,Ling Li,catalyst captum neptune-cli
+1304,https://github.com/fastai/fastai,Ling Li,"Tests are written using nbdev, for example see the documentation for test_eq."
+1305,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,"Most users do not need the OpenPose C++/Python API, but can simply use the OpenPose Demo:"
+1306,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,"OpenPose Demo: To easily process images/video/webcam and display/save the results. See doc/demo_overview.md. E.g., run OpenPose in a video with:"
+1307,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,# Ubuntu
+1308,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,./build/examples/openpose/openpose.bin --video examples/media/video.avi
+1309,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,:: Windows - Portable Demo
+1310,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,bin\OpenPoseDemo.exe --video examples\media\video.avi
+1311,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,Calibration toolbox: To easily calibrate your cameras for 3-D OpenPose or any other stereo vision task. See doc/modules/calibration_module.md.
+1312,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,"OpenPose C++ API: If you want to read a specific input, and/or add your custom post-processing function, and/or implement your own display/saving, check the C++ API tutorial on examples/tutorial_api_cpp/ and doc/library_introduction.md. You can create your custom code on examples/user_code/ and quickly compile it with CMake when compiling the whole OpenPose project. Quickly add your custom code: See examples/user_code/README.md for further details."
+1313,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,"OpenPose Python API: Analogously to the C++ API, find the tutorial for the Python API on examples/tutorial_api_python/."
+1314,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,Adding an extra module: Check doc/library_add_new_module.md.
+1315,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,Standalone face or hand detector:
+1316,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,"Face keypoint detection without body keypoint detection: If you want to speed it up (but also reduce amount of detected faces), check the OpenCV-face-detector approach in doc/standalone_face_or_hand_keypoint_detector.md."
+1317,https://github.com/CMU-Perceptual-Computing-Lab/openpose,Ling Li,"Use your own face/hand detector: You can use the hand and/or face keypoint detectors with your own face or hand detectors, rather than using the body detector. E.g., useful for camera views at which the hands are visible but not the body (OpenPose detector would fail). See doc/standalone_face_or_hand_keypoint_detector.md."
+1318,https://github.com/deepmind/sonnet,Ling Li,Using existing modules
+1319,https://github.com/deepmind/sonnet,Ling Li,Sonnet ships with a number of built in modules that you can trivially use.
+1320,https://github.com/deepmind/sonnet,Ling Li,"For example to define an MLP we can use the snt.Sequential module to call a sequence of modules, passing the output of a given module as the input for the next module."
+1321,https://github.com/deepmind/sonnet,Ling Li,We can use snt.Linear and tf.nn.relu to actually define our computation:
+1322,https://github.com/deepmind/sonnet,Ling Li,mlp = snt.Sequential([
+1323,https://github.com/deepmind/sonnet,Ling Li,"snt.Linear(1024),"
+1324,https://github.com/deepmind/sonnet,Ling Li,"tf.nn.relu,"
+1325,https://github.com/deepmind/sonnet,Ling Li,"snt.Linear(10),"
+1326,https://github.com/deepmind/sonnet,Ling Li,])
+1327,https://github.com/deepmind/sonnet,Ling Li,"To use our module we need to ""call"" it. The Sequential module (and most modules) define a __call__ method that means you can call them by name:"
+1328,https://github.com/deepmind/sonnet,Ling Li,"logits = mlp(tf.random.normal([batch_size, input_size]))"
+1329,https://github.com/deepmind/sonnet,Ling Li,The variables property returns all tf.Variables that are referenced by the given module:
+1330,https://github.com/deepmind/sonnet,Ling Li,all_variables = mlp.variables
+1331,https://github.com/deepmind/sonnet,Ling Li,model_parameters = mlp.
+1332,https://github.com/deepmind/sonnet,Ling Li,Building your own module
+1333,https://github.com/deepmind/sonnet,Ling Li,class MyLinear(snt.Module):
+1334,https://github.com/deepmind/sonnet,Ling Li,"def __init__(self, output_size, name=None):"
+1335,https://github.com/deepmind/sonnet,Ling Li,"super(MyLinear, self).__init__(name=name)"
+1336,https://github.com/deepmind/sonnet,Ling Li,self.output_size = output_size
+1337,https://github.com/deepmind/sonnet,Ling Li,@snt.once
+1338,https://github.com/deepmind/sonnet,Ling Li,"def _initialize(self, x):"
+1339,https://github.com/deepmind/sonnet,Ling Li,"initial_w = tf.random.normal([x.shape[1], self.output_size])"
+1340,https://github.com/deepmind/sonnet,Ling Li,"self.w = tf.Variable(initial_w, name=""w"")"
+1341,https://github.com/deepmind/sonnet,Ling Li,"self.b = tf.Variable(tf.zeros([self.output_size]), name=""b"")"
+1342,https://github.com/deepmind/sonnet,Ling Li,"def __call__(self, x):"
+1343,https://github.com/deepmind/sonnet,Ling Li,self._initialize(x)
+1344,https://github.com/deepmind/sonnet,Ling Li,"return tf.matmul(x, self.w) + self.b"
+1345,https://github.com/deepmind/sonnet,Ling Li,Using this module is trivial:
+1346,https://github.com/deepmind/sonnet,Ling Li,mod = MyLinear(32)
+1347,https://github.com/deepmind/sonnet,Ling Li,"mod(tf.ones([batch_size, input_size]))"
+1348,https://github.com/deepmind/sonnet,Ling Li,By subclassing snt.Module you get many nice properties for free. For example a default implementation of __repr__ which shows constructor arguments (very useful for debugging and introspection):
+1349,https://github.com/deepmind/sonnet,Ling Li,>>> print(repr(mod))
+1350,https://github.com/deepmind/sonnet,Ling Li,MyLinear(output_size=10)
+1351,https://github.com/deepmind/sonnet,Ling Li,You also get the variables and trainable_variables properties:
+1352,https://github.com/deepmind/sonnet,Ling Li,>>> mod.variables
+1353,https://github.com/deepmind/sonnet,Ling Li,"(<tf.Variable 'my_linear/b:0' shape=(10,) ...)>,"
+1354,https://github.com/deepmind/sonnet,Ling Li,"<tf.Variable 'my_linear/w:0' shape=(1, 10) ...)>)"
+1355,https://github.com/JaidedAI/EasyOCR,Ling Li,Usage
+1356,https://github.com/JaidedAI/EasyOCR,Ling Li,import easyocr
+1357,https://github.com/JaidedAI/EasyOCR,Ling Li,"reader = easyocr.Reader(['ch_sim','en']) # need to run only once to load model into memory"
+1358,https://github.com/JaidedAI/EasyOCR,Ling Li,result = reader.readtext('chinese.jpg')
+1359,https://github.com/JaidedAI/EasyOCR,Ling Li,"reader.readtext('chinese.jpg', detail = 0)"
+1360,https://github.com/JaidedAI/EasyOCR,Ling Li,"In case you do not have GPU or your GPU has low memory, you can run it in CPU mode by adding gpu = False"
+1361,https://github.com/JaidedAI/EasyOCR,Ling Li,"reader = easyocr.Reader(['ch_sim','en'], gpu = False)"
+1362,https://github.com/JaidedAI/EasyOCR,Ling Li,Run on command line
+1363,https://github.com/JaidedAI/EasyOCR,Ling Li,$ easyocr -l ch_sim en -f chinese.jpg --detail=1 --gpu=True
+1364,https://github.com/airbnb/airpal,Yi Xie,Build Airpal
+1365,https://github.com/airbnb/airpal,Yi Xie,We'll be using Gradle to build the back-end Java code and a Node.js-based build pipeline (Browserify and Gulp) to build the front-end Javascript code.
+1366,https://github.com/airbnb/airpal,Yi Xie,"If you have node and npm installed locally, and wish to use them, simply run:"
+1367,https://github.com/airbnb/airpal,Yi Xie,./gradlew clean shadowJar -Dairpal.useLocalNode
+1368,https://github.com/airbnb/airpal,Yi Xie,"Otherwise, node and npm will be automatically downloaded for you by running:"
+1369,https://github.com/airbnb/airpal,Yi Xie,./gradlew clean shadowJar
+1370,https://github.com/airbnb/airpal,Yi Xie,Specify Presto version by -Dairpal.prestoVersion:
+1371,https://github.com/airbnb/airpal,Yi Xie,./gradlew -Dairpal.prestoVersion=0.145 clean shadowJar
+1372,https://github.com/airbnb/airpal,Yi Xie,Create a MySQL database for Airpal. We recommend you call it airpal and will assume that for future steps.
+1373,https://github.com/airbnb/airpal,Yi Xie,Create a reference.yml file to store your configuration options.
+1374,https://github.com/airbnb/airpal,Yi Xie,"Start by copying over the example configuration, reference.example.yml."
+1375,https://github.com/airbnb/airpal,Yi Xie,cp reference.example.yml reference.yml
+1376,https://github.com/airbnb/airpal,Yi Xie,"Then edit it to specify your MySQL credentials, and your S3 credentials if using S3 as a storage layer (Airpal defaults to local file storage, for demonstration purposes)."
+1377,https://github.com/airbnb/airpal,Yi Xie,Migrate your database.
+1378,https://github.com/airbnb/airpal,Yi Xie,java -Duser.timezone=UTC \
+1379,https://github.com/airbnb/airpal,Yi Xie,-cp build/libs/airpal-*-all.jar com.airbnb.airpal.AirpalApplication db migrate reference.yml
+1380,https://github.com/airbnb/airpal,Yi Xie,Run Airpal.
+1381,https://github.com/airbnb/airpal,Yi Xie,java -server \
+1382,https://github.com/airbnb/airpal,Yi Xie,-Duser.timezone=UTC \
+1383,https://github.com/airbnb/airpal,Yi Xie,-cp build/libs/airpal-*-all.jar com.airbnb.airpal.AirpalApplication server reference.yml
+1384,https://github.com/airbnb/airpal,Yi Xie,"Visit Airpal. Assuming you used the default settings in reference.yml you can now open http://localhost:8081to use Airpal. Note that you might have to change the host, depending on where you deployed it."
+1385,https://github.com/airbnb/airpal,Yi Xie,"Note: To override the configuration specified in reference.yml, you may specify certain settings on the command line in the traditional Dropwizard fashion, like so:"
+1386,https://github.com/airbnb/airpal,Yi Xie,java -Ddw.prestoCoordinator=http://presto-coordinator-url.com \
+1387,https://github.com/airbnb/airpal,Yi Xie,-Ddw.s3AccessKey=$ACCESS_KEY \
+1388,https://github.com/airbnb/airpal,Yi Xie,-Ddw.s3SecretKey=$SECRET_KEY \
+1389,https://github.com/airbnb/airpal,Yi Xie,-Ddw.s3Bucket=airpal \
+1390,https://github.com/airbnb/airpal,Yi Xie,-Ddw.dataSourceFactory.url=jdbc:mysql://127.0.0.1:3306/airpal \
+1391,https://github.com/airbnb/airpal,Yi Xie,-Ddw.dataSourceFactory.user=airpal \
+1392,https://github.com/airbnb/airpal,Yi Xie,-Ddw.dataSourceFactory.password=$YOUR_PASSWORD \
+1393,https://github.com/airbnb/airpal,Yi Xie,-Duser.timezone=UTC \
+1394,https://github.com/airbnb/airpal,Yi Xie,-cp build/libs/airpal-*-all.jar db migrate reference.yml
+1395,https://github.com/HumbleSoftware/envisionjs,Yi Xie,Templates
+1396,https://github.com/HumbleSoftware/envisionjs,Yi Xie,Templates are pre-built visualizations for common use-cases.
+1397,https://github.com/HumbleSoftware/envisionjs,Yi Xie,Example:
+1398,https://github.com/HumbleSoftware/envisionjs,Yi Xie,var
+1399,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"container = document.getElementById('container'),"
+1400,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"x = [],"
+1401,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"y1 = [],"
+1402,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"y2 = [],"
+1403,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"data, options, i;"
+1404,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Data Format:
+1405,https://github.com/HumbleSoftware/envisionjs,Yi Xie,data = [
+1406,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"[x, y1], // First Series"
+1407,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"[x, y2]  // Second Series"
+1408,https://github.com/HumbleSoftware/envisionjs,Yi Xie,];
+1409,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Sample the sine function for data
+1410,https://github.com/HumbleSoftware/envisionjs,Yi Xie,for (i = 0; i < 4 * Math.PI; i += 0.05) {
+1411,https://github.com/HumbleSoftware/envisionjs,Yi Xie,x.push(i);
+1412,https://github.com/HumbleSoftware/envisionjs,Yi Xie,y1.push(Math.sin(i));
+1413,https://github.com/HumbleSoftware/envisionjs,Yi Xie,y2.push(Math.sin(i + Math.PI));
+1414,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1415,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// TimeSeries Template Options
+1416,https://github.com/HumbleSoftware/envisionjs,Yi Xie,options = {
+1417,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Container to render inside of
+1418,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"container : container,"
+1419,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Data for detail (top chart) and summary (bottom chart)
+1420,https://github.com/HumbleSoftware/envisionjs,Yi Xie,data : {
+1421,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"detail : data,"
+1422,https://github.com/HumbleSoftware/envisionjs,Yi Xie,summary : data
+1423,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1424,https://github.com/HumbleSoftware/envisionjs,Yi Xie,};
+1425,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Create the TimeSeries
+1426,https://github.com/HumbleSoftware/envisionjs,Yi Xie,new envision.templates.TimeSeries(options);
+1427,https://github.com/HumbleSoftware/envisionjs,Yi Xie,Custom
+1428,https://github.com/HumbleSoftware/envisionjs,Yi Xie,Developers can use the envision APIs to build custom visualizations. The existing templates are a good reference for this.
+1429,https://github.com/HumbleSoftware/envisionjs,Yi Xie,Example:
+1430,https://github.com/HumbleSoftware/envisionjs,Yi Xie,var
+1431,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"container = document.getElementById('container'),"
+1432,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"x = [],"
+1433,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"y1 = [],"
+1434,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"y2 = [],"
+1435,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"data, i,"
+1436,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"detail, detailOptions,"
+1437,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"summary, summaryOptions,"
+1438,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"vis, selection,"
+1439,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Data Format:
+1440,https://github.com/HumbleSoftware/envisionjs,Yi Xie,data = [
+1441,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"[x, y1], // First Series"
+1442,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"[x, y2]  // Second Series"
+1443,https://github.com/HumbleSoftware/envisionjs,Yi Xie,];
+1444,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Sample the sine function for data
+1445,https://github.com/HumbleSoftware/envisionjs,Yi Xie,for (i = 0; i < 4 * Math.PI; i += 0.05) {
+1446,https://github.com/HumbleSoftware/envisionjs,Yi Xie,x.push(i);
+1447,https://github.com/HumbleSoftware/envisionjs,Yi Xie,y1.push(Math.sin(i));
+1448,https://github.com/HumbleSoftware/envisionjs,Yi Xie,y2.push(Math.sin(i + Math.PI));
+1449,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1450,https://github.com/HumbleSoftware/envisionjs,Yi Xie,x.push(4 * Math.PI)
+1451,https://github.com/HumbleSoftware/envisionjs,Yi Xie,y1.push(Math.sin(4 * Math.PI));
+1452,https://github.com/HumbleSoftware/envisionjs,Yi Xie,y2.push(Math.sin(4 * Math.PI));
+1453,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Configuration for detail:
+1454,https://github.com/HumbleSoftware/envisionjs,Yi Xie,detailOptions = {
+1455,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"name : 'detail',"
+1456,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"data : data,"
+1457,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"height : 150,"
+1458,https://github.com/HumbleSoftware/envisionjs,Yi Xie,flotr : {
+1459,https://github.com/HumbleSoftware/envisionjs,Yi Xie,yaxis : {
+1460,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"min : -1.1,"
+1461,https://github.com/HumbleSoftware/envisionjs,Yi Xie,max : 1.1
+1462,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1463,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1464,https://github.com/HumbleSoftware/envisionjs,Yi Xie,};
+1465,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Configuration for summary:
+1466,https://github.com/HumbleSoftware/envisionjs,Yi Xie,summaryOptions = {
+1467,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"name : 'summary',"
+1468,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"data : data,"
+1469,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"height : 150,"
+1470,https://github.com/HumbleSoftware/envisionjs,Yi Xie,flotr : {
+1471,https://github.com/HumbleSoftware/envisionjs,Yi Xie,yaxis : {
+1472,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"min : -1.1,"
+1473,https://github.com/HumbleSoftware/envisionjs,Yi Xie,max : 1.1
+1474,https://github.com/HumbleSoftware/envisionjs,Yi Xie,"},"
+1475,https://github.com/HumbleSoftware/envisionjs,Yi Xie,selection : {
+1476,https://github.com/HumbleSoftware/envisionjs,Yi Xie,mode : 'x'
+1477,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1478,https://github.com/HumbleSoftware/envisionjs,Yi Xie,}
+1479,https://github.com/HumbleSoftware/envisionjs,Yi Xie,};
+1480,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Building a custom vis:
+1481,https://github.com/HumbleSoftware/envisionjs,Yi Xie,vis = new envision.Visualization();
+1482,https://github.com/HumbleSoftware/envisionjs,Yi Xie,detail = new envision.Component(detailOptions);
+1483,https://github.com/HumbleSoftware/envisionjs,Yi Xie,summary = new envision.Component(summaryOptions);
+1484,https://github.com/HumbleSoftware/envisionjs,Yi Xie,interaction = new envision.Interaction();
+1485,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Render Visualization
+1486,https://github.com/HumbleSoftware/envisionjs,Yi Xie,vis
+1487,https://github.com/HumbleSoftware/envisionjs,Yi Xie,.add(detail)
+1488,https://github.com/HumbleSoftware/envisionjs,Yi Xie,.add(summary)
+1489,https://github.com/HumbleSoftware/envisionjs,Yi Xie,.render(container);
+1490,https://github.com/HumbleSoftware/envisionjs,Yi Xie,// Wireup Interaction
+1491,https://github.com/HumbleSoftware/envisionjs,Yi Xie,interaction
+1492,https://github.com/HumbleSoftware/envisionjs,Yi Xie,.leader(summary)
+1493,https://github.com/HumbleSoftware/envisionjs,Yi Xie,.follower(detail)
+1494,https://github.com/HumbleSoftware/envisionjs,Yi Xie,.add(envision.actions.selection);
+1495,https://github.com/apache/incubator-echarts,Yi Xie,Build echarts source code:
+1496,https://github.com/apache/incubator-echarts,Yi Xie,Execute the instructions in the root directory of the echarts: (Node.js is required)
+1497,https://github.com/apache/incubator-echarts,Yi Xie,# Install the dependencies from NPM:
+1498,https://github.com/apache/incubator-echarts,Yi Xie,npm install
+1499,https://github.com/apache/incubator-echarts,Yi Xie,"# If intending to build and get all types of the ""production"" files:"
+1500,https://github.com/apache/incubator-echarts,Yi Xie,npm run release
+1501,https://github.com/apache/incubator-echarts,Yi Xie,# The same as `node build/build.js --release`
+1502,https://github.com/apache/incubator-echarts,Yi Xie,"# If only intending to get `dist/echarts.js`, which is usually"
+1503,https://github.com/apache/incubator-echarts,Yi Xie,# enough in dev or running the tests:
+1504,https://github.com/apache/incubator-echarts,Yi Xie,npm run build
+1505,https://github.com/apache/incubator-echarts,Yi Xie,# The same as `node build/build.js`
+1506,https://github.com/apache/incubator-echarts,Yi Xie,"# Get the same ""production"" files as `node build/build.js`, while"
+1507,https://github.com/apache/incubator-echarts,Yi Xie,# watching the editing of the source code. Usually used in dev.
+1508,https://github.com/apache/incubator-echarts,Yi Xie,npm run watch
+1509,https://github.com/apache/incubator-echarts,Yi Xie,# The same as `node build/build.js -w`
+1510,https://github.com/apache/incubator-echarts,Yi Xie,# Check the manual:
+1511,https://github.com/apache/incubator-echarts,Yi Xie,npm run help
+1512,https://github.com/apache/incubator-echarts,Yi Xie,# The same as `node build/build.js --help`
+1513,https://github.com/apache/incubator-echarts,Yi Xie,"Then the ""production"" files are generated in the dist directory."
+1514,https://github.com/apache/incubator-echarts,Yi Xie,More custom build approaches can be checked in this tutorial: Create Custom Build of ECharts please.
+1515,https://github.com/Codecademy/EventHub,Yi Xie,Compile and run
+1516,https://github.com/Codecademy/EventHub,Yi Xie,# set up proper JAVA_HOME for mac
+1517,https://github.com/Codecademy/EventHub,Yi Xie,export JAVA_HOME=$(/usr/libexec/java_home)
+1518,https://github.com/Codecademy/EventHub,Yi Xie,git clone https://github.com/Codecademy/EventHub.git
+1519,https://github.com/Codecademy/EventHub,Yi Xie,cd EventHub
+1520,https://github.com/Codecademy/EventHub,Yi Xie,export EVENT_HUB_DIR=`pwd`
+1521,https://github.com/Codecademy/EventHub,Yi Xie,mvn -am -pl web clean package
+1522,https://github.com/Codecademy/EventHub,Yi Xie,java -jar web/target/web-1.0-SNAPSHOT.jar
+1523,https://github.com/vega/vega,Yi Xie,
