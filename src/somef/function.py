@@ -7,7 +7,7 @@ def pass_data(repo_data):
     input_excerpt= ""
     for excerpt in excerpts:
         input_excerpt += excerpt['excerpt']
-    print(input_excerpt)
+    #print(input_excerpt)
     #print(excerpt,type(repo_data))
     path = Path(__file__).parent.absolute()
     default_funcion =  str(path)+"/models/function.sk"
