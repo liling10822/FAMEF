@@ -1,4 +1,5 @@
-# README-analysis## Install from GitHub
+# README-analysis
+## Install from GitHub
 To run SOMEF, please follow the next steps:
 
 Clone this GitHub repository
