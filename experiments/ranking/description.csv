@@ -1,0 +1,14 @@
+Model ,Accuracy ,Precision,Recall,F1
+TfidfVectorizer+LogisticRegression (L2 Penalty with hyperparameter tuning),0.87,0.87,0.92,0.9
+CountVectorizer+LogisticRegression (L1 Penalty with hyperparameter tuning),0.86,0.88,0.88,0.88
+TfidfVectorizer+MultinomialNB (alpha hyperparameter tuning),0.86,0.83,0.96,0.89
+TfidfVectorizer+SelectFromModel(RF)+LogisticRegression (L2 Penalty with hyperparameter tuning),0.86,0.86,0.89,0.88
+CountVectorizer+ DL Classifier,0.86,0.89,0.81,
+TfidfVectorizer+LogisticRegression (L1 Penalty with hyperparameter tuning),0.84,0.89,0.83,0.86
+CountVectorizer+LogisticRegression (L2 Penalty with hyperparameter tuning),0.83,0.88,0.81,0.84
+TfidfVectorizer+RandomForestClassifier,0.82,0.89,0.78,0.83
+TfidfVectorizer+RandomForestClassifier (tuning of hyperparameters),0.82,0.82,0.89,0.85
+TfidfVectorizer+XGBClassifier,0.8,0.88,0.78,0.83
+CountVectorizer+XGBClassifier,0.79,0.84,0.77,0.81
+CountVectorizer+XGBClassifier ( with stepwise tuning),0.76,0.78,0.76,0.77
+SOMEF Baseline ,0.83,0.85,0.79,0.82
