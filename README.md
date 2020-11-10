@@ -5,7 +5,7 @@ To run SOMEF, please follow the next steps:
 Clone this GitHub repository
 
 ```
-git clone https://github.com/KnowledgeCaptureAndDiscovery/somef.git
+git clone https://github.com/liling10822/SOMEF_Extension-.git
 ```
 
 Install somef (note that you should be in the folder that you just cloned)
