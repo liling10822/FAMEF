@@ -19,6 +19,7 @@ install_requires = [
     "textblob",
     "rdflib",
     "rdflib-jsonld"
+    "gensim"
 ]
 
 
