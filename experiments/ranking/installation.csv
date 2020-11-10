@@ -1,0 +1,8 @@
+Sklearn Primitive,Accuracy,Precision,Recall,F-measure
+"Sklearnpipeline(TFIDFVectorizer, StochasticGradientDescent)",0.91,0.91,0.91,0.91
+"Sklearnpipeline(TFIDFVectorizer, LogisticRegression)",0.9,0.89,0.89,0.89
+"Sklearnpipeline(CountVectorizer, LogisticRegression)",0.89,0.89,0.89,0.89
+"Sklearnpipeline(CountVectorizer, NaiveBayes)",0.9,0.91,0.88,0.89
+"Sklearnpipeline(TFIDFVectorizer, MLPClassifier)",0.9,0.9,0.89,0.89
+"Sklearnpipeline(CountVectorizer, MLPClassifier)",0.89,0.89,0.89,0.89
+Baseline,0.9,0.92,0.9,0.91
