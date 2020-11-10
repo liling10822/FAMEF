@@ -6,9 +6,9 @@ from string import punctuation
 from nltk.stem import WordNetLemmatizer, SnowballStemmer
 import gensim
 from gensim.utils import simple_preprocess
-import pyLDAvis.gensim
+
 import warnings
-import pyLDAvis
+
 import sys
 from gensim import corpora,models
 from nltk.corpus import stopwords
@@ -47,7 +47,7 @@ def get_details(repo):
     input_excerpt = ""
     for excerpt in excerpts:
         input_excerpt += excerpt['excerpt']
-    lda_model = gensim.models.ldamodel.LdaModel.load('./models/lda.model')
+    lda_model = gensim.models.ldamodel.LdaModel.load('./src/somef/models/lda.model')
     dictionary = (lda_model.id2word)
     # bow_corpus = [dictionary.doc2bow(r) for r in repo]
     # tfidf = models.TfidfModel(bow_corpus)
@@ -65,7 +65,7 @@ def get_details(repo):
 
     with open(sys.argv[2],'w') as f:
         for a,b in res:
-           f.write('topic{}\t: probabiity = {}'.format(a,b))
+           f.write('topic{}\t: probability = {}'.format(a,b))
            f.write('\n')
         f.write('\n')
         for t in topics:
