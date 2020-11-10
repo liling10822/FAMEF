@@ -23,7 +23,7 @@ def build_corpora():
     return corpora
 
 def build_corpus(selected_category):
-    categories_df = {cat : pd.read_csv(f"./training_corpus/{cat}.csv") for cat in categories}
+    categories_df = {cat : pd.read_csv(f"../training_corpus/{cat}.csv") for cat in categories}
     negative_sample_size = int(len(categories_df[selected_category]) / 4)
     print(f"Selected Category: {selected_category}")
     for category in categories_df:
