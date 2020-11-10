@@ -1,0 +1,8 @@
+Sklearn Primitive,Accuracy,Precision,Recall,F-measure
+"Sklearnpipeline(CountVectorizer, NaiveBayes)",0.93,0.94,0.92,0.93
+"Sklearnpipeline(CountVectorizer, LogisticRegression)",0.88,0.89,0.87,0.88
+"Sklearnpipeline(TFIDFVectorizer, StochasticGradientDescent)",0.93,0.94,0.92,0.93
+"Sklearnpipeline(TFIDFVectorizer, LogisticRegression)",0.92,0.93,0.9,0.91
+"Sklearnpipeline(TFIDFVectorizer, MLPClassifier)",0.91,0.92,0.89,0.9
+"Sklearnpipeline(CountVectorizer, MLPClassifier)",0.93,0.93,0.93,0.93
+SOMEF Baseline,0.92,0.89,0.98,0.93

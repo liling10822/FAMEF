@@ -1,0 +1,8 @@
+Model ,Accuracy ,Precision,Recall,F1
+TfidfVectorizer+MultinomialNB (alpha hyperparameter tuning),0.89,0.89,0.91,0.9
+CountVectorizer+MultinomialNB (alpha hyperparameter tuning),0.89,0.89,0.93,0.91
+TFIDFVectorizer + StochasticGradientDescent (with hyperparameter tuning),0.88,0.9,0.9,0.9
+TfidfVectorizer+SelectFromModel(logit)+MultinomialNB (alpha hyperparameter tuning),0.87,0.86,0.93,0.89
+CountVectorizer+LogisticRegression (L2 Penalty with hyperparameter tuning),0.86,0.85,0.93,0.89
+TfidfVectorizer+RandomForestClassifier,0.72,0.69,0.96,0.8
+Baseline,0.88,0.86,0.94,0.9
