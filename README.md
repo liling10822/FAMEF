@@ -5,13 +5,20 @@ An extension version based on somef(software metadata extraction framework), whi
 
 On the basis of somef, the accuracies of SOMEF_Extension in the description classifiers, invocation classifiers, installation classifiers, and citation classifiers is increased, and SOMEF_Extension contains the function classifier to analyze the functionality of readme files.
 
-* Contributor *: Daniel Garijo, Ling Li, Pratheek Athreya, Sharad Narayan Sharma, Yi Xie, Yidan Zhang
+ **Contributors:** Daniel Garijo, Ling Li, Pratheek Athreya, Sharad Narayan Sharma, Yi Xie, Yidan Zhang
 
 ## Documentation
 
 To see the [documentation](https://google.com) of SOMEF_Extension
 
 ## Installion
+
+### Mounting SOMEF_Extension in visual environment
+
+Install virtualenv package on your computer by running the command line below:
+ 
+```pip install virtualenv```
+
 To run SOMEF_Extension, please follow the next steps:
 
 Clone this GitHub repository
@@ -20,7 +27,22 @@ Clone this GitHub repository
 git clone https://github.com/liling10822/SOMEF_Extension.git
 ```
 
-Install SOMEF_Extension (note that you should be in the folder that you just cloned)
+Run ```cd SOMEF_Extension```  to go to the folder that you cloned
+ 
+
+Create a blank virtual environment called env by running the command line below:
+ 
+     For macOS and Linux: ```python3 -m venv env```
+   
+     For Windows: ```py -m venv env```
+  
+Activate the env enviornment by running the command line below:
+
+     For macOS and Linux: ```source env/bin/activate```
+   
+     For Windows: ```.\env\Script\activate```
+
+Install SOMEF_Extension in the virtual environment(note that you should be in the folder that you just cloned)
 
 ```
 cd SOMEF_Extension
