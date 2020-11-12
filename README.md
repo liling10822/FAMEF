@@ -5,7 +5,7 @@ An extension version based on somef(software metadata extraction framework), whi
 
 On the basis of somef, the accuracies of SOMEF_Extension in the description classifiers, invocation classifiers, installation classifiers, and citation classifiers is increased, and SOMEF_Extension contains the function classifier to analyze the functionality of readme files.
 
-Author: Daniel Garijo, Ling Li, Pratheek Athreya, Sharad Narayan Sharma, Yi Xie, Yidan Zhang
+* Contributor *: Daniel Garijo, Ling Li, Pratheek Athreya, Sharad Narayan Sharma, Yi Xie, Yidan Zhang
 
 ## Documentation
 
