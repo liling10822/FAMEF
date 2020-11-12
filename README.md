@@ -9,7 +9,7 @@ Author: Daniel Garijo, Ling Li, Pratheek Athreya, Sharad Narayan Sharma, Yi Xie,
 
 ## Documentation
 
-To see the documentation(https://google.com) of SOMEF_Extension
+To see the [documentation](https://google.com) of SOMEF_Extension
 
 ## Installion
 To run SOMEF_Extension, please follow the next steps:
