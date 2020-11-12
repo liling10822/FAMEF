@@ -13,7 +13,7 @@ To see the [documentation](https://google.com) of SOMEF_Extension
 
 ## Installion
 
-### Mounting SOMEF_Extension in visual environment
+### Mounting SOMEF_Extension in virtual environment
 
 Install virtualenv package on your computer by running the command line below:
  
