@@ -124,6 +124,10 @@ somef describe -r https://github.com/dgarijo/Widoco/ -o test.json -t 0.8
 ```
 The results will generate the test.json in the SOMEF_Extension folder.
 
+To get distribution of topics present in the corpus and classify which topic a repo belongs to run the following:
+
+python lda.py name of output file generated in the previous step (test.json) name of output file
+
 ## Citation
 
 ```
