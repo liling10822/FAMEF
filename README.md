@@ -32,15 +32,15 @@ Run ```cd SOMEF_Extension```  to go to the folder that you cloned
 
 Create a blank virtual environment called env by running the command line below:
  
-   *For macOS and Linux: ```python3 -m venv env```
+   * For macOS and Linux: ```python3 -m venv env```
    
-   *For Windows: ```py -m venv env```
+   * For Windows: ```py -m venv env```
   
 Activate the env enviornment by running the command line below:
 
-   *For macOS and Linux: ```source env/bin/activate```
+   * For macOS and Linux: ```source env/bin/activate```
    
-   *For Windows: ```.\env\Script\activate```
+   * For Windows: ```.\env\Script\activate```
 
 Install SOMEF_Extension in the virtual environment(note that you should be in the folder that you just cloned)
 
