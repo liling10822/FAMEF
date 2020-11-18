@@ -10,7 +10,6 @@ src/somef/createExcerpts.py
 src/somef/data_to_graph.py
 src/somef/function.py
 src/somef/header_analysis.py
-src/somef/lda.py
 src/somef.egg-info/PKG-INFO
 src/somef.egg-info/SOURCES.txt
 src/somef.egg-info/dependency_links.txt
@@ -25,6 +24,7 @@ src/somef/models/function.sk
 src/somef/models/installation.sk
 src/somef/models/invocation.sk
 src/somef/models/lda.model
+src/somef/models/lda.model.expElogbeta.npy
 src/somef/models/lda.model.id2word
 src/somef/models/lda.model.state
 src/somef/schema/__init__.py

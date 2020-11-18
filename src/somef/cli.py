@@ -388,7 +388,7 @@ def save_json_output(repo_data, outfile):
     print("Saving json data to", outfile)
     repo_data = function.pass_data(repo_data)
     with open(outfile, 'w') as output:
-        json.dump(repo_data, output)
+        json.dump(repo_data, output,indent=1)
     ## Function takes metadata, readme text predictions, bibtex citations and path to the output file
 
 

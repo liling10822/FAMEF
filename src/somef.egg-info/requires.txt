@@ -11,4 +11,4 @@ pandas
 numpy
 textblob
 rdflib
-rdflib-jsonld
+rdflib-jsonldgensim
