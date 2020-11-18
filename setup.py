@@ -19,7 +19,12 @@ install_requires = [
     "textblob",
     "rdflib",
     "rdflib-jsonld"
-    "gensim"
+    "gensim",
+    "nltk",
+    "spacy",
+    "bs4",
+    "keras",
+    "scipy"
 ]
 
 
