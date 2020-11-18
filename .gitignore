@@ -1,7 +1,7 @@
 
 /env/
 .DS_Store
-.vscode/
-.ipynb_checkpoints/
-__pycache__/
+.vscode
+.ipynb_checkpoints
+__pycache__
 .idea
