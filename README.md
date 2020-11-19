@@ -129,6 +129,27 @@ To get distribution of topics present in the corpus and classify which topic a r
 ```
 python lda.py name of output file generated in the previous step (test.json) name of output file
 ```
+
+### Run on docker
+FAMEF also can be run on the Docker. To set up and run it, please follow the below steps:
+
+1. After you git clone this respository, you need to install Docker[https://www.docker.com/products/docker-desktop] if you don't have one. Play with Docker (https://labs.play-with-docker.com/[https://labs.play-with-docker.com/]) is a good choice for someone who does not have a Linux/MacOS system.
+
+2. Before you build the project, please run ```cd FAMEF``` in your terminal.
+
+3. Build the project:
+
+  ```
+  docker build --tag [tagName] .
+  ```
+  
+4. Run Docker:
+  ```
+  docker run -p 5006:5006 -it [tagName]
+  ```
+  
+In our Dockerfile, we help you excute ```git clone``` the repository and install it. You could add other commands to the Dockfile to explore furthur.
+
 ## Citation
 
 ```
