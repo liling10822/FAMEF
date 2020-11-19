@@ -13,5 +13,5 @@ def pass_data(repo_data):
     default_funcion =  str(path)+"/models/function.sk"
     classifier = pickle.load(open(default_funcion, 'rb'))
     predict = classifier.predict([input_excerpt])
-    repo_data['function'] = func_dict[predict[0]]
+    repo_data['functionality'] = {"excerpt":func_dict[predict[0]],"confidence":[1.0],"technique":"Perceptron"}
     return repo_data
