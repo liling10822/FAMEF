@@ -18,7 +18,7 @@ install_requires = [
     "numpy",
     "textblob",
     "rdflib",
-    "rdflib-jsonld"
+    "rdflib-jsonld",
     "gensim",
     "nltk",
     "spacy",
