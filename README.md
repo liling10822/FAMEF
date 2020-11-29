@@ -43,7 +43,7 @@ Activate the env enviornment by running the command line below:
    
    * For Windows: ```.\env\Script\activate```
 
-Install SOMEF_Extension in the virtual environment(note that you should be in the folder that you just cloned)
+Install FAMEF in the virtual environment(note that you should be in the folder that you just cloned)
 
 ```
 pip install -e .
