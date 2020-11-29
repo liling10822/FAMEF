@@ -37,7 +37,7 @@ Create a blank virtual environment called env by running the command line below:
    
    * For Windows: ```py -m venv env```
   
-Activate the env enviornment by running the command line below:
+Activate the env environment by running the command line below:
 
    * For macOS and Linux: ```source env/bin/activate```
    
