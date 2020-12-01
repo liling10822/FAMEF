@@ -17,10 +17,12 @@ src/somef.egg-info/entry_points.txt
 src/somef.egg-info/not-zip-safe
 src/somef.egg-info/requires.txt
 src/somef.egg-info/top_level.txt
+src/somef/.ipynb_checkpoints/test-checkpoint.ipynb
 src/somef/models/.DS_Store
 src/somef/models/citation.sk
 src/somef/models/description.sk
 src/somef/models/function.sk
+src/somef/models/function_logistic.sk
 src/somef/models/installation.sk
 src/somef/models/invocation.sk
 src/somef/models/lda.model

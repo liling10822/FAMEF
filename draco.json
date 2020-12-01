@@ -1,0 +1,356 @@
+{
+ "description": [
+  {
+   "excerpt": "This repository currently contains:\n\n* [**draco**](https://pypi.org/project/draco/) (pypi) The ASP programs with soft and hard constraints, a python API for [running Draco](https://github.com/uwdata/draco/blob/master/draco/run.py), the [CLI](https://github.com/uwdata/draco/blob/master/draco/cli.py), and the [python wrapper](https://github.com/uwdata/draco/blob/master/draco/js.py) for the **draco-core** API. Additionally includes some [helper functions](https://github.com/uwdata/draco/blob/master/draco/helper.py) that may prove useful.\n* [**draco-core**](https://www.npmjs.com/package/draco-core) (npm) Holds a Typescript / Javascript friendly copy of the ASP programs, and additionally, a Typescript /Javascript API for all the translation logic of Draco, as described below.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "Draco is a formal framework for representing design knowledge about effective visualization design as a collection of constraints. You can use Draco to find effective visualization visual designs in Vega-Lite. Draco's constraints are implemented in based on Answer Set Programming (ASP) and solved with the Clingo constraint solver. We also implemented a way to learn weights for the recommendation system directly from the results of graphical perception experiment. \n",
+   "confidence": [
+    0.8368176222160101
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "There Be Dragons! This project is in active development and we are working hard on cleaning up the repository and making it easier to use the recommendation model in Draco. If you want to use this right now, please talk to us. More documentation is forthcoming. \n",
+   "confidence": [
+    0.8399615573229593
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "Reads an array of data and returns the ASP declaration of it (a list of facts). \n",
+   "confidence": [
+    0.8148776168636097
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "Translates a data schema into an ASP declaration of the data it describes. \n",
+   "confidence": [
+    0.8484025759009962
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "For a bit of historical perspective, after building Compass and CompassQL with @kanitw, @domoritz worked with colleagues at UW on a first constraint-based prototype vis-csp in ASP, then tried Z3 in vis-constraints before going back to ASP for Draco. \n",
+   "confidence": [
+    0.8139847806129825
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "Visualization Constraints and Weight Learning",
+   "confidence": [
+    1.0
+   ],
+   "technique": "metadata"
+  }
+ ],
+ "citation": [],
+ "installation": [
+  {
+   "excerpt": "* https://github.com/potassco/guide/releases/\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "You can use the helper file `asp/_all.lp`.\n\n`clingo asp/_all.lp test.lp`\n\nAlternatively, you can invoke Draco with `draco -m asp test.lp`.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "`pip install -r requirements.txt` or `conda install --file requirements.txt`\n\nInstall Draco in editable mode. We expect Python 3.\n\n`pip install -e .`\n\nNow you can call the command line tool `draco`. For example `draco --version` or `draco --help`.\n\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "`yarn` or `npm install`\n\nYou might need to activate a Python 2.7 environment to compile the canvas module.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "You can install Clingo with conda: `conda install -c potassco clingo`. On MacOS, you can alternatively run `brew install clingo`.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "`pip install draco`\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "You can install Clingo with conda: `conda install -c potassco clingo`. On MacOS, you can alternatively run `brew install clingo`.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "yarn add draco-core or npm install draco-core \n",
+   "confidence": [
+    0.836159189456104
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "git commit -m \"bump version to 0.0.1\" \n",
+   "confidence": [
+    0.8295809352258386
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "Run python setup.py sdist upload. \n",
+   "confidence": [
+    0.8229048965557842
+   ],
+   "technique": "classifier"
+  }
+ ],
+ "invocation": [
+  {
+   "excerpt": "python setup.py test \n",
+   "confidence": [
+    0.8116307175364499
+   ],
+   "technique": "classifier"
+  },
+  {
+   "excerpt": "Run python setup.py sdist upload. \n",
+   "confidence": [
+    0.8237692984883674
+   ],
+   "technique": "classifier"
+  }
+ ],
+ "requirement": [
+  {
+   "excerpt": "`yarn` or `npm install`\n\nYou might need to activate a Python 2.7 environment to compile the canvas module.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  }
+ ],
+ "run": [
+  {
+   "excerpt": "`ansunit asp/tests.yaml`\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "`pytest -v`\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "You can use the helper file `asp/_all.lp`.\n\n`clingo asp/_all.lp test.lp`\n\nAlternatively, you can invoke Draco with `draco -m asp test.lp`.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "`clingo asp/_apt.lp examples/example_apt.lp --opt-mode=optN --quiet=1 --project -c max_extra_encs=0`\n\nThis only prints the relevant data and restricts the extra encodings that are being generated.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  }
+ ],
+ "usage": [
+  {
+   "excerpt": "To run Draco on a partial spec.\n\n`sh run_pipeline.sh spec`\n\nThe output would be a .vl.json file (for Vega-Lite spec) and a .png file to preview the visualization (by default, outputs would be in folder `__tmp__`).\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "Run `yarn build_cql_examples`.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "Run `yarn build_cql_examples`.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "`clingo asp/_apt.lp examples/example_apt.lp --opt-mode=optN --quiet=1 --project -c max_extra_encs=0`\n\nThis only prints the relevant data and restricts the extra encodings that are being generated.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  }
+ ],
+ "codeRepository": {
+  "excerpt": "https://github.com/uwdata/draco",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "owner": {
+  "excerpt": "uwdata",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "ownerType": {
+  "excerpt": "Organization",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "dateCreated": {
+  "excerpt": "2017-05-31T01:02:44Z",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "dateModified": {
+  "excerpt": "2020-11-17T20:01:57Z",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "license": {
+  "excerpt": {
+   "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+   "url": "https://api.github.com/licenses/bsd-3-clause"
+  },
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "name": {
+  "excerpt": "draco",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "fullName": {
+  "excerpt": "uwdata/draco",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "issueTracker": {
+  "excerpt": "https://api.github.com/repos/uwdata/draco/issues{/number}",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "forks_url": {
+  "excerpt": "https://api.github.com/repos/uwdata/draco/forks",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "stargazers_count": {
+  "excerpt": {
+   "count": 163,
+   "date": "Thu, 19 Nov 2020 20:10:49 GMT"
+  },
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "forks_count": {
+  "excerpt": {
+   "count": 13,
+   "date": "Thu, 19 Nov 2020 20:10:49 GMT"
+  },
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "downloadUrl": {
+  "excerpt": "https://github.com/uwdata/draco/releases",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "topics": {
+  "excerpt": [
+   "visualization-constraints",
+   "answer-set-programming",
+   "visualization-recommendation",
+   "vega"
+  ],
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "languages": {
+  "excerpt": [
+   "TypeScript",
+   "Python",
+   "JavaScript",
+   "Shell"
+  ],
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "readme_url": {
+  "excerpt": "https://github.com/uwdata/draco/blob/master/README.md",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "releases": {
+  "excerpt": [],
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "functionality": {
+  "excerpt": "Data Visualization",
+  "confidence": [
+   1.0
+  ],
+  "technique": "Perceptron"
+ }
+}

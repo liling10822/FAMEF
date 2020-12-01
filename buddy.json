@@ -1,0 +1,224 @@
+{
+ "description": [
+  {
+   "excerpt": "A Scala / Java / Python library for cleansing, transforming and preparing large datasets for ML operations on Apache Spark.",
+   "confidence": [
+    1.0
+   ],
+   "technique": "metadata"
+  }
+ ],
+ "citation": [],
+ "installation": [
+  {
+   "excerpt": "A Scala / Java / Python library for cleaning, transforming and executing other preparation tasks for large datasets on Apache Spark.\n\nIt is currently maintained by a team of developers from [ThoughtWorks](http://www.thoughtworks.com).\n\nPost questions and comments to the Google group, or email them directly to data-commons-toolchain@googlegroups.com\n\nDocs are available at http://data-commons.github.io/prep-buddy\nOr check out the [Scaladocs](http://data-commons.github.io/prep-buddy/scaladocs).\n\nOur aim is to provide a set of algorithms for cleaning and transforming very large data sets,                \ninspired by predecessors such as Open Refine, Pandas and Scikit-learn packages.\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  },
+  {
+   "excerpt": "If you don't have pip. Intsall pip. \npip install prep-buddy \n",
+   "confidence": [
+    0.8663125468092844,
+    0.9897244792800712
+   ],
+   "technique": "classifier"
+  }
+ ],
+ "invocation": [],
+ "documentation": [
+  {
+   "excerpt": "- http://data-commons.github.io/prep-buddy\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  }
+ ],
+ "download": [
+  {
+   "excerpt": "- Stable [0.5.1(Beta)](https://github.com/data-commons/prep-buddy/releases/tag/v-0.5.1).\n\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  }
+ ],
+ "requirement": [
+  {
+   "excerpt": "The library depends on a few other libraries.\n- Apache Commons Math for general math and statistics functionality.\n- Apache Spark for all the distributed computation capabilities.\n- Open CSV for parsing the files.\n",
+   "confidence": [
+    1
+   ],
+   "technique": "wordnet"
+  }
+ ],
+ "codeRepository": {
+  "excerpt": "https://github.com/data-commons/prep-buddy",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "owner": {
+  "excerpt": "data-commons",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "ownerType": {
+  "excerpt": "Organization",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "dateCreated": {
+  "excerpt": "2016-03-04T08:12:04Z",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "dateModified": {
+  "excerpt": "2019-08-04T03:50:54Z",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "license": {
+  "excerpt": {
+   "name": "Apache License 2.0",
+   "url": "https://api.github.com/licenses/apache-2.0"
+  },
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "name": {
+  "excerpt": "prep-buddy",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "fullName": {
+  "excerpt": "data-commons/prep-buddy",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "issueTracker": {
+  "excerpt": "https://api.github.com/repos/data-commons/prep-buddy/issues{/number}",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "forks_url": {
+  "excerpt": "https://api.github.com/repos/data-commons/prep-buddy/forks",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "stargazers_count": {
+  "excerpt": {
+   "count": 8,
+   "date": "Thu, 19 Nov 2020 20:11:49 GMT"
+  },
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "forks_count": {
+  "excerpt": {
+   "count": 8,
+   "date": "Thu, 19 Nov 2020 20:11:49 GMT"
+  },
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "downloadUrl": {
+  "excerpt": "https://github.com/data-commons/prep-buddy/releases",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "topics": {
+  "excerpt": [],
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "languages": {
+  "excerpt": [
+   "Scala",
+   "Python",
+   "Java",
+   "Shell"
+  ],
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "readme_url": {
+  "excerpt": "https://github.com/data-commons/prep-buddy/blob/master/README.md",
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "releases": {
+  "excerpt": [
+   {
+    "tag_name": "v-0.5.1",
+    "name": "Few Bug Fixes ",
+    "author_name": "blpabhishek",
+    "authorType": "User",
+    "body": "Removed the take sample method from the AbstractRDD constructor.Now sample is only needed when you do certain tasks on every time.\n",
+    "tarball_url": "https://api.github.com/repos/data-commons/prep-buddy/tarball/v-0.5.1",
+    "zipball_url": "https://api.github.com/repos/data-commons/prep-buddy/zipball/v-0.5.1",
+    "html_url": "https://github.com/data-commons/prep-buddy/releases/tag/v-0.5.1",
+    "url": "https://api.github.com/repos/data-commons/prep-buddy/releases/5214760",
+    "dateCreated": "2017-01-20T06:28:02Z",
+    "datePublished": "2017-01-20T06:36:36Z"
+   },
+   {
+    "tag_name": "v0.5.0",
+    "name": "Beta release",
+    "author_name": "blpabhishek",
+    "authorType": "User",
+    "body": "This is the first release which is compatible  with Apache-spark 1.6.0 version.It has core functionalities in TransformableRDD which is extended from RDD (a top-level abstraction of ApacheSpark). \n",
+    "tarball_url": "https://api.github.com/repos/data-commons/prep-buddy/tarball/v0.5.0",
+    "zipball_url": "https://api.github.com/repos/data-commons/prep-buddy/zipball/v0.5.0",
+    "html_url": "https://github.com/data-commons/prep-buddy/releases/tag/v0.5.0",
+    "url": "https://api.github.com/repos/data-commons/prep-buddy/releases/3822306",
+    "dateCreated": "2016-08-08T07:50:37Z",
+    "datePublished": "2016-08-08T09:18:21Z"
+   }
+  ],
+  "confidence": [
+   1.0
+  ],
+  "technique": "metadata"
+ },
+ "functionality": {
+  "excerpt": "Data Preparation",
+  "confidence": [
+   1.0
+  ],
+  "technique": "Perceptron"
+ }
+}

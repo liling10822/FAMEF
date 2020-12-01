@@ -11,4 +11,10 @@ pandas
 numpy
 textblob
 rdflib
-rdflib-jsonldgensim
+rdflib-jsonld
+gensim
+nltk
+spacy
+bs4
+keras
+scipy
