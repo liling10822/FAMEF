@@ -10,7 +10,7 @@ On the basis of somef, the accuracies of FAMEF in the description classifiers, i
 
 ## Documentation
 
-To see the [documentation](https://google.com) of FAMEF
+To see the [documentation](https://liling10822.github.io/FAMEF/) of FAMEF
 
 ## Installion
 
