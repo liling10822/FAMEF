@@ -43,7 +43,7 @@ CASPR has been tested for MATLAB versions 2013a onwards. The core of CASPR will 
 If you use CASPR in your research please cite the 2016 IROS paper:
 
     @inproceedings{lau2016CASPR,
-     title={{CASPR}: A Comprehensive Cable-Robot Analysis and Simulation Platform for the Research of Cable-Driven Parallel Robots},
+     title={{CASPR}}: A Comprehensive Cable-Robot Analysis and Simulation Platform for the Research of Cable-Driven Parallel Robots},
      author={Lau, Darwin and Eden, Jonathan and Tan, Ying and Oetomo, Denny},
      booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
      year={2016},

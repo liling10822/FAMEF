@@ -37,13 +37,13 @@ Create a blank virtual environment called env by running the command line below:
    
    * For Windows: ```py -m venv env```
   
-Activate the env enviornment by running the command line below:
+Activate the env environment by running the command line below:
 
    * For macOS and Linux: ```source env/bin/activate```
    
    * For Windows: ```.\env\Script\activate```
 
-Install SOMEF_Extension in the virtual environment(note that you should be in the folder that you just cloned)
+Install FAMEF in the virtual environment(note that you should be in the folder that you just cloned)
 
 ```
 pip install -e .
@@ -133,7 +133,7 @@ python lda.py name of output file generated in the previous step (test.json) nam
 ### Run on docker
 FAMEF also can be run on the Docker. To set up and run it, please follow the below steps:
 
-1. After you git clone this respository, you need to install Docker[https://www.docker.com/products/docker-desktop] if you don't have one. Play with Docker (https://labs.play-with-docker.com/[https://labs.play-with-docker.com/]) is a good choice for someone who does not have a Linux/MacOS system.
+1. After you git clone this respository, you need to install [Docker](https://www.docker.com/products/docker-desktop) if you don't have one. Play with Docker ([https://labs.play-with-docker.com/](https://labs.play-with-docker.com/)) is a good choice for someone who does not have a Linux/MacOS system.
 
 2. Before you build the project, please run ```cd FAMEF``` in your terminal.
 
