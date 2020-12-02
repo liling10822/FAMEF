@@ -27,4 +27,4 @@ MyWonder is conducted by Pratheek Athreya, Ling Li, Sharad Sharma, Yi Xie, Yidan
 * **Presentation (Demo) and Report:** This milestone would be focused on preparing for the presentation, presenting results to clients, and submitting the project report. To prepare for the presentation, the team would create result visualizations, record a demo video, publish slides, and attend a dress rehearsal.
 
 ## Gantt Diagram
-![Image of DG](/DG.png)
+![Image of GD](/GD.png)
