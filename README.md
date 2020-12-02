@@ -150,7 +150,7 @@ FAMEF also can be run on the Docker. To set up and run it, please follow the bel
   
 In our Dockerfile, we help you excute ```git clone``` the repository and install it. You could add other commands to the Dockfile to explore furthur.
 
-## Citation
+## Reference
 
 ```
 @INPROCEEDINGS{9006447, 
