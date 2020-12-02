@@ -1,7 +1,7 @@
 ## Project Summary
 Framework Metadata Extraction Framework (FAMEF) extends the existing framework SOMEF and extracts scientific software metadata and its functionality from documentation. This streamlines the work of researchers who are looking to reuse scientific software . We have trained classifiers(supervised) which detects different categories of metadata. We will be evaluating the performance of classifiers against unseen repositories different from the ones used in training. 
 
-MyWonder is conducted by Pratheek Athreya, Ling Li, Sharad Sharma, Yi Xie, Yidan Zhang.
+FAMEF is conducted by Pratheek Athreya, Ling Li, Sharad Sharma, Yi Xie, Yidan Zhang.
 
 ## Wastes
 **1. Transport:** Since the meetings with the client were only required for the project manager, the client had to talk to the project manager about the requirements and concerns, and then the project manager would communicate with the person in charge. This process involved a significant overhead. To avoid this waste, our project manager encouraged everyone to attend as much as possible. 
