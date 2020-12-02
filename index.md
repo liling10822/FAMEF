@@ -1,5 +1,5 @@
 ## Project Summary
-Framework Metadata Extraction Framework (FAMEF) extends the existing framework SOMEF and extracts scientific software metadata and its functionality from documentation. This streamlines the work of researchers who are looking to reuse scientific software . We have trained classifiers(supervised) which detects different categories of metadata. We will be evaluating the performance of classifiers against unseen repositories different from the ones used in training. 
+Framework Metadata Extraction Framework (FAMEF) extends the existing framework SOMEF and extracts scientific software metadata and its functionality from documentation. This streamlines the work of researchers who are looking to reuse scientific software. We have trained classifiers(supervised) which detects different categories of metadata. We will be evaluating the performance of classifiers against unseen repositories different from the ones used in training. 
 
 FAMEF is conducted by Pratheek Athreya, Ling Li, Sharad Sharma, Yi Xie, Yidan Zhang.
 
